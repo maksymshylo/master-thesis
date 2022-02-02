@@ -1,0 +1,4 @@
+\babel@toc {ukrainian}{}\relax 
+\contentsline {chapter}{Перелік умовних позначень, символів, одиниць, скорочень і термінів}{9}{chapter*.4}%
+\contentsline {chapter}{Вступ}{10}{chapter*.5}%
+\contentsfinish 
