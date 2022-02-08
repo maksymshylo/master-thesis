@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.30)  7 FEB 2022 09:59
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.30)  8 FEB 2022 06:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -916,6 +916,10 @@ Package natbib Warning: Citation `zhang:2004' on page 12 undefined on input lin
 e 11.
 
 
+Package caption Warning: \label without proper reference on input line 25.
+See the caption package documentation for explanation.
+
+
 LaTeX Warning: Reference `fig:zhang:2004' on page 12 undefined on input line 13
 .
 
@@ -950,13 +954,24 @@ Package natbib Warning: Citation `sah' on page 13 undefined on input line 66.
 [13]
 File: images/sah.jpg Graphic file (type bmp)
 <images/sah.jpg>
-))
+
+
+Package natbib Warning: Citation `yeh' on page 14 undefined on input line 90.
+
+File: images/yeh_1.jpg Graphic file (type bmp)
+<images/yeh_1.jpg>
+File: images/yeh_2.jpg Graphic file (type bmp)
+<images/yeh_2.jpg>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[14]))
 
 Package natbib Warning: There were undefined citations.
 
 
 AED: lastpage setting LastPage
-[14] (tmp/index.aux)
+[15] (tmp/index.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -967,12 +982,12 @@ Package rerunfilecheck Info: File `index.out' has not changed.
 (rerunfilecheck)             Checksum: A6CA335630C54DF69AE19213B67A82B4;992.
  ) 
 Here is how much of TeX's memory you used:
- 23758 strings out of 476191
- 446254 string characters out of 5809814
- 778012 words of memory out of 5000000
- 44099 multiletter control sequences out of 15000+600000
+ 23803 strings out of 476191
+ 447167 string characters out of 5809814
+ 778277 words of memory out of 5000000
+ 44142 multiletter control sequences out of 15000+600000
  472569 words of font info for 70 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 123i,11n,122p,594b,504s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 123i,11n,122p,594b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tmp/index.pdf (9 pages).
+Output written on tmp/index.pdf (10 pages).
