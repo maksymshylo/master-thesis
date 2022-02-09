@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.30)  8 FEB 2022 06:52
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.30)  9 FEB 2022 05:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -965,13 +965,31 @@ File: images/yeh_2.jpg Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14]))
+[14]
+
+Package natbib Warning: Citation `davila:2017' on page 15 undefined on input li
+ne 117.
+
+File: images/davila_2017_1.jpg Graphic file (type bmp)
+<images/davila_2017_1.jpg>
+File: images/davila_2017_2.png Graphic file (type bmp)
+<images/davila_2017_2.png>
+
+Package natbib Warning: Citation `davila:2021' on page 15 undefined on input li
+ne 137.
+
+File: images/davila_2021.jpg Graphic file (type bmp)
+<images/davila_2021.jpg>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+))
 
 Package natbib Warning: There were undefined citations.
 
 
 AED: lastpage setting LastPage
-[15] (tmp/index.aux)
+[15] [16] (tmp/index.aux)
 
 LaTeX Warning: There were undefined references.
 
@@ -982,12 +1000,12 @@ Package rerunfilecheck Info: File `index.out' has not changed.
 (rerunfilecheck)             Checksum: A6CA335630C54DF69AE19213B67A82B4;992.
  ) 
 Here is how much of TeX's memory you used:
- 23803 strings out of 476191
- 447167 string characters out of 5809814
- 778277 words of memory out of 5000000
- 44142 multiletter control sequences out of 15000+600000
+ 23867 strings out of 476191
+ 448921 string characters out of 5809814
+ 778395 words of memory out of 5000000
+ 44203 multiletter control sequences out of 15000+600000
  472569 words of font info for 70 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  123i,11n,122p,594b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tmp/index.pdf (10 pages).
+Output written on tmp/index.pdf (11 pages).
