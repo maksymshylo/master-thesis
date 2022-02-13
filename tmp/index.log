@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.30)  9 FEB 2022 05:01
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.30)  13 FEB 2022 09:10
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -983,29 +983,41 @@ File: images/davila_2021.jpg Graphic file (type bmp)
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-))
+[15]
+Overfull \hbox (9.46144pt too wide) in paragraph at lines 154--158
+[]\TU/XITS(0)/m/n/14.4 Спільними елементами вищеописаних алгоритмів-аналогів є 
+використання тем-
+ []
+
+) (./4_overview//20_problem.tex [16]))
 
 Package natbib Warning: There were undefined citations.
 
 
 AED: lastpage setting LastPage
-[15] [16] (tmp/index.aux)
+[17] (tmp/index.aux)
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
 
-Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: A6CA335630C54DF69AE19213B67A82B4;992.
+
+Package rerunfilecheck Warning: File `index.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `index.out':
+(rerunfilecheck)             Before: A6CA335630C54DF69AE19213B67A82B4;992
+(rerunfilecheck)             After:  2EFBECD2AD541DC4B604B04EC0E9D8EA;1182.
  ) 
 Here is how much of TeX's memory you used:
- 23867 strings out of 476191
- 448921 string characters out of 5809814
- 778395 words of memory out of 5000000
- 44203 multiletter control sequences out of 15000+600000
+ 23874 strings out of 476191
+ 449105 string characters out of 5809814
+ 778546 words of memory out of 5000000
+ 44207 multiletter control sequences out of 15000+600000
  472569 words of font info for 70 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  123i,11n,122p,594b,502s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tmp/index.pdf (11 pages).
+Output written on tmp/index.pdf (12 pages).
