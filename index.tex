@@ -6,6 +6,9 @@
 \usepackage{pdfpages}
 \usepackage{xassoccnt}
 \usepackage{import}
+\usepackage{tikz}
+
+
 
 \NewTotalDocumentCounter{totalfigures}
 \NewTotalDocumentCounter{totalbibitems}
@@ -18,6 +21,7 @@
 \let\oldcite=\bibcite
 \def\bibcite{\stepcounter{citenum}\oldcite}
 
+\input{macroses.tex}
 
 \begin{document}
 \pagenumbering{gobble}

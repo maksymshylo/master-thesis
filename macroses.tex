@@ -1,0 +1,23 @@
+\newcommand{\indicatorof}[1]{\mathbbm{1}_{#1}}
+\newcommand{\indicator}[1]{\mathbbm{1}\!\left( #1 \right)}
+\newcommand{\Indicator}[1]{\mathbbm{1}\!\left\{ #1 \right\}}
+\newcommand{\probability}[1]{\mathbb{P}\left( #1 \right)}
+\newcommand{\Probability}[1]{\mathbb{P}\left\{ #1 \right\}}
+\newcommand{\cdfof}[2]{F^{#1}\left(#2\right)}
+\newcommand{\cdf}[1]{\cdfof{}{#1}}
+\def\Tau{\mathrm{T}}
+\newcommand{\meanof}[2]{\mathbb{E}_{#1} #2}
+\newcommand{\Meanof}[2]{\meanof{#1}{\left[ #2 \right]}}
+\newcommand{\mean}[1]{\meanof{}{#1}}
+\newcommand{\Mean}[1]{\Meanof{}{#1}}
+\newcommand{\varianceof}[2]{\operatorname{D}_{#1} #2}
+\newcommand{\Varianceof}[2]{\varianceof{#1}{\left[ #2 \right]}}
+\newcommand{\variance}[1]{\varianceof{}{#1}}
+\def \mcond {\;\middle|\;}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+
+\def\chapterConclusion{
+  \section*{Висновки до розділу \arabic{chapter}}
+  \addcontentsline{toc}{section}{Висновки до розділу \arabic{chapter}}
+}

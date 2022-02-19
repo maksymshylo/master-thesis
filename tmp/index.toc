@@ -10,4 +10,6 @@
 \contentsline {subsection}{\numberline {1.1.5}Сучасна робота}{15}{subsection.1.1.5}%
 \contentsline {subsection}{\numberline {1.1.6}Кінцевий аналіз робіт}{16}{subsection.1.1.6}%
 \contentsline {section}{\numberline {1.2}Постановка задачі}{16}{section.1.2}%
+\contentsline {section}{\numberline {1.3}Пропоновані рішення}{17}{section.1.3}%
+\contentsline {section}{Висновки до розділу 1}{18}{figure.caption.12}%
 \contentsfinish 
