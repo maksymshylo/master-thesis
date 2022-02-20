@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.30)  19 FEB 2022 09:47
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.30)  20 FEB 2022 11:13
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1359,25 +1359,35 @@ File: pgflibraryshapes.multipart.code.tex 2021/05/15 v3.1.9a (3.1.9a)
 \pgfnodepartsixbox=\box91
 \pgfnodepartfivebox=\box92
 )))) (./4_overview//40_conclusion.tex))
+(./5_main/main.tex [18]
+Розділ 2.
+(./5_main//10_preface.tex) (./5_main//20_annotations.tex
+Missing character: There is no С ("421) in font cmmi12!
+[19
+
+]))
 
 Package natbib Warning: There were undefined citations.
 
 
 AED: lastpage setting LastPage
-[18] (tmp/index.aux)
+[20] (tmp/index.aux)
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
 Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: B903A1771634E77631902E6A7A2E6251;1613.
+(rerunfilecheck)             Checksum: 8A9EBF39B959521F378107F355D48EE0;1780.
  ) 
 Here is how much of TeX's memory you used:
- 36381 strings out of 476191
- 742374 string characters out of 5809814
- 1037572 words of memory out of 5000000
- 56445 multiletter control sequences out of 15000+600000
+ 36400 strings out of 476191
+ 742777 string characters out of 5809814
+ 1037575 words of memory out of 5000000
+ 56453 multiletter control sequences out of 15000+600000
  472569 words of font info for 70 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 123i,11n,122p,594b,950s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 123i,12n,122p,594b,950s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tmp/index.pdf (13 pages).
+Output written on tmp/index.pdf (15 pages).
