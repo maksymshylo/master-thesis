@@ -13,4 +13,7 @@
 \contentsline {section}{\numberline {1.3}Пропоновані рішення}{17}{section.1.3}%
 \contentsline {section}{Висновки до розділу 1}{18}{figure.caption.12}%
 \contentsline {chapter}{\numberline {2}****Назва розділу}{19}{chapter.2}%
+\contentsline {subsection}{\numberline {2.0.1}Вхід алгоритму}{19}{subsection.2.0.1}%
+\contentsline {subsection}{\numberline {2.0.2}Побудова маски рухомих об'єктів}{20}{subsection.2.0.2}%
+\contentsline {subsection}{\numberline {2.0.3}Алгоритм Бойкова-Колмогорова}{20}{subsection.2.0.3}%
 \contentsfinish 
