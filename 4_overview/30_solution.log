@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2022.1.30)  20 FEB 2022 08:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (TeX Live 2021) (preloaded format=pdflatex 2022.1.30)  6 APR 2022 08:30
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1322,7 +1322,8 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.5 ...лайдів на основі відеоз
-                                                  апису лекції [1].
+                                                  апису лекції (�...
+
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
@@ -1335,7 +1336,8 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.5 ...айдів на основі відеоза
-                                                  пису лекції [1].
+                                                  пису лекції (р�...
+
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
@@ -1348,7 +1350,8 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.5 ...йдів на основі відеозап
-                                                  ису лекції [1].
+                                                  ису лекції (ри�...
+
 You may provide a definition with
 \DeclareUnicodeCharacter 
 
@@ -1361,7 +1364,7 @@ Type  H <return>  for immediate help.
  ...                                              
                                                   
 l.5 ...дів на основі відеозапи
-                                                  су лекції [1].
+                                                  су лекції (рис....
 (That makes 100 errors; please try again.) 
 Here is how much of TeX's memory you used:
  43 strings out of 478287
@@ -1370,6 +1373,6 @@ Here is how much of TeX's memory you used:
  18339 multiletter control sequences out of 15000+600000
  469259 words of font info for 28 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 13i,0n,12p,125b,27s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 13i,0n,12p,141b,27s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 ./30_solution.tex:5:  ==> Fatal error occurred, no output PDF file produced!
