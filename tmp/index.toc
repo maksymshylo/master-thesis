@@ -17,4 +17,6 @@
 \contentsline {subsection}{\numberline {2.0.2}Прибирання викладача з відео}{20}{subsection.2.0.2}%
 \contentsline {subsection}{\numberline {2.0.3}Задача знаходження Min-Cut/Max-Flow}{20}{subsection.2.0.3}%
 \contentsline {subsection}{\numberline {2.0.4}Застосування алгоритму Б-К для отримання маски рухомих об'єктів}{24}{subsection.2.0.4}%
+\contentsline {section}{\numberline {2.1}Пошук відповідності між кадрами}{27}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}SIFT}{28}{subsection.2.1.1}%
 \contentsfinish 

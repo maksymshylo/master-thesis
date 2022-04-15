@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.30)  6 APR 2022 13:08
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.30)  15 APR 2022 18:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1506,26 +1506,44 @@ File: images/bad_example_inv_dif.png Graphic file (type bmp)
 <images/bad_example_inv_dif.png>
 File: images/bad_example_mask.png Graphic file (type bmp)
 <images/bad_example_mask.png>
-))
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) (./5_main//40_cnn_applying.tex) (./5_main//50_frames_matching.tex [26]
+Overfull \hbox (8.27351pt too wide) in paragraph at lines 26--34
+[]\TU/XITS(0)/m/n/14.4 У 1999 році англієць Девід Лоу представив алгоритм SIFT 
+(Scale-invariant feature
+ []
+
+[27]
+File: images/sift1.png Graphic file (type bmp)
+<images/sift1.png>
+ [28]
+File: images/sift2.png Graphic file (type bmp)
+<images/sift2.png>
+File: images/sift3.png Graphic file (type bmp)
+<images/sift3.png>
+ [29]))
 
 Package natbib Warning: There were undefined citations.
 
 
 AED: lastpage setting LastPage
-[26] (tmp/index.aux)
+[30] (tmp/index.aux)
 
 LaTeX Warning: There were undefined references.
 
 Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: 8A9EBF39B959521F378107F355D48EE0;1780.
+(rerunfilecheck)             Checksum: 0CDE80C2E6BB6B3DA0DC8C7EC63164E7;2082.
  ) 
 Here is how much of TeX's memory you used:
- 40041 strings out of 476191
- 815422 string characters out of 5809814
- 1098901 words of memory out of 5000000
- 60048 multiletter control sequences out of 15000+600000
+ 40115 strings out of 476191
+ 817029 string characters out of 5809814
+ 1098268 words of memory out of 5000000
+ 60113 multiletter control sequences out of 15000+600000
  472577 words of font info for 71 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  123i,14n,122p,594b,950s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tmp/index.pdf (21 pages).
+Output written on tmp/index.pdf (25 pages).
