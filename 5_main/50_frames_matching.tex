@@ -171,23 +171,27 @@
 координата на кадрі номер \(i + s\). Відповідними точками є ті, що є
 проекціями однієї і тієї ж точки у просторі.
 
-Нехай $D_i$ та $D_{i+s}$ множина дескрипторів кадрів \(F^{i}\) та \(F^{i + s}\)
-відповідно. Мета - отримати множину $D^{matches}_{i,i+s}$, що містить в собі відповідні дескриптори.
+Нехай $D^i$ та $D^{i+s}$ множина дескрипторів кадрів \(F^{i}\) та \(F^{i + s}\)
+відповідно. Мета - отримати \(M^{i,i+s}\) множину усіх знайдених відповідних точок  між кадрами
+\(F^{i}\) і \(F^{i + s}\).
 
 
 Був використаний \textbf{Brute Force Matcher} для знаходження відповідних точок.
 \begin{algorithm}[H]
     \caption{Алгоритм Brute Force Matcher}
     \begin{algorithmic}
-    \State \textbf{Вхід:} Множини дескрипторів $D_i$ та $D_{i+s}$
-    \State \textbf{Вихід:} Множина відповідних дескрипторів $M_{i,i+s}$
-    \State $\forall i \in D_i$:
+    \State \textbf{Вхід:} Множини дескрипторів $D^i$ та $D^{i+s}$
+    \State \textbf{Вихід:} Множина відповідних точок \(M^{i,i+s}\)
+    \State \textbf{Ініціалізація:} Створюємо множину відповідних дескрипторів $D^{i,i+s}$
+    \State $\forall i \in D^i$:
     \State  \qquad $h^{min}_{i,j} \gets 0$
-    \State  \qquad  $\forall j \in D_{i+s}$:
+    \State  \qquad  $\forall j \in D^{i+s}$:
     \State  \qquad \qquad  $h_{i,j} \gets distance(i,j)$
     \State  \qquad \qquad  Якщо {$h_{i,j} \leq h^{min}_{i,j}$} 
-    \State  \qquad \qquad  \qquad $j$ є відповідним  дескриптором для $i$    
+    \State  \qquad \qquad  \qquad $j$ є відповідним  дескриптором для $i$, додаємо до  $D^{i,i+s}$
+    \State З $D^{i,i+s}$ формуємо \(M^{i,i+s}\)
     \end{algorithmic}
+    \label{al:brute-force-matcher}
 \end{algorithm}
 
 Тобто для кожного дескриптора першого зображення шукаємо найближчий на другому.
@@ -224,16 +228,111 @@
 
 Знаходження $H$ вимагає знаходження всіх 9 параметрів матриці \ref{eq:h_matrix}.
 Візьмемо пару відповідних точок $T$ та $T'$:
-$T = ((x_1,y_1), (x_2,y_2), (x_3,y_3), (x_4,y_4))$, 
-$T' = ((x'_1,y'_1), (x'_2,y'_2), (x'_3,y'_3), (x'_4,y'_4))$ 
 
 
+$T = ((x_1,y_1,1), (x_2,y_2,1), (x_3,y_3,1), (x_4,y_4,1))$, 
 
 
-Для оцінки гомографії використовували RANSAC \cite{Fischler1981RandomSC}.
-Позначимо множину \(M^{i}\) усіх знайдених відповідних точок між кадрами
-\(F^{i}\) і \(F^{i + s}\). Користувач вводить рівень \(\varepsilon > 0\)
+$T' = ((x'_1,y'_1,1), (x'_2,y'_2,1), (x'_3,y'_3,1), (x'_4,y'_4,1))$ 
+
+Перепишемо \ref{eq:h_connection} у матричній формі для $T$ та $T'$:
+
+\begin{equation}
+    \begin{bmatrix}
+        x'_i\lambda\\
+        y'_i\lambda\\
+        \lambda
+    \end{bmatrix} 
+    = 
+    \begin{bmatrix}
+        h_{11} & h_{12} & h_{13}\\
+        h_{21} & h_{22} & h_{13}\\
+        h_{31} & h_{32} & h_{33}
+    \end{bmatrix}
+    \begin{bmatrix}
+        x_i\\
+        y_i\\
+        1
+    \end{bmatrix}
+    ,\quad\forall i,j = \overline{1,4\ }
+    \label{eq:h_connection2}
+\end{equation}
+
+Такми чином ми приходимо до розв'язку системи:
+\begin{equation}
+    \underbrace{
+        \begin{bmatrix}
+            x_1 & y_1 & 1 & 0   & 0   & 0 & -x_1x'_1 -y_1x'_1\\
+            x_2 & y_2 & 1 & 0   & 0   & 0 & -x_2x'_2 -y_2x'_2\\
+            x_3 & y_3 & 1 & 0   & 0   & 0 & -x_3x'_3 -y_3x'_3\\
+            x_4 & y_4 & 1 & 0   & 0   & 0 & -x_4x'_4 -y_4x'_4\\
+            0   & 0   & 0 & x_1 & y_1 & 1 & -x_1y'_1 -y_1y'_1\\
+            0   & 0   & 0 & x_2 & y_2 & 1 & -x_2y'_2 -y_2y'_2\\
+            0   & 0   & 0 & x_3 & y_3 & 1 & -x_3y'_3 -y_3y'_3\\
+            0   & 0   & 0 & x_4 & y_4 & 1 & -x_4y'_4 -y_4y'_4
+        \end{bmatrix}
+    }_\textrm{A}
+    \begin{bmatrix}
+        h_{11}\\
+        h_{12}\\
+        h_{13}\\
+        h_{21}\\
+        h_{22}\\
+        h_{23}\\
+        h_{31}\\
+        h_{32}
+    \end{bmatrix}
+    =
+    h_{33}
+    \begin{bmatrix}
+        x'_1\\
+        x'_2\\
+        x'_3\\
+        x'_4\\
+        y'_1\\
+        y'_2\\
+        y'_3\\
+        y'_4
+    \end{bmatrix}
+\end{equation}
+
+Варто підмітити, що ми потім  позбуваємось  $h_{33}$, щоб $H$ була нормованою, оскільки вона 
+зв'язує точки площин, в яких 3-тя координата 1.
+У $A$ маємо 8 рівнянь, для знаходження параметрів яких потрібно, щоб $A$ була повноранговою.
+Для отримання $H$ застосовується сингулярний розклад (SVD) матриці $А = U\Sigma V^*$.
+Після розкладу $V^*$ має розмір $9\times9$. Параметри $H$ знаходяться в останньому рядку $V^*$.
+
+\begin{equation}
+    H = V^{*}_{9,\cdot }/V^{*}_{9,9},\quad H \in R^{1 \times 9} \rightarrow H \in R^{3 \times 3}
+    \label{eq:honography_svd}
+\end{equation}
+
+
+Для оцінки гомографії використовували RANSAC \cite{Fischler1981RandomSC}. 
+Користувач вводить рівень \(\varepsilon > 0\)
 дозволеної похибки розрахунків -- що менше, то краще, проте тим довше
 буде працювати алгоритм пошуку гомографії.
 
+\begin{equation}
+    E(H) = \sum_{(x,x') \in M^{i,i+s}} 
+    \llbracket \| 
+    \frac{H\cdot x'}{(H\cdot x')_z} - x
+    \Vert \leq \varepsilon
+    \rrbracket
+    \to \max\limits_{\substack{H \in \mathbb{R}^{3 \times 3} \\ \det{H} \neq 0}}
+    \label{eq:homography_estimation}
+\end{equation}
 
+\begin{algorithm}[H]
+    \caption{Алгоритм знаходження гомографії за принципом RANSAC}
+    \begin{algorithmic}
+    \State \textbf{Вхід:} $M^{i,i+s}$ - множина відповідних точок, $\varepsilon$ та $n$ - кількість ітерацій
+    \State \textbf{Вихід:} $H^{best}$ - найкраща матриця гомографії
+    \State $\forall i = \overline{1,n}:$
+    \State \quad 1. Вибираємо випадковим чином 4 пари відповідних точок $T$ та $T'$ з $M^{i,i+s}$.
+    \State \quad 2. Обчислюємо $H$ по формулі \ref{eq:honography_svd}
+    \State \quad 3. Обчислюємо $E(H)$ по формулі \ref{eq:homography_estimation}
+    \State \quad 4. Якщо  $E(H) < E(H^{best})$:
+    \State \quad \quad $H^{best} \gets H$
+    \end{algorithmic}
+\end{algorithm}
