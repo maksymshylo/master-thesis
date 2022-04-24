@@ -17,8 +17,10 @@
 \contentsline {subsection}{\numberline {2.0.2}Прибирання викладача з відео}{20}{subsection.2.0.2}%
 \contentsline {subsection}{\numberline {2.0.3}Задача знаходження Min-Cut/Max-Flow}{20}{subsection.2.0.3}%
 \contentsline {subsection}{\numberline {2.0.4}Застосування алгоритму Б-К для отримання маски рухомих об'єктів}{24}{subsection.2.0.4}%
-\contentsline {section}{\numberline {2.1}Пошук відповідності між кадрами}{27}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}SIFT}{28}{subsection.2.1.1}%
-\contentsline {subsection}{\numberline {2.1.2}Знаходження відповідних точок зображень}{32}{subsection.2.1.2}%
-\contentsline {subsection}{\numberline {2.1.3}Знаходження гомографії за допомогою RANSAC методу}{33}{subsection.2.1.3}%
+\contentsline {subsection}{\numberline {2.0.5}Застосування нейронних мереж для отрмання маски людини}{26}{subsection.2.0.5}%
+\contentsline {subsection}{\numberline {2.0.6}Згорткові нейронні мережі (CNN)}{27}{subsection.2.0.6}%
+\contentsline {section}{\numberline {2.1}Пошук відповідності між кадрами}{30}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}SIFT}{31}{subsection.2.1.1}%
+\contentsline {subsection}{\numberline {2.1.2}Знаходження відповідних точок зображень}{35}{subsection.2.1.2}%
+\contentsline {subsection}{\numberline {2.1.3}Знаходження гомографії за допомогою RANSAC методу}{36}{subsection.2.1.3}%
 \contentsfinish 
