@@ -72,7 +72,7 @@
   author    = {Hartley, Richard and Zisserman, Andrew},
   year      = {2004}
 }
-@article{Lowe_david_2004,
+@article{sift,
   author  = {Lowe, David},
   year    = {2004},
   month   = {11},
@@ -82,31 +82,74 @@
   journal = {International Journal of Computer Vision},
   doi     = {10.1023/B:VISI.0000029664.99615.94}
 }
-@article{mobilenetv3,
-  author        = {Andrew Howard and
-                   Mark Sandler and
-                   Grace Chu and
-                   Liang{-}Chieh Chen and
-                   Bo Chen and
-                   Mingxing Tan and
-                   Weijun Wang and
-                   Yukun Zhu and
-                   Ruoming Pang and
-                   Vijay Vasudevan and
-                   Quoc V. Le and
-                   Hartwig Adam},
-  title         = {Searching for MobileNetV3},
-  journal       = {CoRR},
-  volume        = {abs/1905.02244},
-  year          = {2019},
-  url           = {http://arxiv.org/abs/1905.02244},
-  archiveprefix = {arXiv},
-  eprint        = {1905.02244},
-  timestamp     = {Tue, 12 Jan 2021 15:30:06 +0100},
-  biburl        = {https://dblp.org/rec/journals/corr/abs-1905-02244.bib},
-  bibsource     = {dblp computer science bibliography, https://dblp.org}
+
+
+@article{mobilenetv1,
+  author     = {Andrew G. Howard and
+                Menglong Zhu and
+                Bo Chen and
+                Dmitry Kalenichenko and
+                Weijun Wang and
+                Tobias Weyand and
+                Marco Andreetto and
+                Hartwig Adam},
+  title      = {MobileNets: Efficient Convolutional Neural Networks for Mobile Vision
+                Applications},
+  journal    = {CoRR},
+  volume     = {abs/1704.04861},
+  year       = {2017},
+  url        = {http://arxiv.org/abs/1704.04861},
+  eprinttype = {arXiv},
+  eprint     = {1704.04861},
+  timestamp  = {Thu, 27 May 2021 16:20:51 +0200},
+  biburl     = {https://dblp.org/rec/journals/corr/HowardZCKWWAA17.bib},
+  bibsource  = {dblp computer science bibliography, https://dblp.org}
 }
-@article{Fischler1981RandomSC,
+
+@article{mobilenetv2,
+  author     = {Mark Sandler and
+                Andrew G. Howard and
+                Menglong Zhu and
+                Andrey Zhmoginov and
+                Liang{-}Chieh Chen},
+  title      = {Inverted Residuals and Linear Bottlenecks: Mobile Networks for Classification,
+                Detection and Segmentation},
+  journal    = {CoRR},
+  volume     = {abs/1801.04381},
+  year       = {2018},
+  url        = {http://arxiv.org/abs/1801.04381},
+  eprinttype = {arXiv},
+  eprint     = {1801.04381},
+  timestamp  = {Tue, 12 Jan 2021 15:30:06 +0100},
+  biburl     = {https://dblp.org/rec/journals/corr/abs-1801-04381.bib},
+  bibsource  = {dblp computer science bibliography, https://dblp.org}
+}
+@article{mobilenetv3,
+  author     = {Andrew Howard and
+                Mark Sandler and
+                Grace Chu and
+                Liang{-}Chieh Chen and
+                Bo Chen and
+                Mingxing Tan and
+                Weijun Wang and
+                Yukun Zhu and
+                Ruoming Pang and
+                Vijay Vasudevan and
+                Quoc V. Le and
+                Hartwig Adam},
+  title      = {Searching for MobileNetV3},
+  journal    = {CoRR},
+  volume     = {abs/1905.02244},
+  year       = {2019},
+  url        = {http://arxiv.org/abs/1905.02244},
+  eprinttype = {arXiv},
+  eprint     = {1905.02244},
+  timestamp  = {Thu, 27 May 2021 16:20:51 +0200},
+  biburl     = {https://dblp.org/rec/journals/corr/abs-1905-02244.bib},
+  bibsource  = {dblp computer science bibliography, https://dblp.org}
+}
+
+@article{ransac,
   title   = {Random sample consensus: a paradigm for model fitting with applications to image analysis and automated cartography},
   author  = {Martin A. Fischler and Robert C. Bolles},
   journal = {Commun. ACM},
@@ -115,7 +158,7 @@
   pages   = {381-395},
   doi     = {https://doi.org/10.1145/358669.358692}
 }
-@incollection{NEURIPS2019_9015,
+@software{pytorch_library,
   title     = {PyTorch: An Imperative Style, High-Performance Deep Learning Library},
   author    = {Paszke, Adam and Gross, Sam and Massa, Francisco and Lerer, Adam and Bradbury, James and Chanan, Gregory and Killeen, Trevor and Lin, Zeming and Gimelshein, Natalia and Antiga, Luca and Desmaison, Alban and Kopf, Andreas and Yang, Edward and DeVito, Zachary and Raison, Martin and Tejani, Alykhan and Chilamkurthy, Sasank and Steiner, Benoit and Fang, Lu and Bai, Junjie and Chintala, Soumith},
   booktitle = {Advances in Neural Information Processing Systems 32},
@@ -125,7 +168,7 @@
   publisher = {Curran Associates, Inc.},
   url       = {http://papers.neurips.cc/paper/9015-pytorch-an-imperative-style-high-performance-deep-learning-library.pdf}
 }
-@software{glenn_jocher_2022_6222936,
+@software{yolov5_pytorch,
   author    = {Glenn Jocher and
                Ayush Chaurasia and
                Alex Stoken and
@@ -164,11 +207,19 @@
   doi       = {10.5281/zenodo.6222936},
   url       = {https://doi.org/10.5281/zenodo.6222936}
 }
-@article{RedmonYolo,
+@article{yolov1,
   author = {Redmon, Joseph and Divvala, Santosh and Girshick, Ross and Farhadi, Ali},
   year   = {2016},
   month  = {06},
   pages  = {779-788},
   title  = {You Only Look Once: Unified, Real-Time Object Detection},
   doi    = {10.1109/CVPR.2016.91}
+}
+@misc{deep_wise_sep_conv_website,
+  title   = {Depthwise separable convolutions for machine learning},
+  url     = {https://eli.thegreenplace.net/2018/depthwise-separable-convolutions-for-machine-learning/},
+  journal = {Eli Bendersky’s website},
+  author  = {Bendersky, Eli},
+  year    = {2018},
+  month   = {Apr}
 }
