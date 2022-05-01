@@ -11,17 +11,17 @@
 \contentsline {subsection}{\numberline {1.1.6}Кінцевий аналіз робіт}{16}{subsection.1.1.6}%
 \contentsline {section}{\numberline {1.2}Постановка задачі}{16}{section.1.2}%
 \contentsline {section}{\numberline {1.3}Пропоновані рішення}{17}{section.1.3}%
-\contentsline {section}{Висновки до розділу 1}{18}{figure.caption.12}%
-\contentsline {chapter}{\numberline {2}****Назва розділу}{19}{chapter.2}%
-\contentsline {subsection}{\numberline {2.0.1}Вхід алгоритму}{19}{subsection.2.0.1}%
-\contentsline {subsection}{\numberline {2.0.2}Прибирання викладача з відео}{20}{subsection.2.0.2}%
-\contentsline {subsection}{\numberline {2.0.3}Задача знаходження Min-Cut/Max-Flow}{20}{subsection.2.0.3}%
-\contentsline {subsection}{\numberline {2.0.4}Застосування алгоритму Б-К для отримання маски рухомих об'єктів}{24}{subsection.2.0.4}%
-\contentsline {section}{\numberline {2.1}Застосування нейронних мереж для отрмання маски людини}{26}{section.2.1}%
-\contentsline {subsection}{\numberline {2.1.1}YOLO}{28}{subsection.2.1.1}%
+\contentsline {section}{Висновки до розділу 1}{19}{figure.caption.12}%
+\contentsline {chapter}{\numberline {2}Створення маски викладача}{20}{chapter.2}%
+\contentsline {subsection}{\numberline {2.0.1}Вхід алгоритму}{20}{subsection.2.0.1}%
+\contentsline {subsection}{\numberline {2.0.2}Прибирання викладача з відео}{21}{subsection.2.0.2}%
+\contentsline {subsection}{\numberline {2.0.3}Задача знаходження Min-Cut/Max-Flow}{22}{subsection.2.0.3}%
+\contentsline {subsection}{\numberline {2.0.4}Застосування алгоритму Б-К для отримання маски рухомих об'єктів}{25}{subsection.2.0.4}%
+\contentsline {section}{\numberline {2.1}Застосування нейронних мереж для отримання маски людини}{28}{section.2.1}%
+\contentsline {subsection}{\numberline {2.1.1}YOLO}{29}{subsection.2.1.1}%
 \contentsline {subsection}{\numberline {2.1.2}MobileNet}{31}{subsection.2.1.2}%
-\contentsline {section}{\numberline {2.2}Пошук відповідності між кадрами}{36}{section.2.2}%
-\contentsline {subsection}{\numberline {2.2.1}SIFT}{36}{subsection.2.2.1}%
-\contentsline {subsection}{\numberline {2.2.2}Знаходження відповідних точок зображень}{40}{subsection.2.2.2}%
-\contentsline {subsection}{\numberline {2.2.3}Знаходження гомографії за допомогою RANSAC методу}{41}{subsection.2.2.3}%
+\contentsline {subsubsection}{\numberline {2.1.2.1}Mobilenetv1}{32}{subsubsection.2.1.2.1}%
+\contentsline {subsubsection}{\numberline {2.1.2.2}Mobilenetv2}{35}{subsubsection.2.1.2.2}%
+\contentsline {subsubsection}{\numberline {2.1.2.3}MobileNetv3}{37}{subsubsection.2.1.2.3}%
+\contentsline {chapter}{\numberline {3}Створення панорами}{41}{chapter.3}%
 \contentsfinish 

@@ -1,6 +1,0 @@
-PWD /home/maksym-shylo/desert/master-thesis/4_overview
-INPUT /usr/local/texlive/2021/texmf.cnf
-INPUT /usr/local/texlive/2021/texmf-dist/web2c/texmf.cnf
-INPUT /usr/local/texlive/2021/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT 30_solution.tex
-OUTPUT 30_solution.log
