@@ -35,9 +35,9 @@
 За мету було поставлено підібрати таку мережу, що здатна швидко оброблювати
 один знімок навіть на смартфоні. Тому головним критерієм є швидкість.
 
-\subsection{YOLO}
+\subsection{YOLO: You-Only-Look-Once}
 
-YOLO (You-Only-Look-Once) - це сімейство нейронних мереж.
+YOLO - це сімейство нейронних мереж.
 
 YOLOv1 вперше представили Joseph Redmon.
 Вона розв'язує задачу детекції об'єктів як задачу регресії
@@ -49,7 +49,7 @@ YOLOv1 вперше представили Joseph Redmon.
 Опишемо коротко головні особливості YOLOv1, оскільки YOLOv5, яка застосовувалась
 в роботі є лише модифікацією:
 \begin{enumerate}
-    \item Спочтаку зображення розділяється решіткою $S \times S$.
+    \item Спочатку зображення розділяється решіткою $S \times S$.
           Якщо центр об'єкту потрапляє в комірку решітки, тоді ця комірка
           є кандидатом, для подальшої локалізації об'єкта.
     \item Кожна комірка решітки має передбачувати $B$ областей та рівнів
@@ -153,7 +153,7 @@ MobileNet це також ще одне сімейство, що часто ви
 \end{equation}
 
 Щоб обчислити дану згортку потрібно $S_C · S_C · M · N · S_I · S_I$ операцій, що
-є накладує обчислювальні обмеження на мобільний пристрій, якщо наприклад матимемо
+є створює обчислювальні обмеження на мобільний пристрій, якщо наприклад матимемо
 декілька таких згорток.
 Для вирішення даної проблеми застосовується глибинна згортка (Рис. ). Вона полягає
 у отриманні окремої згортки кожного каналу ядра до кожного каналу
@@ -167,7 +167,7 @@ MobileNet це також ще одне сімейство, що часто ви
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\textwidth]{images/cnn_deep_wise_conv}
+    \includegraphics[width=0.35\textwidth]{images/cnn_deep_wise_conv}
     \caption{Ілюстрація взяття глибинної згортки  \cite{deep_wise_sep_conv_website}
         \label{fig:cnn:deep_wise_conv}
     }
@@ -187,7 +187,7 @@ $S_C · S_C · M · S_I · S_I + M · N · S_I · S_I$ операцій.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.4\textwidth]{images/cnn_deep_wise_separable_conv}
+    \includegraphics[width=0.35\textwidth]{images/cnn_deep_wise_separable_conv}
     \caption{Ілюстрація взяття глибинно просторової згортки  \cite{deep_wise_sep_conv_website}
         \label{fig:cnn:deep_wise_sep_conv}
     }
@@ -202,7 +202,8 @@ $S_C · S_C · M · S_I · S_I + M · N · S_I · S_I$ операцій.
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.4\textwidth]{images/cnn_mobilenetv1_conv_layer}
-    \caption{Ліворуч звичайний згортковий шар, праворуч згортковий шар у MobileNetv1
+    \caption{Ліворуч звичайний згортковий шар,
+        праворуч згортковий шар у MobileNetv1  \cite{mobilenetv1}
         \label{fig:cnn:mobilenetv1_conv_layer}
     }
 \end{figure}
@@ -223,7 +224,7 @@ $S_C · S_C · \alpha M · \rho S_I · \rho S_I + \alpha M ·\alpha  N · \rho S
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.4\textwidth]{images/cnn_mobilenetv1_architecture}
-    \caption{архітектура нейронної мережі MobileNetv1
+    \caption{Архітектура нейронної мережі MobileNetv1   \cite{mobilenetv1}
         \label{fig:cnn:mobilenetv1_architecture}
     }
 \end{figure}
@@ -247,14 +248,14 @@ $S_C · S_C · \alpha M · \rho S_I · \rho S_I + \alpha M ·\alpha  N · \rho S
 
 
 \begin{enumerate}
-    \item   1. Нехай на вході зображення розмірами $S_I · S_I · M$, його приймає перший розширяючий блок.
+    \item Нехай на вході зображення розмірами $S_I · S_I · M$, його приймає перший розширяючий блок.
           Головна особливість цього блоку є новий параметр $t$, що називається розширяючим фактором.
           Найкращими значеннями для нього є $[5,10]$. Менші значення краще застосовувати для меншої мережі,
           а більші відповідно для більших. Саме тут можна побачити різноманітність інтересів.
           Вихід $S_I · S_I · (t·M)$.
-    \item   Наступним кроком є вже відома глибинна згортка з функцією активації $ReLU6(x) =  min(max(0,x),6)$.
+    \item Наступним кроком є вже відома глибинна згортка з функцією активації $ReLU6(x) =  min(max(0,x),6)$.
           Вхід $S_I · S_I · (t·M)$, а вихід $(S_I/stride) · (S_I/stride) · (t·M)$, де  $stride$ - шаг згортки.
-    \item   Далі застосовується точкова згортка, щоб створити єдиний тензор. Як можна побачити на
+    \item Далі застосовується точкова згортка, щоб створити єдиний тензор. Як можна побачити на
           Рис. \ref{fig:cnn:mobilenetv2_layer} також застосовуються переваги residual block, де вхід в шар
           поєднується з передостаннім блоком.
 \end{enumerate}
@@ -262,17 +263,17 @@ $S_C · S_C · \alpha M · \rho S_I · \rho S_I + \alpha M ·\alpha  N · \rho S
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/cnn_mobilenetv2_layer}  \cite{mobilenetv2}
-    \caption{Відмінність MobileNetv2 від MobileNetv1: ліворуч структурний шар MobileNetv2,
-        праворуч - MobileNetv1.
+    \includegraphics[width=0.5\textwidth]{images/cnn_mobilenetv2_layer}
+    \caption{Відмінність MobileNetv2 від MobileNetv1: ліворуч структурний блок MobileNetv2,
+        праворуч - MobileNetv1   \cite{mobilenetv2}
         \label{fig:cnn:mobilenetv2_layer}
     }
 \end{figure}
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/cnn_mobilenetv2_architecture}  \cite{mobilenetv2}
-    \caption{Архітектура мережі MobileNetv2
+    \includegraphics[width=0.5\textwidth]{images/cnn_mobilenetv2_architecture}
+    \caption{Архітектура мережі MobileNetv2     \cite{mobilenetv2}
         \label{fig:cnn:mobilenetv2_architecture}
     }
 \end{figure}
@@ -282,10 +283,6 @@ $S_C · S_C · \alpha M · \rho S_I · \rho S_I + \alpha M ·\alpha  N · \rho S
 до YOLO і застосовується для локалізації об'єктів. Автори замінили звичайні згорткові шари
 на розширяючі згорткові, які використовуються в MobileNetv2. Таким чином створивши досконалішу
 версію SSDLite, про це буде описано пізніше.
-
-% Оскільки для отримання маски застосовується також і SSD з MobileNetv3, тому є
-% причина показати як саме SSD вдається локалізовувати об'єкти та відмінності з YOLO.
-
 
 \subsubsection{MobileNetv3}
 
@@ -300,16 +297,17 @@ $S_C · S_C · \alpha M · \rho S_I · \rho S_I + \alpha M ·\alpha  N · \rho S
 (англ. squeeze and excitation). Мережі з такими блоками називаються Se-Nets.
 
 Мета підходу стиснення та збудження \ref{senet_block} полягає в тому, щоб взяти параметри виходу згортки (нехай
-це матриця $u_c$ $C \times H \times W$) як вхід блоку стиснення та збудження,
-потім зробити операцію стиснення (маємо $1 \times 1 \times C$), операцію збудження ($1 \times 1 \times C$) та
-операцію масштабування параметрів активаціями.
+це матриця $u_c$ розмірами $C \times H \times W$) 
+як вхід блоку стиснення та збудження,
+потім зробити операцію стиснення (маємо $1 \times 1 \times C$), операцію збудження ($1 \times 1 \times C$). Далі
+потрібно масштабувати параметри щоб поєднати $u_c$.
 Ідея полягає в тому, щоб підвищити чутливість мережі до інформативних ознак і передавати їх
 до наступного кроку.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.5\textwidth]{images/cnn_senet_block}  \cite{squeeze_and_excitation_website}
-    \caption{Блок стиснення та збудження
+    \includegraphics[width=0.5\textwidth]{images/cnn_senet_block}
+    \caption{Блок стиснення та збудження      \cite{squeeze_and_excitation_website}
         \label{fig:cnn:senet_block}
     }
 \end{figure}
@@ -339,8 +337,15 @@ $S_C · S_C · \alpha M · \rho S_I · \rho S_I + \alpha M ·\alpha  N · \rho S
 
 Автори покращили даний підхід у своїй MobileNetv3, але з використанням
 різної нелінійності на кожному шарі. Тут мається на увазі заміна лінійних функцій активацій.
-Було вирішено замість нелінійної функції $swish(x) = x·Sigmoid(x)$ використати
-$h-swish(x) = xReLU6(x + 3)/6$. Це пов'язано з тим, що сигмоїда обсичлювально складна
+Було вирішено замість нелінійної функції
+\begin{equation}
+    swish(x) = x·Sigmoid(x)
+\end{equation}
+використати
+\begin{equation}
+    h-swish(x) = x·\frac{ReLU6(x + 3)}{6}
+\end{equation}
+Це пов'язано з тим, що сигмоїда складна в обчисленні
 для малопотужних пристроїв.
 Також автори помітили, що використання $h-swish(x)$ дає приріст в точності, якщо її
 використовувати у глибоких шарах мережі.
@@ -350,7 +355,8 @@ architecture structure), яка створена для  підбирання г
 Тобто NAS рекомендує найкращу знайдену архітектуру, а далі NetAdapt (схожий до NAS) допомагає у підбиранні
 параметрів вже всередині одного обчислювального блоку.
 
-Всі вищеописані техніки допомогли створити нову MobileNetv3-Small та MobileNetv3-Large (Рис. ).
+Всі вищеописані техніки допомогли створити нову MobileNetv3-Small та MobileNetv3-Large
+(Рис. \ref{fig:cnn:mobilenetv3_architecture}).
 
 \begin{figure}[H]
     \centering
@@ -367,7 +373,53 @@ architecture structure), яка створена для  підбирання г
         }
     \end{subfigure}
     \caption{Дві архітектури мережі MobileNetv3 \cite{mobilenetv3}
+        \label{fig:cnn:mobilenetv3_architecture}
     }
 \end{figure}
+
+
+\subsubsection{SSD: Single Shot Multibox Detector}
+
+Оскільки для відокремлення ознак застосовується в цій роботі і SSD із
+структурними елементами MobileNetv3, тому є причина показати як саме SSD вдається
+локалізовувати об'єкти та його відмінності з YOLO.
+
+Мережа SSD (Рис. \ref{fig:cnn:ssd_architecture}) на відміну від YOLO проганяє зображення
+через шари лише один раз. Це пояснюється словами в назві Single Shot. SSD
+використовує задачу MultiBox регресії
+локалізованих областей. Розпишемо її детальніше.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{images/cnn_ssd_architecture}
+    \caption{Архітектура мережі SSD на основі VGG-16    \cite{ssd}
+        \label{fig:cnn:ssd_architecture}
+    }
+\end{figure}
+
+Головна задача MultiBox це оцінювати як точно локалізувати об'єкти. Тут використовується
+дві штрафні функції: довіри, що основана на категоріальній перехресній ентропії та
+локалізації з L2 нормою, яка показує як точно справжня область об'єкту співпадає
+із передбаченою.
+
+Варто також помітити, що SSD застосовує вже фіксовані області для подальшого передбачення
+із згортками малого ядра.
+Чим більше фіксованих областей, то тим більша точність локалізації об'єкту,
+але тим довша обробка фото.
+
+Принцип відокремлення інформативних ознак SSD полягає у розбитті зображення на решітку
+(Рис. \ref{fig:cnn:ssd_work_example}) (аналогічно YOLO). Запускається класифікатор
+і вирішує чи брати ту чи іншу клітинку
+кандидатом на локалізацію. Для кожної фіксованої області обчислюється розмір
+області та рівень довіри для кожної категорії об'єктів.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{images/cnn_ssd_work_example}
+    \caption{Приклад роботи SSD для локалізації об'єктів \cite{ssd}
+        \label{fig:cnn:ssd_work_example}
+    }
+\end{figure}
+
 
 \clearpage

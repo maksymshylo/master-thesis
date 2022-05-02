@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.30)  1 MAY 2022 16:53
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.30)  2 MAY 2022 12:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1472,6 +1472,12 @@ Overfull \hbox (17.11868pt too wide) in paragraph at lines 1--1
 юдини, щоб в подаль-
  []
 
+
+Overfull \hbox (4.70702pt too wide) in paragraph at lines 1--1
+\TU/XITS(0)/m/n/14.4 шому прибрати викладача з кадру. Запропоновано використанн
+я алгоритму Бойкова-
+ []
+
 Missing character: There is no С ("421) in font cmmi12!
 [20
 
@@ -1623,11 +1629,27 @@ ned on input line 193.
 [33]
 File: images/cnn_mobilenetv1_conv_layer.png Graphic file (type bmp)
 <images/cnn_mobilenetv1_conv_layer.png>
- [34]
+
+
+Package natbib Warning: Citation `mobilenetv1' on page 34 undefined on input li
+ne 208.
+
+
+Package natbib Warning: Citation `mobilenetv1' on page 34 undefined on input li
+ne 208.
+
 File: images/cnn_mobilenetv1_architecture.png Graphic file (type bmp)
 <images/cnn_mobilenetv1_architecture.png>
- [35]
-Overfull \hbox (36.06638pt too wide) in paragraph at lines 255--257
+
+Package natbib Warning: Citation `mobilenetv1' on page 34 undefined on input li
+ne 229.
+
+
+Package natbib Warning: Citation `mobilenetv1' on page 34 undefined on input li
+ne 229.
+
+[34] [35]
+Overfull \hbox (36.06638pt too wide) in paragraph at lines 256--258
 []\TU/XITS(0)/m/n/14.4 Наступним кроком є вже відома глибинна згортка з функціє
 ю активації $\OML/cmm/m/it/14.4 ReLU\OT1/cmr/m/n/14.4 6(\OML/cmm/m/it/14.4 x\OT
 1/cmr/m/n/14.4 ) =
@@ -1637,36 +1659,44 @@ File: images/cnn_mobilenetv2_layer.png Graphic file (type bmp)
 <images/cnn_mobilenetv2_layer.png>
 
 Package natbib Warning: Citation `mobilenetv2' on page 36 undefined on input li
-ne 265.
+ne 270.
+
+
+Package natbib Warning: Citation `mobilenetv2' on page 36 undefined on input li
+ne 270.
 
 File: images/cnn_mobilenetv2_architecture.png Graphic file (type bmp)
 <images/cnn_mobilenetv2_architecture.png>
 
 Package natbib Warning: Citation `mobilenetv2' on page 36 undefined on input li
-ne 274.
+ne 278.
+
+
+Package natbib Warning: Citation `mobilenetv2' on page 36 undefined on input li
+ne 278.
 
 [36]
-Overfull \hbox (28.63748pt too wide) in paragraph at lines 281--285
+Overfull \hbox (28.63748pt too wide) in paragraph at lines 282--286
 []\TU/XITS(0)/m/n/14.4 Також варто відмітити, що автори вдосконалили мережу SSD
  (Single Shot Detector),
  []
 
 
-Overfull \hbox (21.78906pt too wide) in paragraph at lines 281--285
+Overfull \hbox (21.78906pt too wide) in paragraph at lines 282--286
 \TU/XITS(0)/m/n/14.4 звичайні згорткові шари на розширяючі згорткові, які викор
 истовуються в MobileNetv2.
  []
 
 
 Package natbib Warning: Citation `mobilenetv3' on page 37 undefined on input li
-ne 292.
+ne 289.
 
 
 Package natbib Warning: Citation `mnasnet' on page 37 undefined on input line 2
-99.
+96.
 
 
-LaTeX Warning: Reference `senet_block' on page 37 undefined on input line 302.
+LaTeX Warning: Reference `senet_block' on page 37 undefined on input line 299.
 
 [37]
 File: images/cnn_senet_block.png Graphic file (type bmp)
@@ -1674,16 +1704,20 @@ File: images/cnn_senet_block.png Graphic file (type bmp)
 
 
 Package natbib Warning: Citation `squeeze_and_excitation_website' on page 38 un
-defined on input line 311.
+defined on input line 312.
 
 
-Overfull \hbox (10.82826pt too wide) in paragraph at lines 318--322
+Package natbib Warning: Citation `squeeze_and_excitation_website' on page 38 un
+defined on input line 312.
+
+
+Overfull \hbox (10.82826pt too wide) in paragraph at lines 316--320
 \TU/XITS(0)/m/n/14.4 го каналу вхідного зображення. Дана операція є краща за зв
 ичну згортку, оскіль-
  []
 
 [38]
-Overfull \hbox (47.56865pt too wide) in paragraph at lines 353--354
+Overfull \hbox (47.56865pt too wide) in paragraph at lines 358--360
 []\TU/XITS(0)/m/n/14.4 Всі вищеописані техніки допомогли створити нову MobileNe
 tv3-Small та MobileNetv3-
  []
@@ -1694,13 +1728,33 @@ File: images/cnn_mobilenetv3_small_architecture.png Graphic file (type bmp)
 <images/cnn_mobilenetv3_small_architecture.png>
 
 Package natbib Warning: Citation `mobilenetv3' on page 39 undefined on input li
-ne 370.
+ne 377.
 
 
 Package natbib Warning: Citation `mobilenetv3' on page 39 undefined on input li
-ne 370.
+ne 377.
 
-[39] [40])) (./6_panorama/main.tex
+[39]
+File: images/cnn_ssd_architecture.png Graphic file (type bmp)
+<images/cnn_ssd_architecture.png>
+
+
+Package natbib Warning: Citation `ssd' on page 40 undefined on input line 397.
+
+
+Package natbib Warning: Citation `ssd' on page 40 undefined on input line 397.
+
+[40]
+File: images/cnn_ssd_work_example.png Graphic file (type bmp)
+<images/cnn_ssd_work_example.png>
+
+
+Package natbib Warning: Citation `ssd' on page 41 undefined on input line 421.
+
+
+Package natbib Warning: Citation `ssd' on page 41 undefined on input line 421.
+
+[41])) (./6_panorama/main.tex
 Розділ 3.
 (./6_panorama//1_preface.tex))
 
@@ -1708,7 +1762,7 @@ Package natbib Warning: There were undefined citations.
 
 
 AED: lastpage setting LastPage
-[41
+[42
 
 
 ] (tmp/index.aux)
@@ -1722,12 +1776,12 @@ Package rerunfilecheck Info: File `index.out' has not changed.
 (rerunfilecheck)             Checksum: 31A54190AA0B82B84AA517F8DF7DB93B;2538.
  ) 
 Here is how much of TeX's memory you used:
- 40641 strings out of 476191
- 829763 string characters out of 5809814
- 1099415 words of memory out of 5000000
- 60602 multiletter control sequences out of 15000+600000
+ 40683 strings out of 476191
+ 831218 string characters out of 5809814
+ 1099893 words of memory out of 5000000
+ 60642 multiletter control sequences out of 15000+600000
  473751 words of font info for 77 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  123i,16n,122p,594b,950s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tmp/index.pdf (36 pages).
+Output written on tmp/index.pdf (37 pages).
