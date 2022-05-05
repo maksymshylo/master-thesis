@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.30)  2 MAY 2022 12:31
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.30)  5 MAY 2022 07:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1754,34 +1754,111 @@ Package natbib Warning: Citation `ssd' on page 41 undefined on input line 421.
 
 Package natbib Warning: Citation `ssd' on page 41 undefined on input line 421.
 
-[41])) (./6_panorama/main.tex
+[41]
+
+Package natbib Warning: Citation `faster_rcnn' on page 42 undefined on input li
+ne 448.
+
+
+LaTeX Warning: Reference `' on page 42 undefined on input line 454.
+
+File: images/cnn_faster_rcnn_rpn.png Graphic file (type bmp)
+<images/cnn_faster_rcnn_rpn.png>
+
+Package natbib Warning: Citation `faster_rcnn' on page 42 undefined on input li
+ne 464.
+
+
+Package natbib Warning: Citation `faster_rcnn' on page 42 undefined on input li
+ne 464.
+
+
+Overfull \hbox (4.08781pt too wide) in paragraph at lines 467--475
+\TU/XITS(0)/m/n/14.4 classification layer). Використання якірних регіонів дозво
+ляє детектувати об’єкти пра-
+ []
+
+[42]
+File: images/cnn_faster_rcnn_architecture.png Graphic file (type bmp)
+<images/cnn_faster_rcnn_architecture.png>
+
+
+Package natbib Warning: Citation `faster_rcnn_website' on page 43 undefined on 
+input line 485.
+
+
+Package natbib Warning: Citation `faster_rcnn_website' on page 43 undefined on 
+input line 485.
+
+[43]) (./5_mask//5_conclusion.tex)) (./6_panorama/main.tex [44
+
+]
 Розділ 3.
-(./6_panorama//1_preface.tex))
+(./6_panorama//1_preface.tex) (./6_panorama//2_frames_matching.tex
+Overfull \hbox (8.27351pt too wide) in paragraph at lines 26--34
+[]\TU/XITS(0)/m/n/14.4 У 1999 році англієць Девід Лоу представив алгоритм SIFT 
+(Scale-invariant feature
+ []
+
+[45
+
+]
+File: images/sift1.png Graphic file (type bmp)
+<images/sift1.png>
+ [46]
+File: images/sift2.png Graphic file (type bmp)
+<images/sift2.png>
+File: images/sift3.png Graphic file (type bmp)
+<images/sift3.png>
+ [47]
+File: images/sift4.png Graphic file (type bmp)
+<images/sift4.png>
+File: images/sift5.png Graphic file (type bmp)
+<images/sift5.png>
+ [48]
+File: images/sift6.png Graphic file (type bmp)
+<images/sift6.png>
+
+Overfull \hbox (5.37663pt too wide) in paragraph at lines 152--160
+\TU/XITS(0)/m/n/14.4 Локальні градієнти обчислюються для кожного масштабу навко
+ло кожної клю-
+ []
+
+[49] [50] [51]
+Missing character: There is no А ("410) in font cmmi12!
+
+Package natbib Warning: Citation `Fischler1981RandomSC' on page 52 undefined on
+ input line 311.
+
+)) [52]
 
 Package natbib Warning: There were undefined citations.
 
 
 AED: lastpage setting LastPage
-[42
-
-
-] (tmp/index.aux)
+[53] (tmp/index.aux)
 
 LaTeX Warning: There were undefined references.
 
 
 LaTeX Warning: There were multiply-defined labels.
 
-Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: 31A54190AA0B82B84AA517F8DF7DB93B;2538.
+
+Package rerunfilecheck Warning: File `index.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `index.out':
+(rerunfilecheck)             Before: C2E85B5B3E11C97AD30D8A318BDFAB2C;2841
+(rerunfilecheck)             After:  25289502E519416956E7561176C392C0;3067.
  ) 
 Here is how much of TeX's memory you used:
- 40683 strings out of 476191
- 831218 string characters out of 5809814
- 1099893 words of memory out of 5000000
- 60642 multiletter control sequences out of 15000+600000
- 473751 words of font info for 77 fonts, out of 8000000 for 9000
+ 40884 strings out of 476191
+ 836064 string characters out of 5809814
+ 1108936 words of memory out of 5000000
+ 60827 multiletter control sequences out of 15000+600000
+ 473767 words of font info for 79 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
  123i,16n,122p,594b,950s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tmp/index.pdf (37 pages).
+Output written on tmp/index.pdf (48 pages).
