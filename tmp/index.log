@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.30)  6 MAY 2022 13:56
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.30)  8 MAY 2022 16:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1055,14 +1055,7 @@ ounters
 \c@citenum=\count372
 \c@citenum@totc=\count373
 
-(./macroses.tex) (tmp/index.aux
-
-LaTeX Warning: Label `fig:cnn:deep_wise_conv' multiply defined.
-
-
-LaTeX Warning: Label `fig:cnn:deep_wise_conv@cref' multiply defined.
-
-)
+(./macroses.tex) (tmp/index.aux)
 \openout1 = `index.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 44.
@@ -1076,7 +1069,8 @@ LaTeX Font Info:    ... okay on input line 44.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 44.
 LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 4
 4.
- (/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
+
+(/usr/local/texlive/2021/texmf-dist/tex/latex/base/ts1cmr.fd
 File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
 )
 LaTeX Font Info:    ... okay on input line 44.
@@ -1510,15 +1504,24 @@ File: images/graph_cut.png Graphic file (type bmp)
 LaTeX Warning: `h' float specifier changed to `ht'.
 
 ) (./6_mask//3_bk_algorithm_applying.tex [24]
-File: images/prev_yakovlev.png Graphic file (type bmp)
-<images/prev_yakovlev.png>
-File: images/next_yakovlev.png Graphic file (type bmp)
-<images/next_yakovlev.png>
+File: images/prev_frame.png Graphic file (type bmp)
+<images/prev_frame.png>
+File: images/next_frame.png Graphic file (type bmp)
+<images/next_frame.png>
 File: images/inv_diff.png Graphic file (type bmp)
 <images/inv_diff.png>
-File: images/mask_yakovlev.png Graphic file (type bmp)
-<images/mask_yakovlev.png>
- [25]
+File: images/next_with_mask.png Graphic file (type bmp)
+<images/next_with_mask.png>
+
+
+Package natbib Warning: Citation `yakovlev_video' on page 25 undefined on input
+ line 57.
+
+
+Package natbib Warning: Citation `yakovlev_video' on page 25 undefined on input
+ line 57.
+
+[25]
 Missing character: There is no я ("44F) in font cmmi12!
 Missing character: There is no к ("43A) in font cmmi12!
 Missing character: There is no щ ("449) in font cmmi12!
@@ -1748,9 +1751,6 @@ Package natbib Warning: Citation `ssd' on page 40 undefined on input line 421.
 Package natbib Warning: Citation `faster_rcnn' on page 41 undefined on input li
 ne 448.
 
-
-LaTeX Warning: Reference `' on page 41 undefined on input line 454.
-
 File: images/cnn_faster_rcnn_rpn.png Graphic file (type bmp)
 <images/cnn_faster_rcnn_rpn.png>
 
@@ -1784,6 +1784,10 @@ input line 485.
 ]
 Розділ 4.
 (./7_panorama//1_preface.tex) (./7_panorama//2_frames_matching.tex
+
+Package natbib Warning: Citation `sift' on page 44 undefined on input line 27.
+
+
 Overfull \hbox (8.27351pt too wide) in paragraph at lines 26--34
 []\TU/XITS(0)/m/n/14.4 У 1999 році англієць Девід Лоу представив алгоритм SIFT 
 (Scale-invariant feature
@@ -1813,13 +1817,46 @@ Overfull \hbox (5.37663pt too wide) in paragraph at lines 152--160
 ло кожної клю-
  []
 
-[48] [49] [50]
+[48]
+File: images/matches_img.png Graphic file (type bmp)
+<images/matches_img.png>
+
+
+Package natbib Warning: Citation `yakovlev_video' on page 49 undefined on input
+ line 209.
+
+
+Package natbib Warning: Citation `yakovlev_video' on page 49 undefined on input
+ line 209.
+
+) (./7_panorama//3_homography_estimation.tex [49] [50]
 Missing character: There is no А ("410) in font cmmi12!
 
 Package natbib Warning: Citation `Fischler1981RandomSC' on page 51 undefined on
- input line 311.
+ input line 112.
 
-)) (./8_results/main.tex [51] [52]
+[51]
+File: images/next_frame_kp.png Graphic file (type bmp)
+<images/next_frame_kp.png>
+File: images/next_frame_matches_mask.png Graphic file (type bmp)
+<images/next_frame_matches_mask.png>
+
+
+Package natbib Warning: Citation `yakovlev_video' on page 52 undefined on input
+ line 174.
+
+
+Package natbib Warning: Citation `yakovlev_video' on page 52 undefined on input
+ line 174.
+
+) (./7_panorama//4_panorama_creating.tex [52]
+File: images/panorama_example.png Graphic file (type bmp)
+<images/panorama_example.png>
+ [53] [54]
+Overfull \vbox (72.181pt too high) has occurred while \output is active []
+
+
+[55] [56]) (./7_panorama//5_conclusion.tex)) (./8_results/main.tex [57]
 Розділ 5.
 (./8_results//1_preface.tex))
 
@@ -1827,25 +1864,22 @@ Package natbib Warning: There were undefined citations.
 
 
 AED: lastpage setting LastPage
-[53
+[58
 
 ] (tmp/index.aux)
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
 Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: 01B981B602C9B34A63D6A3CFDBCAFDF5;4566.
+(rerunfilecheck)             Checksum: 800A3B7AEE30276ABA3B0139F0B0B00B;5473.
  ) 
 Here is how much of TeX's memory you used:
- 40833 strings out of 476191
- 834139 string characters out of 5809814
- 1109117 words of memory out of 5000000
- 60762 multiletter control sequences out of 15000+600000
- 473767 words of font info for 79 fonts, out of 8000000 for 9000
+ 40989 strings out of 476191
+ 838043 string characters out of 5809814
+ 1112120 words of memory out of 5000000
+ 60891 multiletter control sequences out of 15000+600000
+ 479726 words of font info for 108 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 123i,16n,122p,594b,950s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 123i,20n,122p,594b,950s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tmp/index.pdf (48 pages).
+Output written on tmp/index.pdf (53 pages).

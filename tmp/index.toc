@@ -31,6 +31,10 @@
 \contentsline {section}{\numberline {4.1}Пошук відповідності між кадрами}{44}{section.4.1}%
 \contentsline {subsection}{\numberline {4.1.1}SIFT}{44}{subsection.4.1.1}%
 \contentsline {subsection}{\numberline {4.1.2}Знаходження відповідних точок зображень}{49}{subsection.4.1.2}%
-\contentsline {subsection}{\numberline {4.1.3}Знаходження гомографії за допомогою RANSAC методу}{50}{subsection.4.1.3}%
-\contentsline {chapter}{\numberline {5}Практичні результати}{53}{chapter.5}%
+\contentsline {section}{\numberline {4.2}Знаходження гомографії за допомогою RANSAC}{50}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Обробка ключових точок з маскою}{52}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Створення панорамного знімку}{53}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Створення слайдів з відео}{56}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Порівняння слайдів}{56}{subsection.4.4.1}%
+\contentsline {chapter}{\numberline {5}Практичні результати}{58}{chapter.5}%
 \contentsfinish 
