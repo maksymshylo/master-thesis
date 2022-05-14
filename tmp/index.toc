@@ -36,5 +36,9 @@
 \contentsline {section}{\numberline {4.3}Створення панорамного знімку}{53}{section.4.3}%
 \contentsline {section}{\numberline {4.4}Створення слайдів з відео}{56}{section.4.4}%
 \contentsline {subsection}{\numberline {4.4.1}Порівняння слайдів}{56}{subsection.4.4.1}%
+\contentsline {section}{Висновки до розділу 4}{57}{equation.4.4.15}%
 \contentsline {chapter}{\numberline {5}Практичні результати}{58}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Результати алгоритму Б-К та згорткових мереж}{58}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Результати згорткових мереж}{60}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Швидкість методів локалізації людини чи рухомих об'єктів}{62}{section.5.3}%
 \contentsfinish 
