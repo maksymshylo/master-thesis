@@ -3,42 +3,44 @@
 \contentsline {chapter}{Вступ}{10}{chapter*.5}%
 \contentsline {chapter}{\numberline {1}Аналіз попередніх робіт}{12}{chapter.1}%
 \contentsline {section}{\numberline {1.1}Приклади}{12}{section.1.1}%
-\contentsline {subsection}{\numberline {1.1.1}Одна з перших робіт з оцифровування дошки}{12}{subsection.1.1.1}%
+\contentsline {subsection}{\numberline {1.1.1}Перша робота по оцифровуванню дошки}{12}{subsection.1.1.1}%
 \contentsline {subsection}{\numberline {1.1.2}Автоматичне сканування дошки}{13}{subsection.1.1.2}%
-\contentsline {subsection}{\numberline {1.1.3}Відстежування об'єкту та віднімання фону від Стенфорду}{13}{subsection.1.1.3}%
-\contentsline {subsection}{\numberline {1.1.4}Виокремлення написів дошки від Тайванського університету}{14}{subsection.1.1.4}%
+\contentsline {subsection}{\numberline {1.1.3}Відстежування об'єкту та віднімання фону від Стенфордських науковців}{13}{subsection.1.1.3}%
+\contentsline {subsection}{\numberline {1.1.4}Відокремлення написів дошки від Тайванського університету}{14}{subsection.1.1.4}%
 \contentsline {subsection}{\numberline {1.1.5}Сучасна робота}{15}{subsection.1.1.5}%
-\contentsline {section}{Висновки до розділу 1}{16}{figure.caption.11}%
-\contentsline {chapter}{\numberline {2}Постановка задачі створення слайдів}{17}{chapter.2}%
-\contentsline {section}{\numberline {2.1}Постановка задачі}{17}{section.2.1}%
-\contentsline {section}{\numberline {2.2}Пропоновані рішення}{18}{section.2.2}%
-\contentsline {section}{\numberline {2.3}Вхід алгоритму}{19}{section.2.3}%
-\contentsline {section}{Висновки до розділу 2}{21}{equation.2.3.1}%
-\contentsline {chapter}{\numberline {3}Методи локалізації людини та рухомих об'єктів}{22}{chapter.3}%
-\contentsline {section}{\numberline {3.1}Алгоритм Бойкова-Колмогорова}{22}{section.3.1}%
-\contentsline {subsection}{\numberline {3.1.1}Задача знаходження Min-Cut/Max-Flow}{22}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Застосування алгоритму Бойкова-Колмогорова}{25}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Згорткові нейронні мережі}{27}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}YOLO: You-Only-Look-Once}{28}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}MobileNet}{31}{subsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.2.1}Mobilenetv1}{31}{subsubsection.3.3.2.1}%
-\contentsline {subsubsection}{\numberline {3.3.2.2}Mobilenetv2}{34}{subsubsection.3.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.3.2.3}MobileNetv3}{36}{subsubsection.3.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.3.2.4}SSD: Single Shot Multibox Detector}{39}{subsubsection.3.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.3.2.5}Faster R-CNN}{40}{subsubsection.3.3.2.5}%
-\contentsline {section}{Висновки до розділу 3}{43}{figure.caption.32}%
-\contentsline {chapter}{\numberline {4}Створення панорами}{44}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Пошук відповідності між кадрами}{44}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}SIFT}{44}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Знаходження відповідних точок зображень}{49}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Знаходження гомографії за допомогою RANSAC}{50}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Обробка ключових точок з маскою}{52}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}Створення панорамного знімку}{53}{section.4.3}%
-\contentsline {section}{\numberline {4.4}Створення слайдів з відео}{56}{section.4.4}%
-\contentsline {subsection}{\numberline {4.4.1}Порівняння слайдів}{56}{subsection.4.4.1}%
-\contentsline {section}{Висновки до розділу 4}{57}{equation.4.4.15}%
-\contentsline {chapter}{\numberline {5}Практичні результати}{58}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Результати алгоритму Б-К та згорткових мереж}{58}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Результати згорткових мереж}{60}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Швидкість методів локалізації людини чи рухомих об'єктів}{62}{section.5.3}%
+\contentsline {section}{Висновки до розділу 1}{17}{figure.caption.11}%
+\contentsline {chapter}{\numberline {2}Постановка задачі створення слайдів}{18}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Постановка задачі}{18}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Пропоновані рішення}{19}{section.2.2}%
+\contentsline {section}{\numberline {2.3}Вхід алгоритму}{20}{section.2.3}%
+\contentsline {section}{Висновки до розділу 2}{22}{equation.2.3.1}%
+\contentsline {chapter}{\numberline {3}Методи локалізації людини та рухомих об'єктів}{23}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Алгоритм Бойкова-Колмогорова}{23}{section.3.1}%
+\contentsline {subsection}{\numberline {3.1.1}Задача знаходження Min-Cut/Max-Flow}{23}{subsection.3.1.1}%
+\contentsline {section}{\numberline {3.2}Застосування алгоритму Бойкова-Колмогорова}{27}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Згорткові нейронні мережі}{29}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}YOLO: You-Only-Look-Once}{30}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}MobileNet}{33}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}Mobilenetv1}{33}{subsubsection.3.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.3.2.2}Mobilenetv2}{36}{subsubsection.3.3.2.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.3}MobileNetv3}{38}{subsubsection.3.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.3.2.4}SSD: Single Shot Multibox Detector}{41}{subsubsection.3.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.3.2.5}Faster R-CNN}{42}{subsubsection.3.3.2.5}%
+\contentsline {section}{Висновки до розділу 3}{45}{figure.caption.32}%
+\contentsline {chapter}{\numberline {4}Створення панорами}{46}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Пошук відповідності між кадрами}{46}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}SIFT}{46}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Знаходження відповідних точок зображень}{51}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Знаходження гомографії за допомогою RANSAC}{52}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Обробка ключових точок з маскою}{54}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Створення панорамного знімку}{55}{section.4.3}%
+\contentsline {section}{\numberline {4.4}Створення слайдів з відео}{58}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Порівняння слайдів}{58}{subsection.4.4.1}%
+\contentsline {section}{Висновки до розділу 4}{59}{equation.4.4.15}%
+\contentsline {chapter}{\numberline {5}Практичні результати}{60}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Результати алгоритму Б-К та згорткових мереж}{60}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Результати згорткових мереж}{62}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Швидкість методів локалізації людини чи рухомих об'єктів}{63}{section.5.3}%
+\contentsline {section}{\numberline {5.4}Результати створення панорами}{64}{section.5.4}%
+\contentsline {chapter}{Перелік посилань}{65}{section*.47}%
 \contentsfinish 
