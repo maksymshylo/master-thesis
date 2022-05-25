@@ -44,9 +44,9 @@
 
           Будується різниця ґаусіан (DoG метод) (Рис. \ref{fig:swift1}) з константою $k$:
 
-          \begin{equation}
+          \begin{equation*}
               D(x,y,\sigma) = (L(x,y,k\sigma) - L(x,y,\sigma))
-          \end{equation}
+          \end{equation*}
 
           Тобто початкове зображення поступово піддається згорткам ґаусіанів з константою
           $k$ на кожну епоху. При чому кожна епоха відрізняється між собою значенням $k = 2^{1/s}$,
@@ -114,9 +114,9 @@
           \end{equation}
           Підставивши \ref{eq:extremum} у  \ref{eq:tailor_1}, маємо можливість відсіяти нестабільні
           екстремуми по модулю значення (Рис. \ref{fig:sift45}):
-          \begin{equation}
+          \begin{equation*}
               D(\widehat{\textbf{x}}) = D + \frac{1}{2}\frac{\partial D^{T} }{\partial \textbf{x}}\widehat{\textbf{x}}
-          \end{equation}
+          \end{equation*}
 
           \begin{figure}[H]
               \centering
@@ -145,12 +145,12 @@
     \item \textbf{Визначення орієнтації градієнтів.} \\
           До кожної точки визначається декілька орієнтацій градієнтів.
           Магнітуда градієнта по сусідам $m(x,y)$ та його орієнтація $\theta(x,y)$:
-          \begin{equation}
+          \begin{equation*}
               m(x,y) = \sqrt{(L(x+1,y) - L(x-1,y))^2 + (L(x,y+1) - L(x,y-1))^2}
-          \end{equation}
-          \begin{equation}
+          \end{equation*}
+          \begin{equation*}
               \theta(x,y) = \tan^{-1} (L(x,y+1) - L(x,y-1))/(L(x+1,y) - L(x-1,y))
-          \end{equation}
+          \end{equation*}
           , де $L(x,y)$ - значення згладженого ґаусового зображення з найближчим масштабом.
 
     \item \textbf{Дескриптор точок.} \\

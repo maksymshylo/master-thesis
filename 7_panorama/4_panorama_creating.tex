@@ -98,7 +98,7 @@
         координати з панорами до пікселів кадру за допомогою гомографії. Інтенсивність у пікселі $p$ панорами
         $W^{i+s}$ визначається за формулою
 
-        \begin{equation}
+        \begin{equation*}
             W^{i + s}(p) =
             \begin{gathered}
                 \begin{cases}
@@ -107,7 +107,7 @@
                     0,                                          & p + ( x_{\min}^{'},y_{\min}^{'} ) \notin P^{i}
                 \end{cases}
             \end{gathered}
-        \end{equation}
+        \end{equation*}
     \end{algorithmic}
     \label{al:panorama_creating_algorithm}
 \end{algorithm}
@@ -128,9 +128,9 @@
 яскравості і зменшення рівня шуму. У наших експериментах саме цей
 оператор надав кращі результати, ніж інші диференціальні оператори
 
-\begin{equation}
+\begin{equation*}
 L(x,y) = \nabla^{2}f(x,y) = \frac{\partial^{2}f(x,y)}{\partial x^{2}} + \frac{\partial^{2}f(x,y)}{\partial y^{2}}
-\end{equation}
+\end{equation*}
 
 Для одержання маски всіх написів на дошці застосовуємо метод бінаризації
 Оцу . Це швидкий алгоритм, який на наш погляд дає прийнятну
@@ -158,9 +158,9 @@ L(x,y) = \nabla^{2}f(x,y) = \frac{\partial^{2}f(x,y)}{\partial x^{2}} + \frac{\p
 панорами після обробки оператором Лапласа панорам \(W^{i}\) та
 \(W^{i + s \cdot q}\) відповідно. Якщо виконується нерівність
 
-\begin{equation}
+\begin{equation*}
 \sum_{(x,y) \in P^{i}}^{}| L^{i}(x,y) - L^{i + s \cdot q}( x - x_{\min}^{'i},y - y_{\min}^{'i} ) | > t \cdot | P^{i + s \cdot q} |
-\end{equation}
+\end{equation*}
 
 бінаризовану \(W^{i}\) та додаємо до списку слайдів, а в іншому випадку переходимо до
 перевірки слайду \(W^{i + s \cdot q}\).

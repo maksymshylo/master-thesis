@@ -1,4 +1,8 @@
-\section{Алгоритм Бойкова-Колмогорова}
+\section{Локалізація рухомих об'єктів}
+
+Розглянемо теоретичне підґрунтя методів, які використовуються в даній роботі для
+локалізації рухомих об'єктів, а саме задачу Min-Cut/Max-Flow, та її рішення
+у вигляді алгоритму Бойкова-Колмогорова.
 
 \subsection{Задача знаходження Min-Cut/Max-Flow}
 
@@ -26,12 +30,12 @@
 
 Задача максимального потоку формулюється так:
 
-\begin{equation}
+\begin{equation*}
     \sum_{t \in N_s} f_{st} \rightarrow \max_{f: \tau \rightarrow R }
-\end{equation}
+\end{equation*}
 
 З обмеженнями:
-\begin{equation}
+\begin{equation*}
     \begin{gathered}
         \begin{cases}
             f_{tt^{'}} \leq  c_{tt^{'}},                                   & \forall tt^{'}  \in \tau ,         \\
@@ -39,7 +43,7 @@
             \sum f_{tt^{'}} \geq 0,                                        & \forall tt^{'}  \in \tau
         \end{cases}
     \end{gathered}
-\end{equation}
+\end{equation*}
 
 Що значить:
 \begin{enumerate}
@@ -53,11 +57,8 @@
 Мінімальним зрізом є множина тих ребер, які стали насиченими після знаходження максимального
 потоку. Тобто мінімальний зріз створює дві множини, що формують множину всіх дуг.
 
-
-
 Вирішення Min-cut/Max-Flow задачі може базуватись на двох принципах:
 з використанням пошуку в глибину (Едмондса-Карпа) або пошуку в ширину (Форда-Фалкерсона).
-
 \begin{algorithm}[H]
     \caption{Алгоритм Min-Cut/Max-Flow}
     \begin{algorithmic}

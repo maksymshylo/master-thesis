@@ -74,8 +74,7 @@
 Треба знайти маску $B^{i}:P \rightarrow \{0,1\}$ рухомих
 об'єктів для кадрів \(F^{i}\) і \(F^{i + s}\).
 Введемо функції.
-
-\begin{equation}
+\begin{equation*}
 	q_{p}(B_{p}^{i}) =
 	\begin{gathered}
 		\begin{cases}
@@ -83,12 +82,11 @@
 			255 - D_{p}^{i},  & якщо\ B_{p}^{i} = 1 
 		\end{cases}
 	\end{gathered}
-\end{equation}
+\end{equation*}
 
-\begin{equation}
+\begin{equation*}
 	g(B_{p}^{i},B_{p'}^{i}) = \beta|B_{p}^{i} - B_{p'}^{i}|
-\end{equation}
-
+\end{equation*}
 де \(\alpha\) та \(\beta\) -- параметри згладжування маски, що задаються
 користувачем інформаційної технології. Позначимо множину
 $\Gamma \subset P^{2}$ сусідніх пікселів. У даній роботі сусідніми до
@@ -96,11 +94,9 @@ $\Gamma \subset P^{2}$ сусідніх пікселів. У даній робо
 \(\left\{ \left( p_{x + 1},p_{y} \right),\left( p_{x},p_{y + 1} \right) \right\} \cap P\).
 Сформулюємо пошук маски \(B^{i}\) у вигляді задачі мінімізації виразу
 
-\begin{equation}
+\begin{equation*}
 	E\left( B_{p}^{i} \right) = \sum_{p \in P}^{}{q_{{p\ }}( B_{p}^{i}) +}\sum_{(p,p') \in \Gamma}^{}g(B_{p}^{i},B_{p'}^{i})
-\end{equation}
-
-
+\end{equation*}
 На виході отримуємо маску \(B_{p}^{i}\) рухомих об'єктів (Рис.
 \ref{fig:yakovlev:bk_examples:d}).
 Її ми використовуємо, щоб не переносити на фінальне зображення ті
