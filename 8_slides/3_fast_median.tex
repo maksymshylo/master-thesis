@@ -75,8 +75,8 @@
     \item $A[i]$ ~---~ взяття елемента в масиві $A$ під номером $i$;
     \item $A[i:j]$ ~---~ взяття підмасиву масиву $A$, починаючи включно з елементу $i$ до $j$ не включно;
     \item $a \mod b$ ~---~ взяття остачі від ділення числа $a$ на $b$;
-    \item $\left\lceil a \right\rceil$ ~---~ округлення дійсного числа $a$ з до верхньої границі;
-    \item $\left\lfloor a \right\rfloor$ ~---~ округлення дійсного числа $a$ з до нижньої границі;
+    \item $\left\lceil a \right\rceil$ ~---~ округлення дійсного числа $a$ до верхньої границі;
+    \item $\left\lfloor a \right\rfloor$ ~---~ округлення дійсного числа $a$ до нижньої границі;
     \item $\overline{a,b}$ ~---~ множина цілих чисел на відрізку від $a$ до $b-1$, якщо $a \le b$,
           інакше  ~---~ від $b-1$ до $a$.
 \end{itemize}
@@ -106,19 +106,19 @@
 Нехай у нас на вхід подається черга із $m$ картинок. Кожну ітерацію приходить нова картинка.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{images/median_seq}
-    \caption{Приклад послідовності картинок для формування медіани \cite{yakovlev_numbers_theory_video}
+    \includegraphics[width=0.6\textwidth]{images/median_seq}
+    \caption{Приклад послідовності картинок для формування медіани з відео \cite{yakovlev_numbers_theory_video}
         \label{fig:median_seq_example}
     }
 \end{figure}
-Для простішого пояснення методу швидкої медіани візьмемо одноканальне зображення 
-зображення у відтінках сірого розмірами $h \times w$, де $h$ ~---~ висота, $w$ ~---~ ширина, 
-але в реальності операції, що наведені нижче виконуються для трьохканального $RGB$ зображення 
+Для простішого пояснення методу швидкої медіани візьмемо одноканальне зображення
+зображення у відтінках сірого розмірами $h \times w$, де $h$ ~---~ висота, $w$ ~---~ ширина,
+але в реальності операції, що наведені нижче виконуються для трьохканального $RGB$ зображення
 окремо для кожного каналу.
 
-В інформаційній технології перетворення відеозапису з дошки у слайд-шоу 
+В інформаційній технології перетворення відеозапису з дошки у слайд-шоу
 \cite{creating_slides_1} \cite{patent_board}
-алгоритм швидкої медіани застосовується на панорамних знімках 
+алгоритм швидкої медіани застосовується на панорамних знімках
 з метою знешумлення на підвищення якості написів на дошці.
 
 Введемо такі масиви:
@@ -131,7 +131,7 @@
           масиві з $m$ елементів в масиві $S$.
 \end{itemize}
 
-Розглянемо алгоритм ініціалізації масивів $S, M, C$ (Алгоритм \ref{al:initialization}).
+Розглянемо алгоритм ініціалізації масивів $S, M, C$ (алгоритм \ref{al:init_s_m_c}).
 % def initialize_median(m, first_frame):
 %     h, w = first_frame.shape[:2]
 %     med_data = np.dstack([first_frame]*m)
@@ -157,13 +157,13 @@
         \State \qquad $\forall j \in \overline{0,w}$
         \State \qquad \qquad $C[i,j,M[i,j]] \gets m$
         \State \textbf{Крок 5:} Обраховуємо накопичувальну суму $E$ для кожного масиву з $256$ елементів
-        масиву $C$ по формулі \ref{eq:summed_table_formula}.
+        масиву $C$ по формулі \eqref{eq:summed_table_formula}.
         \State \textbf{Крок 6:} $C \gets E$.
     \end{algorithmic}
-    \label{al:initialization}
+    \label{al:init_s_m_c}
 \end{algorithm}
 
-Наведемо алгоритм оновлення $C$ (Алгоритм \ref{al:update_C}) по двом зображенням,
+Наведемо алгоритм оновлення $C$ (алгоритм \ref{al:update_C}) по двом зображенням,
 одне з яких назвемо інкрементним $I_{in}$, а інше декрементним $I_{de}$.
 % @njit
 % def update_cum_img_by_img(cum_img, increment_img, decrement_img):
@@ -198,7 +198,7 @@
     \label{al:update_C}
 \end{algorithm}
 
-Також потрібен алгоритм оновлення медіанного зображення (Алгоритм \ref{al:update_M}) $M$.
+Також потрібен алгоритм оновлення медіанного зображення (алгоритм \ref{al:update_M}) $M$.
 % @njit
 % def update_med_img(cum_img, med_img, med_data, m):
 %     h,w,n_colors = cum_img.shape
@@ -243,7 +243,7 @@
 \end{algorithm}
 
 Використовуючи вищенаведені алгоритми,
-можна записати сам метод швидкої медіани для потоку зображень (Алгоритм \ref{al:fast_median_video}).
+можна записати сам метод швидкої медіани для потоку зображень (алгоритм \ref{al:fast_median_video}).
 % m = 20
 % med_data, med_img, cum_img = initialize_median(m, frames[0])
 % q_head = 0
@@ -263,7 +263,7 @@
     \begin{algorithmic}
         \State \textbf{Вхід:} масив $F$, та параметр $m$.
         \State \textbf{Вихід:} список медіан $L$.
-        \State \textbf{Крок 1:} Ініціалізуємо масиви $S, M, C$ по зображенню $F[1]$
+        \State \textbf{Крок 1:} Ініціалізуємо масиви $S, M, C$ по зображенню $F[1]$ по алгоритму \ref{al:init_s_m_c}
         \State \textbf{Крок 2:} $q \gets 0$ \Comment{лічильник черги}
         \State  $\forall i \in \overline{0,n-1}$
         \State \qquad \textbf{Крок 3:} Оновлюємо $C$ по алгоритму \ref{al:update_C} з параметрами $C$,
