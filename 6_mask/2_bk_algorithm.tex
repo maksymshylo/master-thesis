@@ -61,8 +61,12 @@
 Як вже було зазначено,
 задача пошуку максимального потоку є еквівалентною до задачі пошуку мінімального розрізу.
 Даний висновок отримується з Max-Flow Min-Cut теореми \cite{ford_fulkerson,edmods_karp}.
-\begin{algorithm*}[H]
+
+Наведемо алгоритм знаходження максимального потоку Форда-Фалкерсона (алгоритм \ref{al:ford_fulkerson_mas_flow}).
+
+\begin{algorithm}[H]
     \caption{Алгоритм (метод) Форда-Фалкерсона пошуку максимального потоку}
+    \label{al:ford_fulkerson_mas_flow}
     \begin{algorithmic}
         \State \textbf{Вхід:} граф $G$ з об'єктами $ t \in T $ і ребрами $tt^{'} \in \tau$.
         \State \textbf{Вихід:} $ F_{maxflow} $ - значення максимального потоку.
@@ -86,7 +90,7 @@
         \State \qquad Якщо $c_{tt^{'}} \geqslant f_{tt^{'}}$ та $c_{tt^{'}} \geqslant 0$
         $\implies \theta_{t^{'}} = 1 $, інакше $\theta_{t^{'}} = 0 $
     \end{algorithmic}
-\end{algorithm*}
+\end{algorithm}
 
 У 2004 році Юрій Бойков та Володимир Колмогоров запропонували свій підхід \cite{boykov_kolmogorov}
 для пошуку мінімального розрізу на графі.

@@ -10,91 +10,93 @@
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.8\textwidth]{images/panorama_example}
-    \caption{Приклад отриманої панорами з автоматичним видаленням 
-    викладача з відео \cite{fpmi_2021_video}
-    \label{fig:panorama_example}
+    \includegraphics[width=0.7\textwidth]{images/panorama_example}
+    \caption{Приклад отриманої панорами з автоматичним видаленням
+        викладача з відео \cite{fpmi_2021_video}
+        \label{fig:panorama_example}
     }
 \end{figure}
 
-Панорамою \(W^{i}\) називатимемо відображення
-\(W^{i}:P_{W}^{i} \rightarrow C\) з множини
-\(P_{W}^{i} = \left\{ 1,\ldots,w^{i} \right\} \times \left\{ 1,\ldots,h^{i} \right\}\)
-пікселів у множину \(C\mathbb{\subset R}\) інтенсивностей. Зауважимо, що
+\begin{definition}
+    Панорамою \(W^{i}\) називатимемо відображення
+    \(W^{i}:P_{W}^{i} \rightarrow C\) з множини
+    \(P_{W}^{i} = \left\{ 1,\ldots,w^{i} \right\} \times \left\{ 1,\ldots,h^{i} \right\}\)
+    пікселів у множину \(C\mathbb{\subset R}\) інтенсивностей.
+\end{definition}
+
+Зауважимо, що
 у кожної панорами може бути своя ширина \(w^{i} \geq w\) і висота
 \(h^{i} \geq h\).
 
-% \subsection{Склейка кадрів відео}
-% Для того щоб склеїти два кадри дошки застосовується базовий алгоритм 
-% поєднання двох знімків з використанням матриці гомографії та відповідних точок.
-% Нехай у нас на вхід є два зображення $I_1$ та $I_2$. Маємо матрицю гомографії 
-% переводу точок з $I_1$ та $I_2$ $H_{1}^{2}$
-
 \begin{algorithm}[H]
     \caption{Створення панорами}
+    \label{al:panorama_creating_algorithm}
     \begin{algorithmic}
         \State \textbf{Вхід:} два кадри \(F^{i}\) та \(F^{i + s}\), поточна панорама \(W^{i}\) (\(W^{1} = F^{1}\)).
         \State \textbf{Вихід:} панорама \(W^{i + s}\).
+    \end{algorithmic}
+\end{algorithm}
 
-        \textbf{Етап отримання відповідних точок}
-
-        \textbf{1.} Знаходимо набір \(M^{i}\) пар відповідних пікселів між кадрами
+\begin{description}
+    \item[] \textbf{Етап отримання відповідних точок.}
+    \item[\textbf{1.}]
+        Знаходимо набір \(M^{i}\) пар відповідних пікселів між кадрами
         \(F^{i}\) і \(F^{i + s}\) і будуємо множину
         \(M^{'i} = \left\{ \left( p^{i},p^{i + s} \right) \in M^{i}:B_{p^{i}}^{i} = B_{p^{i + s}}^{i} = 0 \right\}\)
         тих пар відповідних пікселів, координати яких не належать області
         рухомих об'єктів.
-
-        \textbf{2.}
+    \item[\textbf{2.}]
         Якщо \(\left| {M'}^{i} \right| < 0.5 \cdot \left| M^{i} \right|\) або
         \(\left| {M'}^{i} \right| < 4\), завершуємо алгоритм з результатом
         \(W^{i + s} = W^{i}\).
-
-        \textbf{3.}
+    \item[\textbf{3.}]
         Знаходимо набір \(M_{W}^{i}\) пар відповідних пікселів між панорамою
         \(W^{i}\) і кадром \(F^{i + s}\) і будуємо множину
         \(M_{W}^{'i} = \left\{ \left( p_{W}^{i},p^{i + s} \right) \in M_{W}^{i}:\exists p^{i} \in P:\left( p^{i},p^{i + s} \right) \in M^{'i} \right\}\).
-        
-        \textbf{Етап обчислення матриці гомографії}
-
-        \textbf{4.}
+    \item[] \textbf{Етап обчислення матриці гомографії.}
+    \item[\textbf{4.}]
         На базі множини \(M_{W}^{'i}\) пар відповідних точок знаходимо матрицю
         \(H_{W}^{i}\) гомографії, що співставляє пікселі кадру \(F^{i + s}\)
         та панорами \(W^{i}\).
-
-        \textbf{Етап обчислення розміру нової панорами}
-
-        \textbf{5.}
+    \item[] \textbf{Етап обчислення розміру нової панорами.}
+    \item[\textbf{5.}]
         Рахуємо координати
-        \(l_{1}^{i} = H_{W}^{i} \cdot (0,0,1)^{T}\),
-        \(l_{2}^{i} = H_{W}^{i} \cdot (w - 1,0,1)^{T}\),
-        \(l_{3}^{i} = H_{W}^{i} \cdot (0,h - 1,1)^{T}\),
-        \(l_{4}^{i} = H_{W}^{i} \cdot (h - 1,h - 1,1)^{T}\) крайніх
-        точок кадру \(F^{i + s}\) після застосування до них матриці
+        $
+            l_{1}^{i} = H_{W}^{i} \cdot (0,0,1)^{T},
+            l_{2}^{i} = H_{W}^{i} \cdot (w - 1,0,1)^{T}, \\
+            l_{3}^{i} = H_{W}^{i} \cdot (0,h - 1,1)^{T},
+            l_{4}^{i} = H_{W}^{i} \cdot (h - 1,h - 1,1)^{T}
+        $
+        крайніх точок кадру \(F^{i + s}\) після застосування до них матриці
         \(H_{W}^{i}\).
-
-        \textbf{6.}
+    \item[\textbf{6.}]
         Для визначення множини \(P_{W}^{i}\) нової панорами \(W^{i + s}\)
         рахуємо величини
-        \(x_{\min}^{i} = \min_{j = \overline{1,4}}\frac{( l_{j}^{i} )_{x}}{( l_{j}^{i} )_{z}}\),
-        \(x_{\max}^{i} = \max_{j = \overline{1,4}}\frac{( l_{j}^{i} )_{x}}{( l_{j}^{i} )_{z}}\),
-        \(y_{\min}^{i} = \min_{j = \overline{1,4}}\frac{( l_{j}^{i} )_{y}}{( l_{j}^{i} )_{z}}\),
-        \(y_{\max}^{i} = \max_{j = \overline{1,4}}\frac{( l_{j}^{i} )_{y}}{( l_{j}^{i} )_{z}}\).
+        \begin{multline*}
+            x_{\min}^{i} = \min_{j = \overline{1,4}}\frac{( l_{j}^{i} )_{x}}{( l_{j}^{i} )_{z}},
+            x_{\max}^{i} = \max_{j = \overline{1,4}}\frac{( l_{j}^{i} )_{x}}{( l_{j}^{i} )_{z}},
+            y_{\min}^{i} = \min_{j = \overline{1,4}}\frac{( l_{j}^{i} )_{y}}{( l_{j}^{i} )_{z}},
+            y_{\max}^{i} = \max_{j = \overline{1,4}}\frac{( l_{j}^{i} )_{y}}{( l_{j}^{i} )_{z}}.
+        \end{multline*}
         Позначимо
-        $P_{W}^{i + s} = 
-        { 1,\ldots,\max( w^{i},x_{\max}^{i} - x_{\min}^{i} ) }
-        \times 
-        { 1,\ldots,\max( h^{i},y_{\max}^{i} - y_{\min}^{i} ) }$.
-
-        \textbf{Етап створення нової панорами}
-        
-        \textbf{7.}
-        Будуємо панораму $W^{i+s}$. Для зручності позначимо обернену матрицю $H^{'} = (H_{W}^{i})^{-1}$, числа
+        \begin{equation*}
+            P_{W}^{i + s} =
+            { 1,\ldots,\max( w^{i},x_{\max}^{i} - x_{\min}^{i} ) }
+            \times
+            { 1,\ldots,\max( h^{i},y_{\max}^{i} - y_{\min}^{i} ) }
+        \end{equation*}
+    \item[] \textbf{Етап створення нової панорами.}
+    \item[\textbf{7.}]
+        Будуємо панораму $W^{i+s}$. Для зручності позначимо обернену матрицю \\
+        $H^{'} = (H_{W}^{i})^{-1}$, числа
         $x_{\min}^{'} = \min(x_{\max}^{i}, 0), y_{\min}^{'} = \min(y_{\max}^{i}, 0)$ і відображення
-        $f^i: p \rightarrow
-            (|\frac{(H^{'} \cdot p)_x}{(H^{'} \cdot p)_y}|, |\frac{(H^{'} \cdot p)_y}{(H^{'} \cdot p)_z}|)$, що перетворює
-        координати з панорами до пікселів кадру за допомогою гомографії. Інтенсивність у пікселі $p$ панорами
+        \begin{equation*}
+            f^i: p \rightarrow
+            (|\frac{(H^{'} \cdot p)_x}{(H^{'} \cdot p)_y}|, |\frac{(H^{'} \cdot p)_y}{(H^{'} \cdot p)_z}|),
+        \end{equation*}
+        що перетворює координати з панорами до пікселів кадру за допомогою гомографії.
+        Інтенсивність у пікселі $p$ панорами
         $W^{i+s}$ визначається за формулою
-
         \begin{equation*}
             W^{i + s}(p) =
             \begin{gathered}
@@ -105,8 +107,6 @@
                 \end{cases}
             \end{gathered}
         \end{equation*}
-    \end{algorithmic}
-    \label{al:panorama_creating_algorithm}
-\end{algorithm}
+\end{description}
 
 \clearpage

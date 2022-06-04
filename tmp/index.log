@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.30)  3 JUN 2022 08:08
+This is XeTeX, Version 3.141592653-2.6-0.999993 (TeX Live 2021) (preloaded format=xelatex 2022.1.30)  4 JUN 2022 14:43
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1262,110 +1262,39 @@ Underfull \hbox (badness 10000) in paragraph at lines 12--1
 ])) (./4_analogs/main.tex [11]
 Розділ 1.
 (./4_analogs//1_preface.tex) (./4_analogs//2_examples.tex
-
-Package natbib Warning: Citation `zhang:2004' on page 12 undefined on input lin
-e 4.
-
 File: images/zhang_2004_1.jpg Graphic file (type bmp)
 <images/zhang_2004_1.jpg>
 File: images/zhang_2004_2.jpg Graphic file (type bmp)
 <images/zhang_2004_2.jpg>
-
-Package natbib Warning: Citation `zhang:2004' on page 12 undefined on input lin
-e 17.
-
-
-Package natbib Warning: Citation `zhang:2004' on page 12 undefined on input lin
-e 17.
-
-
-Package natbib Warning: Citation `zhang:2007' on page 12 undefined on input lin
-e 25.
-
-[12
+ [12
 
 ]
-
-Package natbib Warning: Citation `wienecke' on page 13 undefined on input line 
-32.
-
 File: images/wienecke_1.png Graphic file (type bmp)
 <images/wienecke_1.png>
 File: images/wienecke_2.png Graphic file (type bmp)
 <images/wienecke_2.png>
-
-Package natbib Warning: Citation `wienecke' on page 13 undefined on input line 
-46.
-
-
-Package natbib Warning: Citation `wienecke' on page 13 undefined on input line 
-46.
-
-
-Package natbib Warning: Citation `suh' on page 13 undefined on input line 53.
-
-[13]
+ [13]
 File: images/suh.jpg Graphic file (type bmp)
 <images/suh.jpg>
-
-
-Package natbib Warning: Citation `suh' on page 14 undefined on input line 67.
-
-
-Package natbib Warning: Citation `suh' on page 14 undefined on input line 67.
-
-
-Package natbib Warning: Citation `yeh' on page 14 undefined on input line 74.
-
 File: images/yeh_1.jpg Graphic file (type bmp)
 <images/yeh_1.jpg>
 File: images/yeh_2.jpg Graphic file (type bmp)
 <images/yeh_2.jpg>
-
-Package natbib Warning: Citation `yeh' on page 14 undefined on input line 89.
-
-
-Package natbib Warning: Citation `yeh' on page 14 undefined on input line 89.
-
-[14]
-
-Package natbib Warning: Citation `davila:2017' on page 15 undefined on input li
-ne 97.
-
+ [14]
 File: images/davila_2017_1.jpg Graphic file (type bmp)
 <images/davila_2017_1.jpg>
 File: images/davila_2017_2.png Graphic file (type bmp)
 <images/davila_2017_2.png>
 
-Package natbib Warning: Citation `davila:2017' on page 15 undefined on input li
-ne 112.
-
-
-Package natbib Warning: Citation `davila:2017' on page 15 undefined on input li
-ne 112.
-
-
-Overfull \hbox (7.647pt too wide) in paragraph at lines 97--113
-[]\TU/XITS(0)/m/n/14.4 Окремо зазначимо роботу [\TU/XITS(0)/b/n/14.4 ? \TU/XITS
-(0)/m/n/14.4 ] науковців з університету Рочестер. Автори Kenny
+Overfull \hbox (5.23503pt too wide) in paragraph at lines 98--114
+[]\TU/XITS(0)/m/n/14.4 Окремо зазначимо роботу [[]] науковців з університету Ро
+честер. Автори Kenny
  []
 
 [15]
-
-Package natbib Warning: Citation `davila:2021' on page 16 undefined on input li
-ne 114.
-
 File: images/davila_2021.jpg Graphic file (type bmp)
 <images/davila_2021.jpg>
-
-Package natbib Warning: Citation `davila:2021' on page 16 undefined on input li
-ne 120.
-
-
-Package natbib Warning: Citation `davila:2021' on page 16 undefined on input li
-ne 120.
-
-[16]) (./4_analogs//3_conclusion.tex)) (./5_problem/main.tex [17
+ [16]) (./4_analogs//3_conclusion.tex)) (./5_problem/main.tex [17
 
 ]
 Розділ 2.
@@ -1469,17 +1398,9 @@ Overfull \hbox (16.03981pt too wide) in paragraph at lines 1--1
 ]
 File: images/graph_example.png Graphic file (type bmp)
 <images/graph_example.png>
-
-
-Package natbib Warning: Citation `ford_fulkerson' on page 24 undefined on input
- line 63.
-
-
-Package natbib Warning: Citation `edmods_karp' on page 24 undefined on input li
-ne 63.
-
 Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
-put line 65.
+put line 68.
+
 Missing character: There is no ш ("448) in font cmmi10!
 Missing character: There is no л ("43B) in font cmmi10!
 Missing character: There is no я ("44F) in font cmmi10!
@@ -1487,31 +1408,10 @@ Missing character: There is no х ("445) in font cmmi10!
 Missing character: There is no і ("456) in font cmmi10!
 Missing character: There is no з ("437) in font cmmi10!
 Missing character: There is no в ("432) in font cmmi10!
-
-Package natbib Warning: Citation `boykov_kolmogorov' on page 24 undefined on in
-put line 91.
-
-[24]
+[24] [25]
 File: images/graph_cut.png Graphic file (type bmp)
 <images/graph_cut.png>
-
-
-Package natbib Warning: Citation `boykov_kolmogorov' on page 25 undefined on in
-put line 129.
-
-
-Package natbib Warning: Citation `boykov_kolmogorov' on page 25 undefined on in
-put line 129.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-) (./6_mask//3_bk_algorithm_applying.tex
-
-Package natbib Warning: Citation `pavliuk_krygin' on page 25 undefined on input
- line 4.
-
-[25]
+) (./6_mask//3_bk_algorithm_applying.tex [26]
 File: images/prev_frame.png Graphic file (type bmp)
 <images/prev_frame.png>
 File: images/next_frame.png Graphic file (type bmp)
@@ -1520,176 +1420,46 @@ File: images/inv_diff.png Graphic file (type bmp)
 <images/inv_diff.png>
 File: images/next_with_mask.png Graphic file (type bmp)
 <images/next_with_mask.png>
-
-
-Package natbib Warning: Citation `yakovlev_discrete_math_video' on page 26 unde
-fined on input line 45.
-
-
-Package natbib Warning: Citation `yakovlev_discrete_math_video' on page 26 unde
-fined on input line 45.
-
-[26] [27]) (./6_mask//4_cnn.tex [28]
+ [27] [28])
+(./6_mask//4_cnn.tex
 File: images/cnn_conv_operation.png Graphic file (type bmp)
 <images/cnn_conv_operation.png>
-
-
-Package natbib Warning: Citation `deep_wise_sep_conv_website' on page 29 undefi
-ned on input line 24.
-
-
-Package natbib Warning: Citation `deep_wise_sep_conv_website' on page 29 undefi
-ned on input line 24.
-
-
-Package natbib Warning: Citation `pytorch_library' on page 29 undefined on inpu
-t line 29.
-
-
-Package natbib Warning: Citation `yolov1' on page 29 undefined on input line 35
-.
-
-[29]
+ [29] [30]
 File: images/cnn_yolo1.png Graphic file (type bmp)
 <images/cnn_yolo1.png>
-
-
-Package natbib Warning: Citation `yolov1' on page 30 undefined on input line 68
-.
-
-
-Package natbib Warning: Citation `yolov1' on page 30 undefined on input line 68
-.
-
 LaTeX Font Info:    Trying to load font information for U+dsrom on input line 9
 3.
+
 (/usr/local/texlive/2021/texmf-dist/tex/latex/doublestroke/Udsrom.fd
 File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
 )
 Missing character: There is no з ("437) in font cmmi12!
 Missing character: There is no з ("437) in font cmmi12!
-[30]
+[31]
 File: images/cnn_yolo2.png Graphic file (type bmp)
 <images/cnn_yolo2.png>
-
-
-Package natbib Warning: Citation `yolov1' on page 31 undefined on input line 10
-4.
-
-
-Package natbib Warning: Citation `yolov1' on page 31 undefined on input line 10
-4.
-
 File: images/cnn_yolo3.png Graphic file (type bmp)
 <images/cnn_yolo3.png>
-[31]
-
-Package natbib Warning: Citation `mobilenetv1' on page 32 undefined on input li
-ne 121.
-
-[32]
+ [32] [33]
 File: images/cnn_deep_wise_conv.png Graphic file (type bmp)
 <images/cnn_deep_wise_conv.png>
-
-
-Package natbib Warning: Citation `deep_wise_sep_conv_website' on page 33 undefi
-ned on input line 162.
-
-
-Package natbib Warning: Citation `deep_wise_sep_conv_website' on page 33 undefi
-ned on input line 162.
-
 File: images/cnn_deep_wise_separable_conv.png Graphic file (type bmp)
 <images/cnn_deep_wise_separable_conv.png>
-
-Package natbib Warning: Citation `deep_wise_sep_conv_website' on page 33 undefi
-ned on input line 179.
-
-
-Package natbib Warning: Citation `deep_wise_sep_conv_website' on page 33 undefi
-ned on input line 179.
-
-[33]
+ [34]
 File: images/cnn_mobilenetv1_conv_layer.png Graphic file (type bmp)
 <images/cnn_mobilenetv1_conv_layer.png>
-
-
-Package natbib Warning: Citation `mobilenetv1' on page 34 undefined on input li
-ne 193.
-
-
-Package natbib Warning: Citation `mobilenetv1' on page 34 undefined on input li
-ne 193.
-
-[34]
+ [35]
 File: images/cnn_mobilenetv1_architecture.png Graphic file (type bmp)
 <images/cnn_mobilenetv1_architecture.png>
-
-
-Package natbib Warning: Citation `mobilenetv1' on page 35 undefined on input li
-ne 213.
-
-
-Package natbib Warning: Citation `mobilenetv1' on page 35 undefined on input li
-ne 213.
-
-[35]
+ [36]
 File: images/cnn_mobilenetv2_layer.png Graphic file (type bmp)
 <images/cnn_mobilenetv2_layer.png>
-
-
-Package natbib Warning: Citation `mobilenetv2' on page 36 undefined on input li
-ne 249.
-
-
-Package natbib Warning: Citation `mobilenetv2' on page 36 undefined on input li
-ne 249.
-
-[36]
 File: images/cnn_mobilenetv2_architecture.png Graphic file (type bmp)
 <images/cnn_mobilenetv2_architecture.png>
-
-
-Package natbib Warning: Citation `mobilenetv2' on page 37 undefined on input li
-ne 257.
-
-
-Package natbib Warning: Citation `mobilenetv2' on page 37 undefined on input li
-ne 257.
-
-
-Package natbib Warning: Citation `ssd' on page 37 undefined on input line 260.
-
-
-Package natbib Warning: Citation `mobilenetv2' on page 37 undefined on input li
-ne 262.
-
-
-Package natbib Warning: Citation `mobilenetv3' on page 37 undefined on input li
-ne 266.
-
-[37]
+ [37]
 File: images/cnn_senet_block.png Graphic file (type bmp)
 <images/cnn_senet_block.png>
-
-
-Package natbib Warning: Citation `squeeze_and_excitation_website' on page 38 un
-defined on input line 288.
-
-
-Package natbib Warning: Citation `squeeze_and_excitation_website' on page 38 un
-defined on input line 288.
-
-[38]
-
-Package natbib Warning: Citation `mnasnet' on page 39 undefined on input line 3
-31.
-
-
-Package natbib Warning: Citation `netadapt' on page 39 undefined on input line 
-333.
-
-[39]
+ [38] [39]
 Overfull \hbox (16.33986pt too wide) in paragraph at lines 336--338
 []\TU/XITS(0)/m/n/14.4 Всі вищеописані техніки допомогли створити MobileNetv3-S
 mall та MobileNetv3-
@@ -1699,38 +1469,13 @@ File: images/cnn_mobilenetv3_large_architecture.png Graphic file (type bmp)
 <images/cnn_mobilenetv3_large_architecture.png>
 File: images/cnn_mobilenetv3_small_architecture.png Graphic file (type bmp)
 <images/cnn_mobilenetv3_small_architecture.png>
-
-Package natbib Warning: Citation `mobilenetv3' on page 40 undefined on input li
-ne 355.
-
-
-Package natbib Warning: Citation `mobilenetv3' on page 40 undefined on input li
-ne 355.
-
+[40]
 File: images/cnn_ssd_architecture.png Graphic file (type bmp)
 <images/cnn_ssd_architecture.png>
-
-Package natbib Warning: Citation `ssd' on page 40 undefined on input line 371.
-
-
-Package natbib Warning: Citation `ssd' on page 40 undefined on input line 371.
-
-[40]
+ [41]
 File: images/cnn_ssd_work_example.png Graphic file (type bmp)
 <images/cnn_ssd_work_example.png>
-
-
-Package natbib Warning: Citation `ssd' on page 41 undefined on input line 393.
-
-
-Package natbib Warning: Citation `ssd' on page 41 undefined on input line 393.
-
-[41]
-
-Package natbib Warning: Citation `faster_rcnn' on page 42 undefined on input li
-ne 419.
-
-
+ [42]
 Overfull \hbox (2.29987pt too wide) in paragraph at lines 419--427
 \TU/XITS(0)/m/n/14.4 нуються в одну мережу за допомогою сумісного використання 
 ознак (feature sharing).
@@ -1738,76 +1483,30 @@ Overfull \hbox (2.29987pt too wide) in paragraph at lines 419--427
 
 File: images/cnn_faster_rcnn_rpn.png Graphic file (type bmp)
 <images/cnn_faster_rcnn_rpn.png>
-
-Package natbib Warning: Citation `faster_rcnn' on page 42 undefined on input li
-ne 433.
-
-
-Package natbib Warning: Citation `faster_rcnn' on page 42 undefined on input li
-ne 433.
-
-[42]
+[43]
 File: images/cnn_faster_rcnn_architecture.png Graphic file (type bmp)
 <images/cnn_faster_rcnn_architecture.png>
-
-
-Package natbib Warning: Citation `faster_rcnn_web_article' on page 43 undefined
- on input line 453.
-
-
-Package natbib Warning: Citation `faster_rcnn_web_article' on page 43 undefined
- on input line 453.
-
-[43]) (./6_mask//5_conclusion.tex)) (./7_panorama/main.tex [44
+ [44]) (./6_mask//5_conclusion.tex)) (./7_panorama/main.tex [45
 
 ]
 Розділ 4.
 (./7_panorama//1_preface.tex) (./7_panorama//2_frames_matching.tex
-
-Package natbib Warning: Citation `sift' on page 45 undefined on input line 22.
-
-
 Overfull \hbox (5.86871pt too wide) in paragraph at lines 21--28
 []\TU/XITS(0)/m/n/14.4 У 1999 році англієць Девід Лоу представив алгоритм SIFT 
 (scale-invariant feature
  []
 
-[45
+[46
 
 ]
-
-Package natbib Warning: Citation `surf' on page 46 undefined on input line 29.
-
-
-Package natbib Warning: Citation `orb' on page 46 undefined on input line 29.
-
 File: images/sift1.png Graphic file (type bmp)
 <images/sift1.png>
-
-Package natbib Warning: Citation `sift' on page 46 undefined on input line 66.
-
-
-Package natbib Warning: Citation `sift' on page 46 undefined on input line 66.
-
-[46]
+ [47]
 File: images/sift2.png Graphic file (type bmp)
 <images/sift2.png>
-
-
-Package natbib Warning: Citation `sift' on page 47 undefined on input line 80.
-
-
-Package natbib Warning: Citation `sift' on page 47 undefined on input line 80.
-
 File: images/sift3.png Graphic file (type bmp)
 <images/sift3.png>
-
-Package natbib Warning: Citation `sift' on page 47 undefined on input line 95.
-
-
-Package natbib Warning: Citation `sift' on page 47 undefined on input line 95.
-
-[47]
+ [48]
 
 LaTeX Font Warning: Font shape `U/stmry/b/n' undefined
 (Font)              using `U/stmry/m/n' instead on input line 105.
@@ -1816,79 +1515,28 @@ File: images/sift4.png Graphic file (type bmp)
 <images/sift4.png>
 File: images/sift5.png Graphic file (type bmp)
 <images/sift5.png>
-
-Package natbib Warning: Citation `sift' on page 48 undefined on input line 142.
-
-
-
-Package natbib Warning: Citation `sift' on page 48 undefined on input line 142.
-
-
-[48]
+[49]
 File: images/sift6.png Graphic file (type bmp)
 <images/sift6.png>
-
-
-Package natbib Warning: Citation `sift' on page 49 undefined on input line 166.
-
-
-
-Package natbib Warning: Citation `sift' on page 49 undefined on input line 166.
-
-
-[49]
+ [50]
 File: images/matches_img.png Graphic file (type bmp)
 <images/matches_img.png>
-
-
-Package natbib Warning: Citation `yakovlev_discrete_math_video' on page 50 unde
-fined on input line 214.
-
-
-Package natbib Warning: Citation `yakovlev_discrete_math_video' on page 50 unde
-fined on input line 214.
-
-) (./7_panorama//3_homography_estimation.tex [50] [51]
+) (./7_panorama//3_homography_estimation.tex [51] [52]
 Missing character: There is no А ("410) in font cmmi12!
-
-Package natbib Warning: Citation `ransac' on page 52 undefined on input line 99
-.
-
-[52]
+[53]
 File: images/next_frame_kp.png Graphic file (type bmp)
 <images/next_frame_kp.png>
 File: images/next_frame_matches_mask.png Graphic file (type bmp)
 <images/next_frame_matches_mask.png>
-
-
-Package natbib Warning: Citation `yakovlev_video' on page 53 undefined on input
- line 158.
-
-
-Package natbib Warning: Citation `yakovlev_video' on page 53 undefined on input
- line 158.
-
-) (./7_panorama//4_panorama_creating.tex [53]
+) (./7_panorama//4_panorama_creating.tex [54]
 File: images/panorama_example.png Graphic file (type bmp)
 <images/panorama_example.png>
-
-
-Package natbib Warning: Citation `fpmi_2021_video' on page 54 undefined on inpu
-t line 17.
-
-
-Package natbib Warning: Citation `fpmi_2021_video' on page 54 undefined on inpu
-t line 17.
-
-[54] [55]
-Overfull \vbox (72.181pt too high) has occurred while \output is active []
-
-
-[56]) (./7_panorama//5_conclusion.tex)) (./8_slides/main.tex [57
+ [55] [56] [57])
+(./7_panorama//5_conclusion.tex)) (./8_slides/main.tex [58
 
 ]
 Розділ 5.
-(./8_slides//1_preface.tex) (./8_slides//2_slides_creating.tex [58
+(./8_slides//1_preface.tex) (./8_slides//2_slides_creating.tex [59
 
 ]
 Overfull \hbox (3.57619pt too wide) in paragraph at lines 39--45
@@ -1897,73 +1545,20 @@ Overfull \hbox (3.57619pt too wide) in paragraph at lines 39--45
 ]$ \TU/XITS(0)/m/n/14.4 —
  []
 
-) (./8_slides//3_fast_median.tex
-
-Package natbib Warning: Citation `integral_image' on page 59 undefined on input
- line 6.
-
-[59]
-
-Package natbib Warning: Citation `median_in_statistics' on page 60 undefined on
- input line 16.
-
-
-Package natbib Warning: Citation `temporal_median_example_1' on page 60 undefin
-ed on input line 28.
-
+) (./8_slides//3_fast_median.tex [60]
 File: images/temporal_median_example_1.png Graphic file (type bmp)
 <images/temporal_median_example_1.png>
 
-Package natbib Warning: Citation `temporal_median_example_1' on page 60 undefin
-ed on input line 44.
-
-
-Package natbib Warning: Citation `temporal_median_example_1' on page 60 undefin
-ed on input line 44.
-
-[60]
 Overfull \hbox (15.23589pt too wide) in paragraph at lines 46--48
 []\TU/XITS(0)/m/n/14.4 Даний метод можна застосовувати як для прибирання швидки
 х рухомих об’єктів,
  []
 
-
-Package natbib Warning: Citation `quick_sort' on page 61 undefined on input lin
-e 55.
-
-[61]
+[61] [62]
 File: images/median_seq.png Graphic file (type bmp)
 <images/median_seq.png>
-
-
-Package natbib Warning: Citation `yakovlev_numbers_theory_video' on page 62 und
-efined on input line 112.
-
-
-Package natbib Warning: Citation `yakovlev_numbers_theory_video' on page 62 und
-efined on input line 112.
-
-[62]
-
-Package natbib Warning: Citation `creating_slides_1' on page 63 undefined on in
-put line 120.
-
-
-Package natbib Warning: Citation `patent_board' on page 63 undefined on input l
-ine 120.
-
-[63]
-
-LaTeX Warning: Reference `al:init_s_m_c' on page 64 undefined on input line 134
-.
-
-[64]
-
-LaTeX Warning: Reference `al:init_s_m_c' on page 65 undefined on input line 266
-.
-
-[65]
-Overfull \hbox (6.7189pt too wide) in paragraph at lines 293--302
+ [63] [64] [65] [66]
+Overfull \hbox (6.7189pt too wide) in paragraph at lines 236--245
 \OML/cmm/m/it/14.4 h \OMS/cmsy/m/n/14.4 ^^B \OML/cmm/m/it/14.4 w$\TU/XITS(0)/m/
 n/14.4 : $\OMS/cmsy/m/n/14.4 O\OT1/cmr/m/n/14.4 (\OML/cmm/m/it/14.4 h \OMS/cmsy
 /m/n/14.4 ^^A \OML/cmm/m/it/14.4 w\OT1/cmr/m/n/14.4 )([]) + \OMS/cmsy/m/n/14.4 
@@ -1973,25 +1568,24 @@ m/it/14.4 h \OMS/cmsy/m/n/14.4 ^^A \OML/cmm/m/it/14.4 w\OT1/cmr/m/n/14.4 )([])
 =
  []
 
-[66] [67]) (./8_slides//4_conclusion.tex)) (./9_results/main.tex [68
+[67]) (./8_slides//4_conclusion.tex)) (./9_results/main.tex [68
 
 ]
 Розділ 6.
 (./9_results//1_preface.tex) (./9_results//2_stats.tex
-File: images/convex_11_bk_10600.png Graphic file (type bmp)
-<images/convex_11_bk_10600.png>
-File: images/schlezinger_bk_6500.png Graphic file (type bmp)
-<images/schlezinger_bk_6500.png>
+Overfull \hbox (1.0315pt too wide) in paragraph at lines 1--4
+\TU/XITS(0)/m/n/14.4 Колмогорова, згорткових нейронних мереж YOLOv5, MobileNetv
+3, SSDLite та Faster
+ []
+
+File: images/krygin_geometry_bk_17300.png Graphic file (type bmp)
+<images/krygin_geometry_bk_17300.png>
+File: images/algebra_geometry_bk_9650.png Graphic file (type bmp)
+<images/algebra_geometry_bk_9650.png>
 File: images/yakovlev2_bk_6500.png Graphic file (type bmp)
 <images/yakovlev2_bk_6500.png>
 File: images/dorohovtsev2_bk_10650.png Graphic file (type bmp)
 <images/dorohovtsev2_bk_10650.png>
-
-Overfull \hbox (15.91989pt too wide) in paragraph at lines 33--34
-[]\TU/XITS(0)/m/n/14.4 Як ми бачимо на прикладах (Рис. []6.1[]) досить гарна як
-ість маски рухомих об’єктів. 
- []
-
 [69
 
 ]
@@ -2001,55 +1595,47 @@ File: images/bad_next_dorohovtsev_bk_5840.png Graphic file (type bmp)
 <images/bad_next_dorohovtsev_bk_5840.png>
 File: images/bad_dorohovtsev_bk_example_5840.png Graphic file (type bmp)
 <images/bad_dorohovtsev_bk_example_5840.png>
-
-
-Package natbib Warning: Citation `dorohovtsev_video' on page 70 undefined on in
-put line 64.
-
-
-Package natbib Warning: Citation `dorohovtsev_video' on page 70 undefined on in
-put line 64.
-
-File: images/convex_11_yolov5n_10600.png Graphic file (type bmp)
-<images/convex_11_yolov5n_10600.png>
-File: images/schlezinger_yolov5n_6500.png Graphic file (type bmp)
-<images/schlezinger_yolov5n_6500.png>
+ [70]
+File: images/krygin_geometry_yolov5n_17300.png Graphic file (type bmp)
+<images/krygin_geometry_yolov5n_17300.png>
+File: images/algebra_geometry_yolov5n_9650.png Graphic file (type bmp)
+<images/algebra_geometry_yolov5n_9650.png>
 File: images/yakovlev2_yolov5n_6500.png Graphic file (type bmp)
 <images/yakovlev2_yolov5n_6500.png>
 File: images/dorohovtsev2_yolov5n_10650.png Graphic file (type bmp)
 <images/dorohovtsev2_yolov5n_10650.png>
-[70]
-File: images/convex_11_ssdlite320_mobilenet_v3_10600.png Graphic file (type bmp
-)
-<images/convex_11_ssdlite320_mobilenet_v3_10600.png>
-File: images/schlezinger_ssdlite320_mobilenet_v3_6500.png Graphic file (type bm
-p)
-<images/schlezinger_ssdlite320_mobilenet_v3_6500.png>
+ [71]
+File: images/krygin_geometry_ssdlite320_mobilenet_v3_17300.png Graphic file (ty
+pe bmp)
+<images/krygin_geometry_ssdlite320_mobilenet_v3_17300.png>
+File: images/algebra_geometry_ssdlite320_mobilenet_v3_9650.png Graphic file (ty
+pe bmp)
+<images/algebra_geometry_ssdlite320_mobilenet_v3_9650.png>
 File: images/yakovlev2_ssdlite320_mobilenet_v3_6500.png Graphic file (type bmp)
 
 <images/yakovlev2_ssdlite320_mobilenet_v3_6500.png>
 File: images/dorohovtsev2_ssdlite320_mobilenet_v3_10650.png Graphic file (type 
 bmp)
 <images/dorohovtsev2_ssdlite320_mobilenet_v3_10650.png>
-File: images/convex_11_fasterrcnn_mobilenet_v3_10600.png Graphic file (type bmp
-)
-<images/convex_11_fasterrcnn_mobilenet_v3_10600.png>
-File: images/schlezinger_fasterrcnn_mobilenet_v3_6500.png Graphic file (type bm
-p)
-<images/schlezinger_fasterrcnn_mobilenet_v3_6500.png>
+File: images/krygin_geometry_fasterrcnn_mobilenet_v3_17300.png Graphic file (ty
+pe bmp)
+<images/krygin_geometry_fasterrcnn_mobilenet_v3_17300.png>
+File: images/algebra_geometry_fasterrcnn_mobilenet_v3_9650.png Graphic file (ty
+pe bmp)
+<images/algebra_geometry_fasterrcnn_mobilenet_v3_9650.png>
 File: images/yakovlev2_fasterrcnn_mobilenet_v3_6500.png Graphic file (type bmp)
 
 <images/yakovlev2_fasterrcnn_mobilenet_v3_6500.png>
 File: images/dorohovtsev2_fasterrcnn_mobilenet_v3_10650.png Graphic file (type 
 bmp)
 <images/dorohovtsev2_fasterrcnn_mobilenet_v3_10650.png>
- [71] [72]
-Overfull \hbox (1.58942pt too wide) in paragraph at lines 162--167
+ [72] [73]
+Overfull \hbox (1.58942pt too wide) in paragraph at lines 155--160
  [] 
  []
 
 
-Overfull \hbox (20.51225pt too wide) in paragraph at lines 171--173
+Overfull \hbox (20.51225pt too wide) in paragraph at lines 164--166
 []\TU/XITS(0)/m/n/14.4 Як бачимо найшвидшим методом є ssdlite320-mobilenet-v3, 
 а найдовшим Бойкова-
  []
@@ -2058,40 +1644,153 @@ File: images/frame_before_median.png Graphic file (type bmp)
 <images/frame_before_median.png>
 File: images/frame_after_median.png Graphic file (type bmp)
 <images/frame_after_median.png>
+) (./9_results//3_futher_improvements.tex [74] [75])
+(./9_results//4_conclusion.tex)) [76
 
-Package natbib Warning: Citation `yakovlev_discrete_math_video' on page 73 unde
-fined on input line 193.
-
-
-Package natbib Warning: Citation `yakovlev_discrete_math_video' on page 73 unde
-fined on input line 193.
-
-))
-
-Package natbib Warning: There were undefined citations.
+] (tmp/index.bbl [77
 
 
+]
+Underfull \hbox (badness 1622) in paragraph at lines 96--106
+\TU/XITS(0)/m/it/14.4 Теоретичні і прикладні проблеми фізики, математики та інф
+орматики\TU/XITS(0)/m/n/14.4 .
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 109--113
+[]\TU/XITS(0)/m/n/14.4 ММЗІ, Кафедра. Дискретна математика, лекція 05-2: віднош
+ення
+ []
+
+
+Underfull \hbox (badness 2189) in paragraph at lines 109--113
+\TU/XITS(0)/m/n/14.4 еквівалентності (продовження); замикання відношень. —  201
+6. — Sep.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--119
+[]\TU/XITS(0)/m/n/14.4 Bendersky, Eli. Depthwise separable convolutions for mac
+hine
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 116--119
+\TU/XITS(0)/m/n/14.4 learning. —  2018. — Apr. []$[][][][][] [] [] [] [][][] []
+ [][][][][][][][][][][][][] [] [][][] [] [][][][] []
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--126
+[]\TU/XITS(0)/m/n/14.4 Paszke, Adam. PyTorch: An Imperative Style, High-Perform
+ance
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 122--126
+\TU/XITS(0)/m/n/14.4 Deep Learning Library. —  2019. []$[][][][] [] [] [] [][][
+][][][] [] [][][][][][][] [] [][] [] [][][][][] []
+ []
+
+[78]
+Underfull \hbox (badness 3557) in paragraph at lines 193--197
+[]\TU/XITS(0)/m/n/14.4 KHAZRI, Achraf. Faster RCNN Object detection / Achraf KH
+AZRI // \TU/XITS(0)/m/it/14.4 To-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--197
+\TU/XITS(0)/m/it/14.4 wards Data Science\TU/XITS(0)/m/n/14.4 . —  2019. — Apr. 
+[]$[][][][][] [] [] [] [][][][][][][][][][][][][][][][][][] [] [][][] []
+ []
+
+
+Underfull \hbox (badness 6758) in paragraph at lines 200--205
+[]\TU/XITS(0)/m/n/14.4 Lowe, David. Distinctive Image Features from Scale-Invar
+iant Keypoints /
+ []
+
+[79]
+! Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   R
+l.222 ...e/db/conf/iccv/iccv2011.html#RubleeRKB11}
+                                                  .
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \Hy@tempa.
+<to be read again> 
+                   R
+l.222 ...e/db/conf/iccv/iccv2011.html#RubleeRKB11}
+                                                  .
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+! Illegal parameter number in definition of \Hy@gtemp.
+<to be read again> 
+                   R
+l.222 ...e/db/conf/iccv/iccv2011.html#RubleeRKB11}
+                                                  .
+You meant to type ## instead of #, right?
+Or maybe a } was forgotten somewhere earlier, and things
+are all screwed up? I'm going to assume that you meant ##.
+
+
+Underfull \hbox (badness 1577) in paragraph at lines 264--268
+[]\TU/XITS(0)/m/n/14.4 Algorithms In C: Fundamentals, Data Structures, Sorting,
+ Searching, Parts 1-
+ []
+
+
+Underfull \hbox (badness 2662) in paragraph at lines 264--268
+\TU/XITS(0)/m/n/14.4 4, 3/E. —  Pearson Education, 1998. []$[][][][][] [] [] []
+ [][][][][] [] [][][][][][] [] [][][] [] [][] [] [][][][][] [] [][] []
+ []
+
+
+Underfull \hbox (badness 1320) in paragraph at lines 277--282
+[]\TU/XITS(0)/m/n/14.4 Shylo M. Smirnov A., Krygin V. Creating Slides from Vide
+o Lecture / Kry-
+ []
+
+
+Underfull \hbox (badness 3954) in paragraph at lines 277--282
+\TU/XITS(0)/m/n/14.4 gin V. Shylo M., Smirnov A. // \TU/XITS(0)/m/it/14.4 Maste
+rs Symposium on Advances in Da-
+ []
+
+
+Underfull \hbox (badness 4441) in paragraph at lines 277--282
+\TU/XITS(0)/m/it/14.4 ta Mining, Machine Learning, and Computer Vision\TU/XITS(
+0)/m/n/14.4 . —  2021. — Feb.
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 277--282
+[]$[][][][][] [] [] [] [][] [] [][][][][][][][][][][][][][] [] [][][][][][][][]
+[] [] [][][] [] [][][] [] [][][] [] [][] [] [][][][][][][][][][][] [] [][][][][
+][][] [] [][][][][] [] [] []
+ []
+
+[80]) 
 AED: lastpage setting LastPage
-[73] (tmp/index.aux)
+[81] (tmp/index.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package rerunfilecheck Info: File `index.out' has not changed.
-(rerunfilecheck)             Checksum: 93F8CB9E04D473EC09FDDDADDBA9393E;10084.
+(rerunfilecheck)             Checksum: F563AF53B9F87D81248E312ED0C1A249;10781.
  ) 
 Here is how much of TeX's memory you used:
- 41399 strings out of 476191
- 856893 string characters out of 5809814
- 1119996 words of memory out of 5000000
- 61263 multiletter control sequences out of 15000+600000
+ 41547 strings out of 476191
+ 860932 string characters out of 5809814
+ 1115340 words of memory out of 5000000
+ 61403 multiletter control sequences out of 15000+600000
  481696 words of font info for 113 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
- 123i,20n,122p,594b,946s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 123i,18n,122p,594b,946s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on tmp/index.pdf (69 pages).
+Output written on tmp/index.pdf (77 pages).

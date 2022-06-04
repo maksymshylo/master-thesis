@@ -6,7 +6,7 @@
     Накопичувальна сума масиву \cite{integral_image} $X$~---~це масив, кожний елемент якого є сумою всіх попередніх.
 \end{definition}
 
-Наведемо рекуррентну формулу обчислення накопичувальної суми
+Наведемо рекурентну формулу обчислення накопичувальної суми
 \begin{equation}
     S_1 = a_1, \qquad S_n = a_n + S_{n-1}.
     \label{eq:summed_table_formula}
@@ -37,7 +37,7 @@
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.6\textwidth]{images/temporal_median_example_1}
+    \includegraphics[width=0.5\textwidth]{images/temporal_median_example_1}
     \caption{Приклад отримання фону без людини шляхом використання темпоральної медіани
         \cite{temporal_median_example_1}
         \label{fig:temporal_median_example_1}
@@ -84,6 +84,7 @@
 
 \begin{algorithm}[H]
     \caption{Знаходження медіани для одновимірного масиву з хеш-таблицею.}
+    \label{al:median_hash}
     \begin{algorithmic}
         \State \textbf{Вхід:} не відсортований масив $A$, $\ell$ ~---~ кількість елементів.
         \State \textbf{Вихід:} $m$ ~---~ медіанне значення масиву $A$.
@@ -98,7 +99,6 @@
         \State \qquad  $ i \gets i + H[j] $
         \State \textbf{Крок 3:} Знаходимо $m = \frac{A[  \left\lfloor \ell/2 \right\rfloor   ] + A[\left\lceil \ell/2 \right\rceil ]}{2} $
     \end{algorithmic}
-    \label{al:median_hash}
 \end{algorithm}
 
 \section{Побудова швидкої медіани для зображень}
@@ -132,17 +132,9 @@
 \end{itemize}
 
 Розглянемо алгоритм ініціалізації масивів $S, M, C$ (алгоритм \ref{al:init_s_m_c}).
-% def initialize_median(m, first_frame):
-%     h, w = first_frame.shape[:2]
-%     med_data = np.dstack([first_frame]*m)
-%     med_img = first_frame.copy()
-%     cum_img = np.zeros((h, w, 256))
-%     # that's just fucking numpy magic
-%     np.put_along_axis(cum_img, med_img[..., None], values=m, axis=2)
-%     cum_img = np.cumsum(cum_img, axis = 2)
-%     return med_data, med_img, cum_img
 \begin{algorithm}[H]
     \caption{Алгоритм ініціалізації масивів $S, M, C$}
+    \label{al:init_s_m_c}
     \begin{algorithmic}
         \State \textbf{Вхід:} $m$ ~---~ кількість зображень для обчислення медіани,
         $I$ ~---~ перше зображення з відео.
@@ -160,31 +152,14 @@
         масиву $C$ по формулі \eqref{eq:summed_table_formula}.
         \State \textbf{Крок 6:} $C \gets E$.
     \end{algorithmic}
-    \label{al:init_s_m_c}
 \end{algorithm}
 
 Наведемо алгоритм оновлення $C$ (алгоритм \ref{al:update_C}) по двом зображенням,
 одне з яких назвемо інкрементним $I_{in}$, а інше декрементним $I_{de}$.
-% @njit
-% def update_cum_img_by_img(cum_img, increment_img, decrement_img):
-%     h,w = increment_img.shape[:2]
-%     for i in range(h):
-%         for j in range(w):
-%             cum_img[i,j,increment_img[i,j]]+=1
-%             cum_img[i,j,decrement_img[i,j]]-=1
-%     return cum_img
-% Valeriy Krygin, [23.05.22 22:24]
-% Касательно алгоритма 3. Смотри. 
-% Когда добавляешь в список изображение, то нужно ведь обновить интегральную сумму. 
-% А она содержит в себе сумму всех предыдущих цветов. А это значит, что при добавлении 
-% пикселя с цветом 200 нужно добавить единичку и в тот элемент интегральной суммы, что 
-% соответствует 201, и 202, и так далее до 255. Понимаешь?
-% Аналогично с декрементом
-% Valeriy Krygin, [23.05.22 22:25]
-% То есть, нужен ещё один цикл, мне кажется. Но его сложность константная, потому что, как ты указал в конце, количество яркостей известно
 
 \begin{algorithm}[H]
     \caption{Алгоритм оновлення $C$}
+    \label{al:update_C}
     \begin{algorithmic}
         \State \textbf{Вхід:} масив $C$, інкрементне та декрементне зображення $I_{in}, I_{de}$.
         \State \textbf{Вихід:} оновлений масив $C$.
@@ -195,32 +170,13 @@
         \State \qquad \qquad $\forall k \in \overline{I_{de}[i,j],256}$
         \State \qquad \qquad \qquad $C[i,j,k] \gets C[i,j,k] - 1$
     \end{algorithmic}
-    \label{al:update_C}
 \end{algorithm}
 
 Також потрібен алгоритм оновлення медіанного зображення (алгоритм \ref{al:update_M}) $M$.
-% @njit
-% def update_med_img(cum_img, med_img, med_data, m):
-%     h,w,n_colors = cum_img.shape
-%     med_position = int(m/2)
-%     for i in range(h):
-%         for j in range(w):
-%             if cum_img[i,j, med_img[i,j]] >= med_position:
-%                 new_med_pos = cum_img[i,j, med_img[i,j]]
-%                 for k in range(med_img[i,j] - 1, 0, -1):
-%                     if cum_img[i,j, k] <= med_position:
-%                         new_med_pos = cum_img[i,j, k+1]
-%                         break;
-%             else:
 
-%                 for k in range(med_img[i,j] + 1,n_colors, 1):
-%                     if cum_img[i,j, k] >= med_position:
-%                         new_med_pos = cum_img[i,j, k-1]
-%                         break;
-%             med_img[i,j] = med_data[i,j,int(new_med_pos-1)]
-%     return med_img
 \begin{algorithm}[H]
     \caption{Алгоритм оновлення $M$}
+    \label{al:update_M}
     \begin{algorithmic}
         \State \textbf{Вхід:} масиви $M, S, C$, та параметр $m$.
         \State \textbf{Вихід:} оновлений масив $M$.
@@ -239,27 +195,14 @@
         \State \qquad \qquad \qquad \qquad \qquad стоп
         \State \qquad \qquad $M[i,j] \gets S[i,j, \left\lfloor p_{new}\right\rfloor ]$
     \end{algorithmic}
-    \label{al:update_M}
 \end{algorithm}
 
 Використовуючи вищенаведені алгоритми,
-можна записати сам метод швидкої медіани для потоку зображень (алгоритм \ref{al:fast_median_video}).
-% m = 20
-% med_data, med_img, cum_img = initialize_median(m, frames[0])
-% q_head = 0
-% meds = []
-% for i in range(1,frames.shape[0]):
-%     cum_img = update_cum_img_by_img(cum_img, 
-%                                     increment_img = frames[i], 
-%                                     decrement_img = frames[i-1])
-
-%     med_img = update_med_img(cum_img, med_img, med_data, m = m)
-%     med_data[..., q_head] = frames[i]
-%     q_head = (q_head + 1)%m
-%     meds.append(med_img)
+можна записати сам метод швидкої медіани для потоку зображень (алгоритм \ref{al:fast_median_algorithm}).
 
 \begin{algorithm}[H]
     \caption{Алгоритм швидкої медіани для потоку зображень}
+    \label{al:fast_median_algorithm}
     \begin{algorithmic}
         \State \textbf{Вхід:} масив $F$, та параметр $m$.
         \State \textbf{Вихід:} список медіан $L$.
@@ -273,12 +216,12 @@
         \State \qquad \textbf{Крок 6:} Оновлюємо лічильник $q \gets (q+1) \mod m$
         \State \qquad \textbf{Крок 7:} Додаємо нову $M$ у $L$.
     \end{algorithmic}
-    \label{al:fast_median_video}
 \end{algorithm}
 
-Для аналогії наведемо звичайний алгоритм медіани для $S$.
+Для аналогії наведемо звичайний алгоритм \ref{al:temporal_median} медіани для $S$.
 \begin{algorithm}[H]
     \caption{Звичайний алгоритм медіани для $S$}
+    \label{al:temporal_median}
     \begin{algorithmic}
         \State \textbf{Вхід:} масив $S$, та параметр $m$.
         \State \textbf{Вихід:} масив $M$.

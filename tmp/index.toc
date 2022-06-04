@@ -16,35 +16,38 @@
 \contentsline {chapter}{\numberline {3}Методи локалізації людини та рухомих об'єктів}{23}{chapter.3}%
 \contentsline {section}{\numberline {3.1}Локалізація рухомих об'єктів}{23}{section.3.1}%
 \contentsline {subsection}{\numberline {3.1.1}Задача знаходження мінімального розрізу графа}{23}{subsection.3.1.1}%
-\contentsline {section}{\numberline {3.2}Застосування алгоритму Бойкова-Колмогорова}{26}{section.3.2}%
-\contentsline {section}{\numberline {3.3}Згорткові нейронні мережі}{28}{section.3.3}%
-\contentsline {subsection}{\numberline {3.3.1}YOLO (You Only Look Once)}{29}{subsection.3.3.1}%
-\contentsline {subsection}{\numberline {3.3.2}MobileNet}{32}{subsection.3.3.2}%
-\contentsline {subsubsection}{\numberline {3.3.2.1}MobileNetv1}{32}{subsubsection.3.3.2.1}%
+\contentsline {section}{\numberline {3.2}Застосування алгоритму Бойкова-Колмогорова}{27}{section.3.2}%
+\contentsline {section}{\numberline {3.3}Згорткові нейронні мережі}{29}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}YOLO (You Only Look Once)}{30}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}MobileNet}{33}{subsection.3.3.2}%
+\contentsline {subsubsection}{\numberline {3.3.2.1}MobileNetv1}{33}{subsubsection.3.3.2.1}%
 \contentsline {subsubsection}{\numberline {3.3.2.2}Mobilenetv2}{36}{subsubsection.3.3.2.2}%
-\contentsline {subsubsection}{\numberline {3.3.2.3}MobileNetv3}{37}{subsubsection.3.3.2.3}%
-\contentsline {subsubsection}{\numberline {3.3.2.4}SSD (Single Shot Multibox Detector)}{40}{subsubsection.3.3.2.4}%
+\contentsline {subsubsection}{\numberline {3.3.2.3}MobileNetv3}{38}{subsubsection.3.3.2.3}%
+\contentsline {subsubsection}{\numberline {3.3.2.4}SSD (Single Shot Multibox Detector)}{41}{subsubsection.3.3.2.4}%
 \contentsline {subsubsection}{\numberline {3.3.2.5}Faster R-CNN}{42}{subsubsection.3.3.2.5}%
-\contentsline {section}{Висновки до розділу 3}{44}{figure.caption.31}%
-\contentsline {chapter}{\numberline {4}Створення панорами}{45}{chapter.4}%
-\contentsline {section}{\numberline {4.1}Пошук відповідності між кадрами}{45}{section.4.1}%
-\contentsline {subsection}{\numberline {4.1.1}SIFT}{45}{subsection.4.1.1}%
-\contentsline {subsection}{\numberline {4.1.2}Знаходження відповідних точок зображень}{50}{subsection.4.1.2}%
-\contentsline {section}{\numberline {4.2}Знаходження матриці гомографії за допомогою RANSAC}{51}{section.4.2}%
-\contentsline {subsection}{\numberline {4.2.1}Обробка ключових точок з маскою}{53}{subsection.4.2.1}%
-\contentsline {section}{\numberline {4.3}Створення панорамного знімку}{54}{section.4.3}%
-\contentsline {section}{Висновки до розділу 4}{57}{ALG@line.2}%
-\contentsline {chapter}{\numberline {5}Обробка слайдів}{58}{chapter.5}%
-\contentsline {section}{\numberline {5.1}Порівняння слайдів}{58}{section.5.1}%
-\contentsline {section}{\numberline {5.2}Темпоральна медіана}{59}{section.5.2}%
-\contentsline {section}{\numberline {5.3}Швидка медіана для зображень}{61}{section.5.3}%
+\contentsline {section}{Висновки до розділу 3}{45}{figure.caption.31}%
+\contentsline {chapter}{\numberline {4}Створення панорами}{46}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Пошук відповідності між кадрами}{46}{section.4.1}%
+\contentsline {subsection}{\numberline {4.1.1}SIFT}{46}{subsection.4.1.1}%
+\contentsline {subsection}{\numberline {4.1.2}Знаходження відповідних точок зображень}{51}{subsection.4.1.2}%
+\contentsline {section}{\numberline {4.2}Знаходження матриці гомографії за допомогою RANSAC}{52}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Обробка ключових точок з маскою}{54}{subsection.4.2.1}%
+\contentsline {section}{\numberline {4.3}Створення панорамного знімку}{55}{section.4.3}%
+\contentsline {section}{Висновки до розділу 4}{58}{ALG@line.2}%
+\contentsline {chapter}{\numberline {5}Обробка слайдів}{59}{chapter.5}%
+\contentsline {section}{\numberline {5.1}Порівняння слайдів}{59}{section.5.1}%
+\contentsline {section}{\numberline {5.2}Темпоральна медіана}{60}{section.5.2}%
+\contentsline {section}{\numberline {5.3}Швидка медіана для зображень}{62}{section.5.3}%
 \contentsline {section}{\numberline {5.4}Побудова швидкої медіани для зображень}{63}{section.5.4}%
-\contentsline {section}{\numberline {5.5}Порівняння складності}{66}{section.5.5}%
+\contentsline {section}{\numberline {5.5}Порівняння складності}{67}{section.5.5}%
 \contentsline {section}{Висновки до розділу 5}{68}{section.5.5}%
 \contentsline {chapter}{\numberline {6}Практичні результати}{69}{chapter.6}%
 \contentsline {section}{\numberline {6.1}Результати алгоритму Б-К та згорткових мереж}{69}{section.6.1}%
-\contentsline {section}{\numberline {6.2}Результати згорткових мереж}{71}{section.6.2}%
-\contentsline {section}{\numberline {6.3}Швидкість методів локалізації людини чи рухомих об'єктів}{72}{section.6.3}%
-\contentsline {section}{\numberline {6.4}Результати створення панорами}{73}{section.6.4}%
-\contentsline {section}{\numberline {6.5}Приклад роботи}{73}{section.6.5}%
+\contentsline {section}{\numberline {6.2}Результати згорткових мереж}{72}{section.6.2}%
+\contentsline {section}{\numberline {6.3}Швидкість методів локалізації людини чи рухомих об'єктів}{73}{section.6.3}%
+\contentsline {section}{\numberline {6.4}Результати створення панорами}{74}{section.6.4}%
+\contentsline {section}{\numberline {6.5}Результати швидкої медіани}{74}{section.6.5}%
+\contentsline {section}{\numberline {6.6}Майбутні покращення}{75}{section.6.6}%
+\contentsline {section}{Висновки до розділу 6}{76}{section.6.6}%
+\contentsline {chapter}{Перелік посилань}{77}{section*.49}%
 \contentsfinish 
