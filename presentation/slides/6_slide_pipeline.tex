@@ -1,0 +1,28 @@
+\section{Процедура створення панорамних слайдів}
+\begin{frame}
+    \frametitle{Процедура створення панорамних слайдів}
+    \usetikzlibrary{arrows,positioning,shapes}
+    \begin{figure}[H]
+        \begin{center}
+            \begin{tikzpicture}[node distance=4mm, >=latex',
+                    block/.style = {draw, rectangle, minimum height=10mm, minimum width=28mm,align=center},
+                    rblock/.style = {draw, rectangle, rounded corners=0.5em},
+                    tblock/.style = {draw, trapezium, minimum height=10mm,
+                            trapezium left angle=75, trapezium right angle=105, align=center},
+                ]
+                \node [rblock]                           (video)        {Відео};
+                \node [block, below=of video]            (mov_objects)  {Побудова маски\\
+                    рухомих об'єктів або людини};
+                \node [block, right=of mov_objects]      (pan)          {Побудова панорамами};
+                \node [block, right=of pan]              (denoise)      {Зниження рівня\\ шуму};
+                \node [rblock,above=of denoise]          (slides)       {Слайди};
+
+                \path[draw,->] (video)         edge    (mov_objects)
+                (mov_objects)   edge    (pan)
+                (pan)           edge    (denoise)
+                (denoise)       edge    (slides)
+                ;
+            \end{tikzpicture}
+        \end{center}
+    \end{figure}
+\end{frame}

@@ -1,0 +1,20 @@
+\section{Стабілізація відео}
+\begin{frame}
+  \frametitle{Стабілізація відео}
+
+  Оскільки дошка~---~це плоска поверхня, ми можемо знайти матрицю гомографії між двома кадрами.
+  Для цього використовуємо алгоритм SIFT та RANSAC.
+
+  \begin{block}{Оцінка гомографії}
+  \begin{equation*}
+    \sum_{\left\langle \boldsymbol{x}^P, \boldsymbol{x}^N \right\rangle \in M}
+      \left\llbracket
+        \left\lVert \frac{H \cdot \boldsymbol{x}_i^N}{\left( H \cdot \boldsymbol{x}_i^N \right)_z}
+        - \boldsymbol{x}_i^P \right\rVert < \varepsilon
+      \right\rrbracket
+    \to \max\limits_{\substack{H \in \mathbb{R}^{3 \times 3} \\ \det{H} \neq 0}},
+    \quad \varepsilon > 0.
+  \end{equation*}
+  \end{block}
+
+\end{frame}

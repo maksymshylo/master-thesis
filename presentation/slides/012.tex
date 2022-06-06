@@ -1,0 +1,22 @@
+\begin{frame}
+  \frametitle{Dividing Board into Sections}
+  $d$~---~number of slides \\
+  $q$~---~number of divided sections \\
+  $g$~---~height of divided parts \\ 
+  $b$~---~width of divided part \\
+  $H$~---~a matrix of labels with size 
+  $\left|d  \right|   \times   \left|q  \right|$, \\
+  where each element equal $1$ if content of this section has changed and $0$ otherwise. \\
+  $S$~---~a matrix of divided slides with size
+  $\left|d \right|  \times   \left|q  \right|   \times  \left|g \right|  \times   \left|b \right|$. \\
+  $t$~---~a treshold of changes
+  between $S_{i,j,\cdot,\cdot}$ and $S_{i+1,j,\cdot,\cdot}$ sections.\\
+  We only take sections where $D_{i,j} = 1$ and get new slides
+  \begin{equation*}
+    D_{i,j} =
+      \begin{cases}
+        1 & t > k\left( S_{i,j,\cdot,\cdot},S_{i+1,j,\cdot,\cdot} \right), \\
+        0 & otherwise.
+      \end{cases}
+  \end{equation*}
+\end{frame}

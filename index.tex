@@ -1,4 +1,7 @@
 \input{/var/common/head_ua.tex}
+\input{macroses.tex}
+\input{config.tex}
+
 \setmainfont{XITS}
 
 \usepackage{lastpage}
@@ -42,10 +45,12 @@
 \let\oldcite=\bibcite
 \def\bibcite{\stepcounter{citenum}\oldcite}
 
-\input{macroses.tex}
+\usepackage{changepage}
 
 \begin{document}
 \pagenumbering{gobble}
+
+\import{1_title/}{main.tex}
 
 \import{2_abstract/}{main.tex}
 

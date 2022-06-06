@@ -1,0 +1,109 @@
+\documentclass[10pt,pdf,aspectratio=169]{beamer}
+\usetheme{CambridgeUS}
+
+\usepackage{graphicx}
+\usepackage{subfigure}
+
+\usepackage{caption}
+\captionsetup[figure]{labelformat=empty}% redefines the caption setup of the figures environment in the beamer class.
+
+%\setbeamertemplate{caption}{\raggedright\insertcaption\par}
+
+% \usepackage{dsfont}
+\usepackage{cancel}
+\usepackage[export]{adjustbox}
+\usepackage{amsthm}
+\usepackage{amsmath}
+%\usepackage{stmaryrd}
+\usepackage{ulem}
+% \usepackage[backend=biber,style=numeric-comp,sorting=none]{biblatex}
+\usepackage{stmaryrd}
+
+\usepackage[english]{babel}
+\usepackage{fontspec}
+
+%\usepackage{subcaption}
+\usepackage[]{graphics}
+\usepackage{mathtools}
+\usepackage{cite}
+
+%\graphicspath{{../images}}
+
+\setmainfont{cmun}[
+  Extension=.otf,
+  UprightFont=*rm,
+  ItalicFont=*ti,
+  BoldFont=*bx,
+  BoldItalicFont=*bi,
+]
+\setsansfont{cmun}[
+  Extension=.otf,
+  UprightFont=*ss,
+  ItalicFont=*si,
+  BoldFont=*sx,
+  BoldItalicFont=*so,
+]
+\setmonofont{cmun}[
+  Extension=.otf,
+  UprightFont=*btl,% light version
+  ItalicFont=*bto,%  light version
+  BoldFont=*tb,
+  BoldItalicFont=*tx,
+]
+
+\usepackage{tikz}
+\usepackage[beamer]{hf-tikz}
+\usepackage{pgfplots}
+\usepackage{ragged2e}
+\usepackage{bbm}
+
+\usetikzlibrary{arrows,automata,shapes,calc,patterns,arrows.meta}
+\usetikzlibrary{fadings}
+
+% \pgfplotsset{
+%   axis line style={thick, black!50},
+% }
+\tikzset{
+  every picture/.style={line width=1pt},
+  >=latex
+}
+
+\makeatother
+\title[Перетворення відеозапису з дошки у слайд-шоу]{
+  \huge{Перетворення відеозапису з дошки у слайд-шоу}
+}
+
+\author[Доповідач: Максим Шило,  Науковий керівник: Водолазський Є. В.]{
+Доповідач: Максим Шило\inst{1} \and
+Науковий керівник: Водолазський Є. В.\inst{1}}
+
+\institute{
+  \inst{1} Національний технічний університет України
+  ``Київський політехнічний інститут імені Ігоря Сікорського''}
+
+\date[]{16 червня 2022}
+
+\setbeamertemplate{theorems}[numbered]
+
+\DeclareMathOperator{\argmax}{argmax}
+\DeclareMathOperator{\argmin}{argmin}
+\DeclareMathOperator{\rank}{rank}
+
+% \bibliographystyle{plain}
+% \addbibresource{proofs}
+% \bibliography{proofs}
+
+\begin{document}
+
+\input{slides/1_slide_title.tex}
+\input{slides/2_slide_motivation_1.tex}
+\input{slides/3_slide_motivation_2.tex}
+\input{slides/4_slide_task.tex}
+\input{slides/5_slide_agenda.tex}
+\input{slides/6_slide_pipeline.tex}
+\input{slides/7_slide_video_stab.tex}
+\input{slides/8_slide_bk_algorithm_1.tex}
+%\input{slides/9_slide_bk_algorithm_2.tex}
+
+
+\end{document}

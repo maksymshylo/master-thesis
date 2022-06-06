@@ -1,0 +1,25 @@
+\section{Методи локалізації людини та рухомих об'єктів}
+\begin{frame}
+  \frametitle{Алгоритм Бойкова Колмогорова}
+
+  Сформулюємо задачу максимального потоку
+  \begin{equation*}
+    \sum_{t \in N_s} f_{st} \rightarrow \max_{f: \tau \rightarrow R }
+  \end{equation*}
+  з обмеженнями
+  \begin{equation*}
+    \begin{gathered}
+      \begin{cases}
+        f_{tt^{'}} \leq  c_{tt^{'}},                                   & \forall tt^{'}  \in \tau ,         \\
+        \sum_{p \in P_t} f_{pt} - \sum_{t^{'} \in N_t} f_{tt^{'}} = 0, & \forall t \in T \setminus \{s,e\}, \\
+        \sum f_{tt^{'}} \geq 0,                                        & \forall tt^{'}  \in \tau.
+      \end{cases}
+    \end{gathered}
+  \end{equation*}
+  Це означає, що
+  \begin{enumerate}
+    \item потік має не перевищувати пропускну здатність для всіх ребер;
+    \item сума потоків, що входять у вузол не повинна змінитись на виході;
+    \item потік завжди додатній.
+  \end{enumerate}
+\end{frame}

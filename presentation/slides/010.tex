@@ -1,0 +1,19 @@
+\begin{frame}
+  \frametitle{Slides Comparison}
+  To measure the relative changes between frames $P$ and $N$ we use
+  \begin{equation}
+    k\left(P,N\right)= {\sum\limits_{i=1}^{h}\sum\limits_{j=1}^{w} P_{i,j} \oplus N_{i,j} \over h \cdot w}.
+  \end{equation}
+  We say that the frame $N$ is a new slide
+  if its mean XOR from the frame $P$ is more than $t$
+  \begin{equation}
+  s\left(h,w,t,P,N\right)= 
+      \begin{cases}
+        yes,& t > k\left(P,N\right), \\
+        no,& otherwise.
+      \end{cases}
+  \end{equation}
+  
+  Then we take a new frame as a $N$ and the old $N$ becomes the new $P$,
+  and the procedure starts again.
+\end{frame}

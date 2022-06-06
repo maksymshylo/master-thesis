@@ -1,0 +1,20 @@
+\section{Video Stabilization}
+\begin{frame}
+  \frametitle{Homography Estimation}
+  Given two frames $P$ and $N$ (Previous and Next),
+  we can get four pairs of corresponding points from them
+  \begin{equation}
+    \label{eq:corresponding-points}
+    M = \left\{
+      \left\langle \boldsymbol{x}_i^P, \boldsymbol{x}_i^N \right\rangle: i = \overline{1, 4}
+    \right\},
+    \quad \boldsymbol{x}_i^P \in \mathbb{R}^2 \times \left\{ 1 \right\}.
+  \end{equation}
+  Corresponding points are those ones which are projections of the same point in space.
+  If these points are points of a flat board, they are connected by the relation
+  \begin{equation}
+    \label{eq:homogrpahy}
+    H \cdot \boldsymbol{x}_i^N \approx c \cdot \boldsymbol{x}_i^P,
+    \quad \forall i = \overline{1, 4}.
+  \end{equation}
+\end{frame}

@@ -1,0 +1,20 @@
+\section{Методи локалізації людини та рухомих об'єктів}
+\begin{frame}
+  \frametitle{Процес створення маски рухомих об'єктів алгоритмом Б-К}
+  
+  \begin{figure}[H]
+	\centering
+	\subfloat[Попередній кадр $F^i$]{
+		\includegraphics[width=0.45\textwidth]{images/prev_frame}
+	}\\
+	\subfloat[Поточний кадр $F^{i+s}$]{
+		\includegraphics[width=0.45\textwidth]{images/next_frame}
+	}\\
+	\subfloat[Інвертована різниця $F^i$ і $F^{i+s}$]{
+		\includegraphics[width=0.45\textwidth]{images/inv_diff}
+	}\\
+	\subfloat[Маска рухомих об'єктів на кадрі $F^{i+s}$]{
+		\includegraphics[width=0.45\textwidth]{images/next_with_mask}
+	}
+\end{figure}
+\end{frame}
