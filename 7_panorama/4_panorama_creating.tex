@@ -92,20 +92,18 @@
         $x_{\min}^{'} = \min(x_{\max}^{i}, 0), y_{\min}^{'} = \min(y_{\max}^{i}, 0)$ і відображення
         \begin{equation*}
             f^i: p \rightarrow
-            (|\frac{(H^{'} \cdot p)_x}{(H^{'} \cdot p)_y}|, |\frac{(H^{'} \cdot p)_y}{(H^{'} \cdot p)_z}|),
+            \left( \left| \frac{(H^{'} \cdot p)_x}{(H^{'} \cdot p)_y} \right|, \left| \frac{(H^{'} \cdot p)_y}{(H^{'} \cdot p)_z} \right| \right),
         \end{equation*}
         що перетворює координати з панорами до пікселів кадру за допомогою гомографії.
         Інтенсивність у пікселі $p$ панорами
         $W^{i+s}$ визначається за формулою
         \begin{equation*}
             W^{i + s}(p) =
-            \begin{gathered}
-                \begin{cases}
-                    F^{i + s}(f(p)),                            & f(p) \in P,                                    \\
-                    W^{i}( p + ( x_{\min}^{'},y_{\min}^{'} ) ), & p + ( x_{\min}^{'},y_{\min}^{'} ) \in P^{i},   \\
-                    0,                                          & p + ( x_{\min}^{'},y_{\min}^{'} ) \notin P^{i}
-                \end{cases}
-            \end{gathered}
+            \begin{cases}
+                F^{i + s}(f(p)),                            & f(p) \in P,                                    \\
+                W^{i}( p + ( x_{\min}^{'},y_{\min}^{'} ) ), & p + ( x_{\min}^{'},y_{\min}^{'} ) \in P^{i},   \\
+                0,                                          & p + ( x_{\min}^{'},y_{\min}^{'} ) \notin P^{i}.
+            \end{cases}
         \end{equation*}
 \end{description}
 

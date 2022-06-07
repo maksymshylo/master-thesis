@@ -102,9 +102,9 @@
 буде працювати алгоритм пошуку матриці гомографії
 \begin{equation}
     E(H) = \sum_{(x,x') \in M^{i,i+s}}
-    \left\llbracket \|
+    \left\llbracket \left\lVert
     \frac{H\cdot x'}{(H\cdot x')_z} - x
-    \Vert \leq \varepsilon
+    \right\rVert \leq \varepsilon
     \right\rrbracket
     \to \max\limits_{\substack{H \in \mathbb{R}^{3 \times 3} \\ \det{H} \neq 0}}.
     \label{eq:homography_estimation}
