@@ -1,16 +1,22 @@
-\section{Conclusions}
+\section{Висновки}
 \begin{frame}
-  \frametitle{Conclusions}
-    Now we have:
-    \begin{itemize}
-     \item stabilization based on homography estimation
-     \item neural network for human detection
-     \item creating slides
-   \end{itemize}
-   Future improvements:
-   \begin{itemize}
-     \item replace a neural network with faster method
-     \item vectorization of the board
-     \item improve stabilization
-   \end{itemize}
+  \frametitle{Висновки}
+  Побудовано алгоритм, що перетворює відеозапис лекції у панорамні знімки без викладача з камерою, що може
+  рухатись. Створена інформаційна технологія по даному алгоритму. Програма є досить
+  швидкою, оскільки може оброблювати відео з високою роздільною здатністю $1920 \times 1080$. 
+  Наприклад обробка 45 хв відео (\url{https://youtu.be/_aGdtc23o1o}) на комп'ютері з 
+  процесором Intel Core i5-7200U @ 4x 3,1GHz на операційній системі Ubuntu 21.04 займає
+  всього 12 хвилин. Такі результати свідчать про можливу подальшу роботу над даною темою.
+
+  Майбутні покращення:
+  \begin{itemize}
+    \item можливість детектувати дошку, що дасть приріст у швидкості обробки
+          всього відео, оскільки панорама буде створюватись по кадрам меншого розміру;
+    \item можливість детектувати секції дошки, яка розділена на декілька малих дошок;
+    \item можливість отримати панорамне відео, а не слайди;
+    \item можливість векторизувати написи на дошці;
+    \item реалізувати програмну частину за допомогою більш ефективних засобів:
+          наприклад, використовувати компільовану мову програмування
+          та використовувати обчислення на GPU.
+  \end{itemize}
 \end{frame}
