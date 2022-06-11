@@ -21,14 +21,14 @@
 \subsubsection{SIFT}
 
 У 1999 році англієць Девід Лоу представив алгоритм SIFT (scale-invariant feature transform)
-\cite{sift} (укр. масштабонезалежне перетворення ознак). Даний алгоритм
+\cite{bib:sift} (укр. масштабонезалежне перетворення ознак). Даний алгоритм
 застовується для знаходження ключових точок (локальних ознак) (англ. feature points, keypoints) зображення.
 Метод досить точно і швидко знаходить дані точки.
 Головною перевагою алгоритму є інваріантність щодо просторової орієнтації та якості освітлення.
 Має широке застосування в області комп'ютерного зору як один з кроків для побудови 3D-карт,
 ректифікації стереопари та виявлення об'єктів.
 
-Ми можемо також використовувати дескриптори ознак, такі як SURF \cite{surf} або ORB \cite{orb},
+Ми можемо також використовувати дескриптори ознак, такі як SURF \cite{bib:surf} або ORB \cite{bib:orb},
 щоб знайти ключові точки, але був обраний SIFT,
 оскільки під час експериментів він надав візуально кращі результати, ніж
 інші алгоритми.
@@ -63,7 +63,7 @@
           \begin{figure}[H]
               \centering
               \includegraphics[width=0.5\textwidth]{images/sift1}
-              \caption{Знаходження різниць Ґауссіанів 1-ий етап SIFT \cite{sift}
+              \caption{Знаходження різниць Ґауссіанів 1-ий етап SIFT \cite{bib:sift}
                   \label{fig:swift1}
               }
           \end{figure}
@@ -77,7 +77,7 @@
           \begin{figure}[H]
               \centering
               \includegraphics[width=0.3\textwidth]{images/sift2}
-              \caption{Пошук локальних екстремумів: 2-ий етап SIFT \cite{sift}
+              \caption{Пошук локальних екстремумів: 2-ий етап SIFT \cite{bib:sift}
                   \label{fig:swift2}
               }
           \end{figure}
@@ -92,7 +92,7 @@
               \centering
               \includegraphics[width=0.4\textwidth]{images/sift3}
               \caption{Графік залежності кількості змін масштабу на кожну епоху до
-                  кількості ключових точок на зображенні \cite{sift}
+                  кількості ключових точок на зображенні \cite{bib:sift}
                   \label{fig:swift3}
               }
           \end{figure}
@@ -117,7 +117,7 @@
               \label{eq:extremum}
           \end{equation}
           Підставивши \eqref{eq:extremum} у \eqref{eq:tailor_1}, маємо можливість відсіяти нестабільні
-          екстремуми по модулю значення (рис. \eqref{fig:sift45})
+          екстремуми по модулю значення (рис. \eqref{fig:extremums_filtering})
           \begin{equation*}
               D(\widehat{\boldsymbol{x}}) = D + \frac{1}{2}\frac{\partial D^{T} }{\partial \boldsymbol{x}}\widehat{\boldsymbol{x}}.
           \end{equation*}
@@ -139,8 +139,8 @@
                       \label{fig:swift5}
                   }
               \end{subfigure}
-              \caption{Приклад відсіювання екстремумів \cite{sift}
-                  \label{fig:sift45}
+              \caption{Приклад відсіювання екстремумів \cite{bib:sift}
+                  \label{fig:extremums_filtering}
               }
           \end{figure}
           Таким чином  ми обмежуємо $|D(\widehat{\boldsymbol{x}})| < \alpha$.
@@ -163,7 +163,7 @@
           \begin{figure}[H]
               \centering
               \includegraphics[width=0.5\textwidth]{images/sift6}
-              \caption{Створення дескрипторів точок \cite{sift}
+              \caption{Створення дескрипторів точок \cite{bib:sift}
                   \label{fig:swift6}
               }
           \end{figure}
@@ -213,7 +213,7 @@
     \centering
     \includegraphics[width=0.55\textwidth]{images/matches_img}
     \caption{Кадри $F^i$ (верхній) та $F^{i+s}$ (нижній) із ключовими точками та лініями,
-        які поєднують відповідні точки з відео \cite{yakovlev_discrete_math_video}
+        які поєднують відповідні точки з відео \cite{video:mmzi:yakovlev_discrete_math}
         \label{fig:matches_img}
     }
 \end{figure}

@@ -7,16 +7,16 @@
 \begin{figure}[H]
     \centering
 
-    \subfloat[\cite{krygin_geometry}]{
+    \subfloat[\cite{video:krygin_geometry}]{
         \includegraphics[width=0.35\textwidth]{images/krygin_geometry_bk_17350}
     }
-    \subfloat[\cite{algebra_geometry}]{
+    \subfloat[\cite{video:mmzi:algebra_geometry}]{
         \includegraphics[width=0.35\textwidth]{images/algebra_geometry_bk_9650}
     }\\
-    \subfloat[\cite{yakovlev_numbers_theory_video}]{
+    \subfloat[\cite{video:mmzi:yakovlev_numbers_theory}]{
         \includegraphics[width=0.35\textwidth]{images/yakovlev2_bk_6500}
     }
-    \subfloat[\cite{dorohovtsev_wiener_video}]{
+    \subfloat[\cite{video:dorohovtsev_wiener_process}]{
         \includegraphics[width=0.35\textwidth]{images/dorohovtsev2_bk_10650}
     }
     \caption{Приклад роботи алгоритму Б-К для отримання маски рухомих об'єктів
@@ -55,7 +55,7 @@
     \subfloat[]{
         \includegraphics[width=0.35\textwidth]{images/bad_dorohovtsev_bk_example_5840}
     }
-    \caption{Приклад поганої маски рухомих об'єктів з відео \cite{dorohovtsev_video}
+    \caption{Приклад поганої маски рухомих об'єктів з відео \cite{video:dorohovtsev_spetskurs_vesna}
         \label{fig:bk_bad_mask}
     }
 \end{figure}
@@ -66,7 +66,7 @@
 \begin{enumerate}
     \item згорткові нейромережі для детекції людини, що були використані в даній роботі,
           є теж досить швидкими, оскільки були створені для мобільних пристроїв;
-        \item детекція людини не залежить від руху камери, тому навіть ті кадри, що
+    \item детекція людини не залежить від руху камери, тому навіть ті кадри, що
           отримуються під час руху камери, будуть застосовані для створення панорами;
     \item результати експериментів свідчать про високу точність локалізації викладача.
 \end{enumerate}
@@ -81,16 +81,16 @@
 \begin{figure}[H]
     \centering
     % yolov5n
-    \subfloat[\cite{krygin_geometry}]{
+    \subfloat[\cite{video:krygin_geometry}]{
         \includegraphics[width=0.35\textwidth]{images/krygin_geometry_yolov5n_17350}
     }
-    \subfloat[\cite{algebra_geometry}]{
+    \subfloat[\cite{video:mmzi:algebra_geometry}]{
         \includegraphics[width=0.35\textwidth]{images/algebra_geometry_yolov5n_9650}
     } \\
-    \subfloat[\cite{yakovlev_numbers_theory_video}]{
+    \subfloat[\cite{video:mmzi:yakovlev_numbers_theory}]{
         \includegraphics[width=0.35\textwidth]{images/yakovlev2_yolov5n_6500}
     }
-    \subfloat[\cite{dorohovtsev_wiener_video}]{
+    \subfloat[\cite{video:dorohovtsev_wiener_process}]{
         \includegraphics[width=0.35\textwidth]{images/dorohovtsev2_yolov5n_10650}
     }
     \caption{Приклад роботи yolov5n
@@ -100,16 +100,16 @@
 
 \begin{figure}[H]
     \centering
-    \subfloat[\cite{krygin_geometry}]{
+    \subfloat[\cite{video:krygin_geometry}]{
         \includegraphics[width=0.35\textwidth]{images/krygin_geometry_ssdlite320_mobilenet_v3_17350}
     }
-    \subfloat[\cite{algebra_geometry}]{
+    \subfloat[\cite{video:mmzi:algebra_geometry}]{
         \includegraphics[width=0.35\textwidth]{images/algebra_geometry_ssdlite320_mobilenet_v3_9650}
     } \\
-    \subfloat[\cite{yakovlev_numbers_theory_video}]{
+    \subfloat[\cite{video:mmzi:yakovlev_numbers_theory}]{
         \includegraphics[width=0.35\textwidth]{images/yakovlev2_ssdlite320_mobilenet_v3_6500}
     }
-    \subfloat[\cite{dorohovtsev_wiener_video}]{
+    \subfloat[\cite{video:dorohovtsev_wiener_process}]{
         \includegraphics[width=0.35\textwidth]{images/dorohovtsev2_ssdlite320_mobilenet_v3_10650}
     }
     \caption{Приклад роботи ssdlite320-mobilenet-v3
@@ -119,16 +119,16 @@
 
 \begin{figure}[H]
     \centering
-    \subfloat[\cite{krygin_geometry}]{
+    \subfloat[\cite{video:krygin_geometry}]{
         \includegraphics[width=0.35\textwidth]{images/krygin_geometry_fasterrcnn_mobilenet_v3_17350}
     }
-    \subfloat[\cite{algebra_geometry}]{
+    \subfloat[\cite{video:mmzi:algebra_geometry}]{
         \includegraphics[width=0.35\textwidth]{images/algebra_geometry_fasterrcnn_mobilenet_v3_9650}
     }\\
-    \subfloat[\cite{yakovlev_numbers_theory_video}]{
+    \subfloat[\cite{video:mmzi:yakovlev_numbers_theory}]{
         \includegraphics[width=0.35\textwidth]{images/yakovlev2_fasterrcnn_mobilenet_v3_6500}
     }
-    \subfloat[\cite{dorohovtsev_wiener_video}]{
+    \subfloat[\cite{video:dorohovtsev_wiener_process}]{
         \includegraphics[width=0.35\textwidth]{images/dorohovtsev2_fasterrcnn_mobilenet_v3_10650}
     }
     \caption{Приклад роботи fasterrcnn-mobilenet-v3
@@ -156,17 +156,32 @@
     \end{center}
 \end{table}
 
-Як бачимо з табл. \ref{tab:speed_methods_table}, найшвидшим методом є ssdlite320-mobilenet-v3, а найдовшим є алгоритм Бойкова-Колмогорова.
+Як бачимо з табл. \ref{tab:speed_methods_table}, найшвидшим методом є ssdlite320-mobilenet-v3, 
+а найдовшим є алгоритм Бойкова-Колмогорова.
 Проте емпіричним шляхом було визначено, що кращі результати надає yolov5n.
 
 \section{Результати створення панорами}
 
+\begin{figure}[H]
+    \centering
+    \subfloat[Панорама з відео \cite{video:mfti:kombinatorika}]{
+        \includegraphics[width=0.35\textwidth]{images/panorama_example_2}
+        \label{fig:panorama:example_2}
+    }\\
+    \subfloat[Панорама з відео \cite{video:mfti:algebra_structure}]{
+        \includegraphics[width=0.35\textwidth]{images/panorama_example_3}
+        \label{fig:panorama:example_3}
+    }
+    \caption{Приклади панорами отриманої без викладача
+    }
+\end{figure}
+
 
 \section{Результати використання швидкої медіани}
 
-На рис. \ref{fig:after_median_denoising} можна побачити як медіана справляється з шумом та артефактами компресії. Написи стали більш чіткими,
-а фон дошки більш однорідним. Даний алгоритм доданий до інформаційної технології перетворення відео
-з дошки у слайди.
+На рис. \ref{fig:median:after_denoising} можна побачити як медіана справляється з шумом 
+та артефактами компресії.  Написи стали більш чіткими, а фон дошки більш однорідним.
+Даний алгоритм доданий до інформаційної технології перетворення відео з дошки у слайди.
 
 \begin{figure}[H]
     \centering
@@ -175,8 +190,8 @@
     }
     \subfloat[Після]{
         \includegraphics[width=0.35\textwidth]{images/frame_after_median}
-        \label{fig:after_median_denoising}
+        \label{fig:median:after_denoising}
     }
-    \caption{Приклад роботи медіани для зображень \cite{yakovlev_discrete_math_video}
+    \caption{Приклад роботи медіани для зображень \cite{video:mmzi:yakovlev_discrete_math}
     }
 \end{figure}
