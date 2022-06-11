@@ -1,7 +1,7 @@
 \subsection{Застосування алгоритму Бойкова-Колмогорова}
 
 Окремо Б-К алгоритм не є корисним для детекції рухомих об'єктів. У даній роботі
-використано метод \cite{pavliuk_krygin}, який у свою чергу використовує алгоритм Б-К
+використано метод \cite{bib:pavliuk_krygin}, який у свою чергу використовує алгоритм Б-К
 для пошуку мінімального розрізу на графі, що дозволяє знаходити
 маску рухомих об'єктів та має можливість налаштовувати ступінь взаємодії сусідніх
 пікселів.
@@ -26,32 +26,32 @@
 	\centering
 	\subfloat[Попередній кадр $F^i$]{
 		\includegraphics[width=0.55\textwidth]{images/prev_frame}
-		\label{fig:yakovlev:bk_examples:a}
+		\label{fig:yakovlev_discrete_math:bk_examples:a}
 	}\\
 	\subfloat[Поточний кадр $F^{i+s}$]{
 		\includegraphics[width=0.55\textwidth]{images/next_frame}
-		\label{fig:yakovlev:bk_examples:b}
+		\label{fig:yakovlev_discrete_math:bk_examples:b}
 	}\\
 	\subfloat[Інвертована різниця $F^i$ і $F^{i+s}$]{
 		\includegraphics[width=0.55\textwidth]{images/inv_diff}
-		\label{fig:yakovlev:bk_examples:c}
+		\label{fig:yakovlev_discrete_math:bk_examples:c}
 	}\\
 	\subfloat[Маска рухомих об'єктів на кадрі $F^{i+s}$]{
 		\includegraphics[width=0.55\textwidth]{images/next_with_mask}
-		\label{fig:yakovlev:bk_examples:d}
+		\label{fig:yakovlev_discrete_math:bk_examples:d}
 	}
-	\caption{Процес створення маски рухомих об'єктів з відео \cite{yakovlev_discrete_math_video}
-		\label{fig:yakovlev:bk_examples}
+	\caption{Процес створення маски рухомих об'єктів з відео \cite{video:mmzi:yakovlev_discrete_math}
+		\label{fig:yakovlev_discrete_math:bk_examples}
 	}
 \end{figure}
 
-Для того, щоб видалити всі рухомі об'єкти, які можуть перекривати дошку, ми
-беремо кадри \(F^{i}\) та \(F^{i + s}\) (рис. \ref{fig:yakovlev:bk_examples},
-\subref{fig:yakovlev:bk_examples:a},
-\subref{fig:yakovlev:bk_examples:b}) та для
+Для того, щоб отримати маску рухомих об'єктів, які можуть перекривати дошку, ми
+беремо кадри \(F^{i}\) та \(F^{i + s}\) (рис.
+\subref{fig:yakovlev_discrete_math:bk_examples:a},
+\subref{fig:yakovlev_discrete_math:bk_examples:b}) та для
 кожної пари кольорів пікселів \(p\) з однаковими координатами знаходимо
 модуль \(D_{p}^{i} = \left| F_{p}^{i} - F_{p}^{i + s} \right|\) різниці
-інтенсивностей (рис. \ref{fig:yakovlev:bk_examples:c}). Зображення \(D^{i}\) подаємо на вхід
+інтенсивностей (рис. \ref{fig:yakovlev_discrete_math:bk_examples:c}). Зображення \(D^{i}\) подаємо на вхід
 Б-К алгоритму.
 
 Знайдемо маску $B^{i}:P \rightarrow \{0,1\}$ рухомих
@@ -75,7 +75,7 @@ $\Gamma \subset P^{2}$ сусідніх пікселів. У даній робо
 	E\left( B_{p}^{i} \right) = \sum_{p \in P}^{}{q_{{p\ }}( B_{p}^{i}) +}\sum_{(p,p') \in \Gamma}^{}g(B_{p}^{i},B_{p'}^{i}).
 \end{equation*}
 На виході отримуємо маску \(B_{p}^{i}\) рухомих об'єктів (рис.
-\ref{fig:yakovlev:bk_examples:d}).
+\ref{fig:yakovlev_discrete_math:bk_examples:d}).
 Її ми використовуємо, щоб не переносити на фінальне зображення ті
 пікселі, на яких було помічено рух, адже зміна яскравості пікселя
 виникає не тільки під час створення напису, а й під час тимчасового

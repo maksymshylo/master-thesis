@@ -61,7 +61,7 @@
 
 Як вже було зазначено,
 задача пошуку максимального потоку є еквівалентною до задачі пошуку мінімального розрізу.
-Даний висновок отримується з Max-Flow Min-Cut теореми \cite{ford_fulkerson,edmods_karp}.
+Даний висновок отримується з Max-Flow Min-Cut теореми \cite{bib:ford_fulkerson, bib:edmods_karp}.
 
 Наведемо алгоритм знаходження максимального потоку Форда-Фалкерсона (алгоритм \ref{al:ford_fulkerson_mas_flow}).
 
@@ -93,7 +93,7 @@
     \end{algorithmic}
 \end{algorithm}
 
-У 2004 році Юрій Бойков та Володимир Колмогоров запропонували свій підхід \cite{boykov_kolmogorov}
+У 2004 році Юрій Бойков та Володимир Колмогоров запропонували свій підхід \cite{bib:boykov_kolmogorov}
 для пошуку мінімального розрізу на графі.
 Запропонована ідея методу полягає у нарощенні потоку у шляхах з джерела та стоку.
 Будується два дерева $S$ та $T$, коренями яких є $s$ та $t$ відповідно.
@@ -129,7 +129,7 @@
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.3\textwidth]{images/graph_cut}
-    \caption{Приклад графу-решітки з мінімальним розрізом \cite{boykov_kolmogorov}
+    \caption{Приклад графу-решітки з мінімальним розрізом \cite{bib:boykov_kolmogorov}
         \label{fig:graph_lattice}
     }
 \end{figure}
