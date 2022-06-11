@@ -10,7 +10,18 @@
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=0.7\textwidth]{images/panorama_example}
+    \subfloat[Ліва частина]{
+        \includegraphics[width=0.25\textwidth]{images/kratnye_intergraly_left}
+    }
+    \subfloat[Центральна частина]{
+        \includegraphics[width=0.25\textwidth]{images/kratnye_intergraly_center}
+    }
+    \subfloat[Права частина]{
+        \includegraphics[width=0.25\textwidth]{images/kratnye_intergraly_center}
+    }\\
+    \subfloat[Панорама]{
+        \includegraphics[width=0.7\textwidth]{images/kratnye_integraly_panorama_example_1}
+    }
     \caption{Приклад отриманої панорами з автоматичним видаленням
         викладача з відео \cite{fpmi_2021_video}
         \label{fig:panorama_example}
@@ -100,8 +111,8 @@
         \begin{equation*}
             W^{i + s}(p) =
             \begin{cases}
-                F^{i + s}(f(p)),                            & f(p) \in P,                                    \\
-                W^{i}( p + ( x_{\min}^{'},y_{\min}^{'} ) ), & p + ( x_{\min}^{'},y_{\min}^{'} ) \in P^{i},   \\
+                F^{i + s}(f(p)),                            & f(p) \in P,                                     \\
+                W^{i}( p + ( x_{\min}^{'},y_{\min}^{'} ) ), & p + ( x_{\min}^{'},y_{\min}^{'} ) \in P^{i},    \\
                 0,                                          & p + ( x_{\min}^{'},y_{\min}^{'} ) \notin P^{i}.
             \end{cases}
         \end{equation*}
