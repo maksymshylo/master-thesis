@@ -44,7 +44,7 @@
     }
 \end{figure}
 Даний метод можна застосовувати як для прибирання швидких рухомих об'єктів,
-так і для  отримання зображення із високою роздільною здатністю (super-resolution).
+так і для отримання зображення із високою роздільною здатністю (super-resolution).
 
 \subsection{Швидка медіана для зображень}
 
@@ -104,13 +104,6 @@
 \subsection{Побудова швидкої медіани для зображень}
 
 Нехай у нас на вхід подається черга із $m$ картинок. Кожну ітерацію приходить нова картинка.
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=0.5\textwidth]{images/median_seq}
-    \caption{Приклад послідовності картинок для формування медіани з відео \cite{video:mmzi:yakovlev_numbers_theory}
-        \label{fig:median_seq_example}
-    }
-\end{figure}
 Для простішого пояснення методу швидкої медіани візьмемо одноканальне зображення
 зображення у відтінках сірого розмірами $h \times w$, де $h$ ~---~ висота, $w$ ~---~ ширина,
 але в реальності операції, що наведені нижче виконуються для трьохканального $RGB$ зображення
@@ -120,6 +113,14 @@
 \cite{bib:creating_slides_1} \cite{bib:patent_board}
 алгоритм швидкої медіани застосовується на панорамних знімках
 з метою знешумлення на підвищення якості написів на дошці.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{images/median_seq}
+    \caption{Приклад послідовності картинок для формування медіани з відео \cite{video:mmzi:yakovlev_numbers_theory}
+        \label{fig:median_seq_example}
+    }
+\end{figure}
 
 Введемо такі масиви:
 \begin{itemize}
