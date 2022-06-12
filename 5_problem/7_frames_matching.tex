@@ -62,7 +62,7 @@
 
           \begin{figure}[H]
               \centering
-              \includegraphics[width=0.5\textwidth]{images/sift1}
+              \includegraphics[width=0.4\textwidth]{images/sift1}
               \caption{Знаходження різниць Ґауссіанів 1-ий етап SIFT \cite{bib:sift}
                   \label{fig:swift1}
               }
@@ -117,30 +117,21 @@
               \label{eq:extremum}
           \end{equation}
           Підставивши \eqref{eq:extremum} у \eqref{eq:tailor_1}, маємо можливість відсіяти нестабільні
-          екстремуми по модулю значення (рис. \eqref{fig:extremums_filtering})
+          екстремуми по модулю значення (рис. \ref{fig:filtering_extremum})
           \begin{equation*}
               D(\widehat{\boldsymbol{x}}) = D + \frac{1}{2}\frac{\partial D^{T} }{\partial \boldsymbol{x}}\widehat{\boldsymbol{x}}.
           \end{equation*}
 
           \begin{figure}[H]
               \centering
-              \ContinuedFloat
-              \begin{subfigure}[c]{0.3\textwidth}
-                  \centering
-                  \includegraphics[width=\textwidth]{images/sift4}
-                  \caption{ 832 ключових точок
-                      \label{fig:swift4}
-                  }
-              \end{subfigure}
-              \begin{subfigure}[c]{0.3\textwidth}
-                  \centering
-                  \includegraphics[width=\textwidth]{images/sift5}
-                  \caption{ 536 ключових точок
-                      \label{fig:swift5}
-                  }
-              \end{subfigure}
+              \subfloat[832 ключових точок]{
+                  \includegraphics[width=0.3\textwidth]{images/sift4}
+              }
+              \subfloat[536 ключових точок]{
+                  \includegraphics[width=0.3\textwidth]{images/sift5}
+              }
               \caption{Приклад відсіювання екстремумів \cite{bib:sift}
-                  \label{fig:extremums_filtering}
+                  \label{fig:filtering_extremum}
               }
           \end{figure}
           Таким чином  ми обмежуємо $|D(\widehat{\boldsymbol{x}})| < \alpha$.

@@ -22,6 +22,16 @@
 містить нерухомі «дірки» (пікселі, де колір не змінився), вони можуть
 вважатися частиною рухомого об'єкту.
 
+
+Для того, щоб отримати маску рухомих об'єктів, які можуть перекривати дошку, ми
+беремо кадри \(F^{i}\) та \(F^{i + s}\) (рис.
+\subref{fig:yakovlev_discrete_math:bk_examples:a},
+\subref{fig:yakovlev_discrete_math:bk_examples:b}) та для
+кожної пари кольорів пікселів \(p\) з однаковими координатами знаходимо
+модуль \(D_{p}^{i} = \left| F_{p}^{i} - F_{p}^{i + s} \right|\) різниці
+інтенсивностей (рис. \ref{fig:yakovlev_discrete_math:bk_examples:c}). Зображення \(D^{i}\) подаємо на вхід
+Б-К алгоритму.
+
 \begin{figure}[H]
 	\centering
 	\subfloat[Попередній кадр $F^i$]{
@@ -44,15 +54,6 @@
 		\label{fig:yakovlev_discrete_math:bk_examples}
 	}
 \end{figure}
-
-Для того, щоб отримати маску рухомих об'єктів, які можуть перекривати дошку, ми
-беремо кадри \(F^{i}\) та \(F^{i + s}\) (рис.
-\subref{fig:yakovlev_discrete_math:bk_examples:a},
-\subref{fig:yakovlev_discrete_math:bk_examples:b}) та для
-кожної пари кольорів пікселів \(p\) з однаковими координатами знаходимо
-модуль \(D_{p}^{i} = \left| F_{p}^{i} - F_{p}^{i + s} \right|\) різниці
-інтенсивностей (рис. \ref{fig:yakovlev_discrete_math:bk_examples:c}). Зображення \(D^{i}\) подаємо на вхід
-Б-К алгоритму.
 
 Знайдемо маску $B^{i}:P \rightarrow \{0,1\}$ рухомих
 об'єктів для кадрів \(F^{i}\) і \(F^{i + s}\).
