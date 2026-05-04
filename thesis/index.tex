@@ -1,0 +1,63 @@
+% Boolean flag to enable/disable bibliography
+\newif\ifusebib
+\usebibtrue      % ← with bibliography
+%\usebibfalse      % ← without bibliography
+
+% Custom document class
+\documentclass{dstu}
+
+% Custom preamble with packages and settings
+\usepackage{preamble}
+
+\usepackage{import} % Allows importing files from subdirectories
+
+% External configuration (user-defined settings/macros)
+\input{config}
+
+% Explicit biblatex load (note: already conditionally loaded in preamble)
+\usepackage{biblatex}
+
+% Add bibliography resource only if enabled
+\ifusebib
+  \addbibresource{bibliography.bib}
+\fi
+
+% Remove chapter-based numbering for equations
+\counterwithout{equation}{chapter}
+\regtotcounter{figure} % Counter of figures
+
+\begin{document}
+
+% Disable page numbering for front matter
+\pagenumbering{gobble}
+
+
+\import{chapters/1_title/}{main.tex}
+\import{chapters/2_abstract/}{main.tex}
+
+
+\tableofcontents
+
+
+\clearpage
+\pagenumbering{arabic} % Arabic page numbering
+\pagestyle{fancy}     % Use custom headers/footers
+\setcounter{page}{8}  % Start numbering from page 8
+\clearpage
+
+
+\import{chapters/3_preface/}{main.tex}
+\import{chapters/4_analogs/}{main.tex}
+\import{chapters/5_problem/}{main.tex}
+\import{chapters/6_results/}{main.tex}
+\import{chapters/7_conclusions/}{main.tex}
+
+% Bibliography section (conditionally included)
+\ifusebib
+  \clearpage
+  \phantomsection % Correct hyperlink anchor for TOC
+  \addcontentsline{toc}{chapter}{Перелік посилань} % Add to TOC
+  \printbibliography[title=Перелік посилань] % Print bibliography
+\fi
+
+\end{document}

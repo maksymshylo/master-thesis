@@ -1,0 +1,108 @@
+\ProvidesPackage{preamble}
+
+% =====================
+% MATH
+% =====================
+
+\RequirePackage{amsmath,amsthm,amssymb,amsfonts} % Core AMS math packages
+\RequirePackage{bbm,dsfont,stmaryrd,amsopn} % Additional math symbols and operators
+
+\theoremstyle{definition} % Theorem style for definitions (non-italic text)
+\newtheorem{definition}{Означення} % Definition environment
+\counterwithout{equation}{chapter}
+
+% =====================
+% GRAPHICS
+% =====================
+
+\RequirePackage{graphicx} % Include images
+\RequirePackage{multirow} % Multi-row cells in tables
+\RequirePackage{tikz} % Drawing diagrams
+
+% =====================
+% TECHNICAL UTILITIES
+% =====================
+
+\RequirePackage{icomma} % Smart comma spacing in math mode
+\RequirePackage{indentfirst} % Indent first paragraph after section
+\RequirePackage{changepage} % Adjust page layout locally
+\RequirePackage{float} % Improved float control (H specifier)
+\RequirePackage{algorithm} % Floating environment for algorithms
+\RequirePackage{algpseudocode} % Pseudocode formatting
+\RequirePackage{lastpage} % Reference last page number
+\RequirePackage{totcount} % Count total elements (figures, tables, etc.)
+\RequirePackage{tocloft} % TOC customization
+
+% =====================
+% LISTS
+% =====================
+
+\RequirePackage{enumitem} % Custom list formatting
+\setlist{nolistsep} % Remove extra spacing between list items
+
+% =====================
+% SUBCAPTIONS
+% =====================
+
+\RequirePackage{subcaption} % Subfigure/subtable support
+
+% Fallback definition if \asbuk is not defined (Ukrainian-style lettering)
+\providecommand{\asbuk}[1]{\alph{#1}}
+
+% Use Ukrainian-style labels for subfigures (a, b, c, ...)
+\renewcommand{\thesubfigure}{\asbuk{subfigure}}
+
+% =====================
+% HYPERLINKS
+% =====================
+
+\RequirePackage[hidelinks]{hyperref} % Enable hyperlinks without colored boxes
+
+% =====================
+% TABLES
+% =====================
+
+\renewcommand{\arraystretch}{1.3} % Increase row height in tables
+
+% =====================
+% CUSTOM COMMANDS
+% =====================
+
+% Section "Conclusions for the chapter" with TOC entry
+\newcommand{\chapterConclusion}{%
+  \section*{Висновки до розділу}%
+  \addcontentsline{toc}{section}{Висновки до розділу \thechapter}%
+}
+
+% Rename algorithm float caption (Ukrainian)
+\floatname{algorithm}{Алгоритм}
+
+
+% =====================
+% BIBLIOGRAPHY
+% =====================
+% =====================
+% GEOMETRY (source of truth for margins)
+% =====================
+
+\geometry{
+    left=2.0cm,
+    right=1.0cm,
+    top=2.0cm,
+    bottom=2.0cm
+}
+
+% =====================
+% BIBLIOGRAPHY
+% =====================
+\ifusebib
+\RequirePackage[
+    backend=biber,
+    style=gost-numeric,
+    language=autobib,
+    sorting=none
+]{biblatex}
+
+% Remove dot after number
+\DeclareFieldFormat{labelnumberwidth}{#1}
+\fi
