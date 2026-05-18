@@ -50,8 +50,11 @@
 \providecommand{\asbuk}[1]{\alph{#1}}
 
 % Use Ukrainian-style labels for subfigures (a, b, c, ...)
-\renewcommand{\thesubfigure}{\asbuk{subfigure}}
 
+\makeatletter
+\renewcommand{\p@subfigure}{\thefigure}
+\renewcommand{\thesubfigure}{(\asbuk{subfigure})}
+\makeatother
 % =====================
 % HYPERLINKS
 % =====================
@@ -100,9 +103,53 @@
     backend=biber,
     style=gost-numeric,
     language=autobib,
+    blockpunct=space,
     sorting=none
 ]{biblatex}
 
+\DeclareSourcemap{
+  \maps[datatype=bibtex]{
+    \map[overwrite=false]{
+      \step[fieldsource=url, match=\regexp{.+}, final]
+      %\step[fieldset=urldate, fieldvalue={2026-05-18}]
+    }
+  }
+}
+
+\DefineBibliographyStrings{ukrainian}{
+  urlseen  = {дата звернення:},
+  andothers = {та\addabbrvspace ін\adddot}
+}
+
+\renewbibmacro*{name:andothers}{%
+  \ifboolexpr{
+    test {\ifnumequal{\value{listcount}}{\value{liststop}}}
+    and
+    test \ifmorenames
+  }
+    {%
+      \space
+      \bibstring{andothers}%
+    }
+    {}%
+}
+
 % Remove dot after number
 \DeclareFieldFormat{labelnumberwidth}{#1}
+
+% Keep the bibliography text inside the same page margins as the main text.
+\defbibenvironment{bibliography}
+  {\sloppy
+   \setlength{\emergencystretch}{3em}%
+   \list{}
+    {\setlength{\labelwidth}{0.5cm}%
+     \setlength{\labelsep}{0.5cm}%
+     \setlength{\leftmargin}{\dimexpr\labelwidth+\labelsep\relax}%
+     \setlength{\rightmargin}{0pt}%
+     \setlength{\itemindent}{0pt}%
+     \setlength{\itemsep}{\bibitemsep}%
+     \setlength{\parsep}{\bibparsep}%
+     \renewcommand*{\makelabel}[1]{##1\hss}}}
+  {\endlist}
+  {\item[\printfield{labelprefix}\printfield{labelnumber}]}
 \fi
