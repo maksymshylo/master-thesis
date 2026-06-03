@@ -59,8 +59,6 @@ The thesis is expected to be built from the `thesis/` directory.
 
 Fast build without bibliography:
 
-/System/Library/Fonts/Supplemental/Times\ New\ Roman.ttf
-
 ```bash
 docker run --rm \
   -u "$(id -u):$(id -g)" \
@@ -82,6 +80,25 @@ docker run --rm \
 Output PDF:
 
 - `thesis/index.pdf`
+
+### Build Thesis with Times New Roman font
+
+By default, the thesis uses `XITS`. To build with the operating system's
+`Times New Roman`, pass `--times` to the thesis build script:
+
+When building locally with XeLaTeX, the font is resolved from the operating
+system font database. Make sure `Times New Roman` is installed:
+
+- macOS: usually available at
+  `/System/Library/Fonts/Supplemental/Times New Roman.ttf`
+- Windows: usually available at
+  `C:\Windows\Fonts\times.ttf`
+- Linux: install a package that provides Microsoft core fonts, for example
+  `ttf-mscorefonts-installer` on Ubuntu/Debian-based systems
+
+When building inside Docker, the container can only see fonts installed in the
+container or mounted from the host. On macOS, mount the system font directory:
+
 
 ## Build Presentation
 
@@ -110,7 +127,6 @@ To also remove the generated PDF:
 cd thesis
 bash clean.sh --full
 ```
-docker run --rm -u "$(id -u):$(id -g)" -v "$(pwd):/work" thesis-builder bash -lc 'cd /work/thesis && bash build.sh'
 
 ## Supervisor
 - Valerii Krygin ([@definability](https://github.com/definability))

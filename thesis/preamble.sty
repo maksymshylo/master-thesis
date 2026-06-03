@@ -32,6 +32,7 @@
 \RequirePackage{lastpage} % Reference last page number
 \RequirePackage{totcount} % Count total elements (figures, tables, etc.)
 \RequirePackage{tocloft} % TOC customization
+\newtotcounter{bibliographyitems} % Total number of printed bibliography entries
 
 % =====================
 % LISTS
@@ -120,6 +121,8 @@
   urlseen  = {дата звернення:},
   andothers = {та\addabbrvspace ін\adddot}
 }
+
+\AtEveryBibitem{\stepcounter{bibliographyitems}}
 
 \renewbibmacro*{name:andothers}{%
   \ifboolexpr{
