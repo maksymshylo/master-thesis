@@ -162,5 +162,12 @@ pythontex-files-*/
 # Local host fonts staged for Docker builds
 .fonts/
 
+# Build outputs and local metadata
+*.pdf
+*.synctex.gz
+tmp/
+.DS_Store
+.idea/
+
 # Latexian
 TSWLatexianTemp*

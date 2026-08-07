@@ -41,17 +41,24 @@ Panorama slides produced from lecture videos:
 
 - `thesis/` — master thesis sources and build scripts
 - `presentation/` — presentation sources and build script
-- `Dockerfile` — TeX Live build environment
+- `latex-dstu` — shared Docker image used for compilation
 
 ## Build Prerequisites
 
 - Docker
+- the local `latex-dstu` image
 
 ## Build Docker Image
 
+Build the shared image first from the sibling `latex-dstu` repository:
+
 ```bash
-docker build -t thesis-builder .
+cd /Users/mshylo/dev/latex-dstu
+docker build -f docker/Dockerfile -t latex-dstu:latest .
 ```
+
+The thesis and presentation use `latex-dstu:latest` directly. No project
+specific Dockerfile is required.
 
 ## Build Thesis
 
@@ -63,7 +70,7 @@ Fast build without bibliography:
 docker run --rm \
   -u "$(id -u):$(id -g)" \
   -v "$(pwd):/work/thesis" \
-  thesis-builder \
+  latex-dstu:latest \
   bash -lc 'cd /work/thesis && bash build.sh'
 ```
 
@@ -73,7 +80,7 @@ Full build with bibliography:
 docker run --rm \
   -u "$(id -u):$(id -g)" \
   -v "$(pwd):/work/thesis" \
-  thesis-builder \
+  latex-dstu:latest \
   bash -lc 'cd /work/thesis && bash build_with_bib.sh'
 ```
 
@@ -110,7 +117,7 @@ docker run --rm \
   -u "$(id -u):$(id -g)" \
   -v "$(pwd):/work/thesis" \
   -v "$(pwd)/.fonts:/usr/local/share/fonts:ro" \
-  thesis-builder \
+  latex-dstu:latest \
   bash -lc 'cd /work/thesis && bash build_with_bib.sh --times'
 ```
 
@@ -122,7 +129,7 @@ Run the following command from inside `presentation/`.
 docker run --rm \
   -u "$(id -u):$(id -g)" \
   -v "$(pwd):/work/presentation" \
-  thesis-builder \
+  latex-dstu:latest \
   bash -lc 'cd /work/presentation && bash build.sh'
 ```
 
