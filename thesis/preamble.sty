@@ -50,11 +50,13 @@
 % Fallback definition if \asbuk is not defined (Ukrainian-style lettering)
 \providecommand{\asbuk}[1]{\alph{#1}}
 
-% Use Ukrainian-style labels for subfigures (a, b, c, ...)
+% Use Ukrainian-style labels for subfigures (a, b, c, ...).
+% Keep parentheses out of the caption label itself, but include them in
+% references such as \ref{...}: 3.6(а).
 
 \makeatletter
-\renewcommand{\p@subfigure}{\thefigure}
-\renewcommand{\thesubfigure}{(\asbuk{subfigure})}
+\renewcommand{\thesubfigure}{\asbuk{subfigure}}
+\labelformat{subfigure}{\thefigure(#1)}
 \makeatother
 % =====================
 % HYPERLINKS
@@ -107,6 +109,8 @@
     blockpunct=space,
     sorting=none
 ]{biblatex}
+
+\DeclareDelimFormat{multicitedelim}{\addcomma\space}
 
 \DeclareSourcemap{
   \maps[datatype=bibtex]{

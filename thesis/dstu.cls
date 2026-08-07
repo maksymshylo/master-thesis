@@ -1,6 +1,10 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{dstu}
 
+\newif\ifdstutimes
+\DeclareOption{times}{\dstutimestrue}
+\ProcessOptions\relax
+
 % Base class: extended report with 14pt font on A4 paper
 \LoadClass[14pt,a4paper]{extreport}
 
@@ -12,7 +16,21 @@
 % =====================
 
 \RequirePackage{fontspec} % Allows using system fonts (XeLaTeX/LuaLaTeX)
-\setmainfont{XITS}[Ligatures=TeX] % Main document font
+\ifdstutimes
+  \IfFontExistsTF{Times New Roman}
+    {\setmainfont{Times New Roman}[
+      Ligatures=TeX,
+      BoldFont={Times New Roman Bold},
+      ItalicFont={Times New Roman Italic},
+      BoldItalicFont={Times New Roman Bold Italic}
+    ]}
+    {\ClassError{dstu}
+      {Times New Roman font was requested but not found}
+      {Install Times New Roman or make the host system font directory visible to XeLaTeX.}%
+     \stop}
+\else
+  \setmainfont{XITS}[Ligatures=TeX] % Main document font
+\fi
 
 \RequirePackage[english,ukrainian]{babel} % Multilingual support
 \RequirePackage{csquotes} % Context-aware quotation marks

@@ -30,7 +30,7 @@ Panorama slides produced from lecture videos:
 
 - The work produced an end-to-end algorithm for creating panorama slides
   without the lecturer.
-- None of the reviewed analogs combined all of the capabilities implemented in
+- None of the reviewed analogs combined all the capabilities implemented in
   this thesis.
 - YOLO-family models, especially `YOLOv5n`, showed the best practical tradeoff
   for lecturer removal.
@@ -55,14 +55,14 @@ docker build -t thesis-builder .
 
 ## Build Thesis
 
-The thesis is expected to be built from the `thesis/` directory.
+Run the following commands from inside `thesis/`.
 
 Fast build without bibliography:
 
 ```bash
 docker run --rm \
   -u "$(id -u):$(id -g)" \
-  -v "$(pwd):/work" \
+  -v "$(pwd):/work/thesis" \
   thesis-builder \
   bash -lc 'cd /work/thesis && bash build.sh'
 ```
@@ -72,7 +72,7 @@ Full build with bibliography:
 ```bash
 docker run --rm \
   -u "$(id -u):$(id -g)" \
-  -v "$(pwd):/work" \
+  -v "$(pwd):/work/thesis" \
   thesis-builder \
   bash -lc 'cd /work/thesis && bash build_with_bib.sh'
 ```
@@ -83,29 +83,45 @@ Output PDF:
 
 ### Build Thesis with Times New Roman font
 
-By default, the thesis uses `XITS`. To build with the operating system's
-`Times New Roman`, pass `--times` to the thesis build script:
+By default, the thesis uses `XITS`. 
+To build with the operating system's
+`Times New Roman`, make sure it's installed:
 
-When building locally with XeLaTeX, the font is resolved from the operating
-system font database. Make sure `Times New Roman` is installed:
-
-- macOS: usually available at
+- **macOS**: usually available at
   `/System/Library/Fonts/Supplemental/Times New Roman.ttf`
-- Windows: usually available at
+- **Windows**: usually available at
   `C:\Windows\Fonts\times.ttf`
-- Linux: install a package that provides Microsoft core fonts, for example
+- **Linux**: install a package that provides Microsoft core fonts, for example
   `ttf-mscorefonts-installer` on Ubuntu/Debian-based systems
 
-When building inside Docker, the container can only see fonts installed in the
-container or mounted from the host. On macOS, mount the system font directory:
+Copy the required font files into the project-local `.fonts/` directory first.
 
+```bash
+mkdir -p .fonts
+cp "/System/Library/Fonts/Supplemental/Times New Roman.ttf" .fonts/
+cp "/System/Library/Fonts/Supplemental/Times New Roman Bold.ttf" .fonts/
+cp "/System/Library/Fonts/Supplemental/Times New Roman Italic.ttf" .fonts/
+cp "/System/Library/Fonts/Supplemental/Times New Roman Bold Italic.ttf" .fonts/
+```
+
+Build thesis with `Times New Roman`:
+```
+docker run --rm \
+  -u "$(id -u):$(id -g)" \
+  -v "$(pwd):/work/thesis" \
+  -v "$(pwd)/.fonts:/usr/local/share/fonts:ro" \
+  thesis-builder \
+  bash -lc 'cd /work/thesis && bash build_with_bib.sh --times'
+```
 
 ## Build Presentation
+
+Run the following command from inside `presentation/`.
 
 ```bash
 docker run --rm \
   -u "$(id -u):$(id -g)" \
-  -v "$(pwd):/work" \
+  -v "$(pwd):/work/presentation" \
   thesis-builder \
   bash -lc 'cd /work/presentation && bash build.sh'
 ```

@@ -159,5 +159,8 @@ pythontex-files-*/
 *.ttt
 *.fff
 
+# Local host fonts staged for Docker builds
+.fonts/
+
 # Latexian
 TSWLatexianTemp*
