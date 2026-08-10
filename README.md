@@ -1,5 +1,10 @@
 # Master Thesis - Creating slides from video lecture
 
+## Structure
+
+- `presentation/` — presentation sources and build script
+- `thesis/` — master thesis sources and build scripts
+
 ## Abstract
 The aim of this work is to create an algorithm for obtaining panorama slides
 without a teacher from a video lecture recorded by a camera that may move or
@@ -22,9 +27,24 @@ The implementation combines:
 
 ## Example Results
 
-Panorama slides produced from lecture videos:
+| Key points                                                   |
+|--------------------------------------------------------------|
+| ![](thesis/images/next_frame_kp.png)                         |
 
-![Panorama example 1](thesis/images/kratnye_integraly_panorama_example_1.png)
+| Key points    after removal                                  |
+| ------------------------------------------------------------ |
+| ![](thesis/images/next_frame_matches_mask.png)               |
+
+
+
+| Left part                                      |                              Center part                              | Right part                                      |
+|------------------------------------------------|:---------------------------------------------------------------------:|-------------------------------------------------|
+| ![](thesis/images/kratnye_intergraly_left.png) |           ![](thesis/images/kratnye_intergraly_center.png)            | ![](thesis/images/kratnye_intergraly_right.png) |
+
+| Panorama                                                    |
+|-------------------------------------------------------------|
+| ![](thesis/images/kratnye_integraly_panorama_example_1.png) |
+
 
 ## Thesis Conclusions
 
@@ -36,120 +56,6 @@ Panorama slides produced from lecture videos:
   for lecturer removal.
 - Further improvements suggested in the thesis include board detection,
   vectorized board content extraction, and GPU acceleration.
-
-## Repository Layout
-
-- `thesis/` — master thesis sources and build scripts
-- `presentation/` — presentation sources and build script
-- `latex-dstu` — shared Docker image used for compilation
-
-## Build Prerequisites
-
-- Docker
-- the local `latex-dstu` image
-
-## Build Docker Image
-
-Build the shared image first from the sibling `latex-dstu` repository:
-
-```bash
-cd /Users/mshylo/dev/latex-dstu
-docker build -f docker/Dockerfile -t latex-dstu:latest .
-```
-
-The thesis and presentation use `latex-dstu:latest` directly. No project
-specific Dockerfile is required.
-
-## Build Thesis
-
-Run the following commands from inside `thesis/`.
-
-Fast build without bibliography:
-
-```bash
-docker run --rm \
-  -u "$(id -u):$(id -g)" \
-  -v "$(pwd):/work/thesis" \
-  latex-dstu:latest \
-  bash -lc 'cd /work/thesis && bash build.sh'
-```
-
-Full build with bibliography:
-
-```bash
-docker run --rm \
-  -u "$(id -u):$(id -g)" \
-  -v "$(pwd):/work/thesis" \
-  latex-dstu:latest \
-  bash -lc 'cd /work/thesis && bash build_with_bib.sh'
-```
-
-Output PDF:
-
-- `thesis/index.pdf`
-
-### Build Thesis with Times New Roman font
-
-By default, the thesis uses `XITS`. 
-To build with the operating system's
-`Times New Roman`, make sure it's installed:
-
-- **macOS**: usually available at
-  `/System/Library/Fonts/Supplemental/Times New Roman.ttf`
-- **Windows**: usually available at
-  `C:\Windows\Fonts\times.ttf`
-- **Linux**: install a package that provides Microsoft core fonts, for example
-  `ttf-mscorefonts-installer` on Ubuntu/Debian-based systems
-
-Copy the required font files into the project-local `.fonts/` directory first.
-
-```bash
-mkdir -p .fonts
-cp "/System/Library/Fonts/Supplemental/Times New Roman.ttf" .fonts/
-cp "/System/Library/Fonts/Supplemental/Times New Roman Bold.ttf" .fonts/
-cp "/System/Library/Fonts/Supplemental/Times New Roman Italic.ttf" .fonts/
-cp "/System/Library/Fonts/Supplemental/Times New Roman Bold Italic.ttf" .fonts/
-```
-
-Build thesis with `Times New Roman`:
-```
-docker run --rm \
-  -u "$(id -u):$(id -g)" \
-  -v "$(pwd):/work/thesis" \
-  -v "$(pwd)/.fonts:/usr/local/share/fonts:ro" \
-  latex-dstu:latest \
-  bash -lc 'cd /work/thesis && bash build_with_bib.sh --times'
-```
-
-## Build Presentation
-
-Run the following command from inside `presentation/`.
-
-```bash
-docker run --rm \
-  -u "$(id -u):$(id -g)" \
-  -v "$(pwd):/work/presentation" \
-  latex-dstu:latest \
-  bash -lc 'cd /work/presentation && bash build.sh'
-```
-
-Output PDF:
-
-- `presentation/index.pdf`
-
-## Clean Thesis Build Artifacts
-
-```bash
-cd thesis
-bash clean.sh
-```
-
-To also remove the generated PDF:
-
-```bash
-cd thesis
-bash clean.sh --full
-```
 
 ## Supervisor
 - Valerii Krygin ([@definability](https://github.com/definability))
